@@ -38,9 +38,7 @@ def payment_type():
 
 
 def payment_failure_reason(success, payment_type):
-    if success == True:
-        return ""
-    else:
+    if success == False:
         rng = random.randint(0, 100)
         if payment_type == "Cash" or payment_type == "Gift card":
             return "Insufficent funds"
@@ -52,6 +50,8 @@ def payment_failure_reason(success, payment_type):
             return "Invalid CVV"
         else:
             return "Invalid card number"
+    else:
+        return ""
 
 
 def main():
@@ -61,12 +61,13 @@ def main():
         lst = payment_txn_id(n)
         for i in range(n):
             temp_type = payment_type()
-            print(temp_type)
-            if payment_txn_success == True:
+            if payment_txn_success() == True:
                 temp_success = "Y"
+                tmp = True
             else:
                 temp_success = "N"
-            temp_reason = payment_failure_reason(temp_success, temp_type)
+                tmp = False
+            temp_reason = payment_failure_reason(tmp, temp_type)
             line = f"{temp_type}, {lst[i]}, {temp_success}, {temp_reason}\n"
             f.write(line)
 
