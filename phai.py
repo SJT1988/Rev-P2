@@ -1,6 +1,5 @@
 import random
 import csv
-from tkinter import Y
 
 # Generates n number of txn id where every txn id is unique
 def payment_txn_id(n):
