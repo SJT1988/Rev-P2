@@ -1,23 +1,21 @@
 # Kyunghoon Han
 # Visual Studio Python 3
 
-import csv, re
+import csv
 import random
 
 class productInfo():
     # Generate at least a 1000 fake(?) products and product categories
 
-    @staticmethod
-    def fakeProducts(p):
+    def product_id(num):
         lst = []
-        for i in range(p):
-            product_id = random.randint(1, 15000)
-            if product_id not in lst:
-                lst.append(product_id)
+        for i in range(num):
+            id = random.randint(10000, 100000)
+            if id not in lst:
+                lst.append(id)
             else:
                 i -= 1
         return lst
-
     
     # Tech
 
