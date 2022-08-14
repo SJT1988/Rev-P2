@@ -17,16 +17,7 @@ def product_id(num):
             i -= 1
     return lst
     
-    # Tech
-
-    # Food
-
-    # Clothes
-
-    # Beverages
-
-    # Appliances
-
-    # Home Decor
-
-    # Sports
+# Tech / Food / Clothes / Beverages / Appliances / Home Decor / Sports
+def product_category():
+    category = random.randint(0, 105)
+    if
