@@ -9,7 +9,17 @@ class productInfo():
 
     @staticmethod
     def fakeProducts():
-        num = 1000
-        idNum = 0
-        with open('product_info.csv', 'w', encoding='utf-8', newline = '') as file:
-            
+        lst = []
+        # Tech
+
+        # Food
+
+        # Clothes
+
+        # Beverages
+
+        # Appliances
+
+        # Home Decor
+
+        # Sports
