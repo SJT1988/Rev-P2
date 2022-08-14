@@ -4,12 +4,12 @@ import csv
 # Generates n number of txn id where every txn id is unique
 def payment_txn_id(n):
     lst = []
-    for i in range(n):
+    i = 0
+    while i < n:
         txn_id = random.randint(10000, 100000)
         if txn_id not in lst:
             lst.append(txn_id)
-        else:
-            i -= 1
+            i += 1
     return lst
 
 
