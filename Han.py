@@ -8,18 +8,27 @@ class productInfo():
     # Generate at least a 1000 fake(?) products and product categories
 
     @staticmethod
-    def fakeProducts():
+    def fakeProducts(p):
         lst = []
-        # Tech
+        for i in range(p):
+            product_id = random.randint(1, 15000)
+            if product_id not in lst:
+                lst.append(product_id)
+            else:
+                i -= 1
+        return lst
 
-        # Food
+    
+    # Tech
 
-        # Clothes
+    # Food
 
-        # Beverages
+    # Clothes
 
-        # Appliances
+    # Beverages
 
-        # Home Decor
+    # Appliances
 
-        # Sports
+    # Home Decor
+
+    # Sports
