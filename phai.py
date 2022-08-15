@@ -67,7 +67,7 @@ def main():
                 temp_success = "N"
                 tmp = False
             temp_reason = payment_failure_reason(tmp, temp_type)
-            line = f"{temp_type}, {lst[i]}, {temp_success}, {temp_reason}\n"
+            line = f"{temp_type},{lst[i]},{temp_success},{temp_reason}\n"
             f.write(line)
 
 
