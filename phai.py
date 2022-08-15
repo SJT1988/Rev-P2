@@ -56,7 +56,7 @@ def payment_failure_reason(success, payment_type):
 def main():
     with open("payment_info.csv", "w") as f:
         n = 15000
-        f.write("payment type, payment trans id, payment trans success, failure reason")
+        f.write("id, payment type, payment trans id, payment trans success, failure reason\n")
         lst = payment_txn_id(n)
         for i in range(n):
             temp_type = payment_type()
