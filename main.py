@@ -60,7 +60,7 @@ def combine_csvs():
         payment_txn_id = payment_list[i][1].strip()
         payment_txn_success = payment_list[i][2].strip()
         failure_reason = payment_list[i][3].strip()
-        # 5% chance for line to be "roguefied"
+        # 5% chance for line to be "rogue field"
         if rng < 6:
             order_id = num2words(order_id, to="ordinal")
             order_id = order_id.translate({ord(","): None})
