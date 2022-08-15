@@ -3,17 +3,33 @@
 # 4 fields: customer_id, customer_name,
 # city, country
 
-import csv, re
+import csv, re, random
 from faker import Faker
 
 #================================================================================
 #================================================================================
 class CustomerInfo():
+
+    #============================================================================
+    #============================================================================
+    @staticmethod
+    def init_locations_list() -> list:
+        fields = []
+        us_locations = []
+        with open('most_populous_us_cities.csv', 'r', encoding='utf-8', newline='') as f:
+            reader = csv.reader(f) 
+            fields = next(reader)
+
+            for row in reader:
+                us_locations.append([row[0],row[1],row[2],row[3]]) # rank, city, state, st
+        return us_locations
+        
     #============================================================================
     #============================================================================
     # generate 1000 fake names and cities for 15 countries using Faker
     @staticmethod
     def fakeItToMakeIt():
+
         n=1000
         id = 0
         with open('customer_info.csv', 'w', encoding='utf-8', newline='') as f:
@@ -21,108 +37,124 @@ class CustomerInfo():
             writer.writerow(['Id','Name', 'City', 'Country'])
 
             #US
+            us_locations = CustomerInfo.init_locations_list()
             faker = Faker('en_US')
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'United States'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), random.choice(us_locations)[1], 'United States'])
             del(faker)
 
             #Britain
             faker = Faker(['en_GB'])
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Great Brittain'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Great Britain'])
             del(faker)
 
             #Australia
             faker = Faker(['en_AU'])
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Australia'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Australia'])
             del(faker)
 
             #Ireland
             faker = Faker('en_IE')
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Ireland'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Ireland'])
             del(faker)
 
             #France
             faker = Faker(['fr_FR'])
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'France'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'France'])
             del(faker)
 
             #Germany
             faker = Faker(['de_DE'])
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Germany'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Germany'])
             del(faker)
 
             #Mexico
             faker = Faker('es_MX')
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Mexico'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Mexico'])
             del(faker)
 
             #Brazil
             faker = Faker('pt_BR')
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Brazil'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Brazil'])
             del(faker)
 
             #Ukraine
             faker = Faker(['uk_UA'])
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Ukraine'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Ukraine'])
             del(faker)
 
             #Russia
             faker = Faker(['ru_RU'])
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Russia'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Russia'])
             del(faker)
 
             #Iran
             faker = Faker(['fa_IR'])
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Iran'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Iran'])
             del(faker)
 
             #India
             faker = Faker('en_IN')
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'India'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'India'])
             del(faker)
 
             #China
             faker = Faker('zh_CN')
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'China'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'China'])
             del(faker)
 
             #Japan
             faker = Faker('ja_JP')
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Japan'])
+                cc_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Japan'])
             del(faker)
 
             #Korea
             faker = Faker('ko_KR')
             for i in range(n):
                 id+=1
-                writer.writerow([id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Korea'])
+                c_id = 'c_' + f'{id:05}'
+                writer.writerow([c_id,faker.first_name() + ' ' + faker.last_name(), faker.city(), 'Korea'])
             del(faker)
         return
 
@@ -157,8 +189,8 @@ if __name__ == '__main__':
         cartoon_names = ['Tommy Pickles','Rick Sanchez', 'Morty Smith', 'Helga Pataki',
         'Chucky Finster', 'Homer Simpson', 'Peter Griffin', 'Sandy Cheeks', 'Velma Dinkley',
         'Eliza Thornberry', "April O'Neil", 'Tina Belcher', 'Lana Kane', 'Patrick Star',
-        'Eric Cartman', 'Norville Rogers', 'Hank Hill', 'Daria Morgendorffer', 'Malala Yousafzai',
-        'Azadeh Shahshahani']
+        'Eric Cartman', 'Norville Rogers', 'Hank Hill', 'Daria Morgendorffer', 'Samurai Jack',
+        'Fry Farnsworth']
 
         with open(si_csv, 'r',encoding='utf-8') as f:
             next(f)
