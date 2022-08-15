@@ -189,8 +189,8 @@ if __name__ == '__main__':
         cartoon_names = ['Tommy Pickles','Rick Sanchez', 'Morty Smith', 'Helga Pataki',
         'Chucky Finster', 'Homer Simpson', 'Peter Griffin', 'Sandy Cheeks', 'Velma Dinkley',
         'Eliza Thornberry', "April O'Neil", 'Tina Belcher', 'Lana Kane', 'Patrick Star',
-        'Eric Cartman', 'Norville Rogers', 'Hank Hill', 'Daria Morgendorffer', 'Malala Yousafzai',
-        'Azadeh Shahshahani']
+        'Eric Cartman', 'Norville Rogers', 'Hank Hill', 'Daria Morgendorffer', 'Samurai Jack',
+        'Fry Farnsworth']
 
         with open(si_csv, 'r',encoding='utf-8') as f:
             next(f)
