@@ -61,9 +61,10 @@ def combine_csvs():
         payment_txn_success = payment_list[i][2]
         failure_reason = payment_list[i][3]
         # 5% chance for line to be "roguefied"
-        print(type(order_id))
         if rng < 6:
             order_id = num2words(order_id, to="ordinal")
+            order_id = order_id.translate({ord(","): None})
+            print(order_id)
         data_file.write(
             f"{order_id}, {customer_id}, {customer_name}, {payment_type}, {country}, {city}, {payment_txn_id}, {payment_txn_success}, {failure_reason}\n"
         )
