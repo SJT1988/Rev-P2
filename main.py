@@ -57,9 +57,9 @@ def combine_csvs():
         country = customer_list[i][3]
         city = customer_list[i][2]
         # ecommerce_website_name = qty_list[i][2]
-        payment_txn_id = payment_list[i][1]
-        payment_txn_success = payment_list[i][2]
-        failure_reason = payment_list[i][3]
+        payment_txn_id = payment_list[i][1].strip()
+        payment_txn_success = payment_list[i][2].strip()
+        failure_reason = payment_list[i][3].strip()
         # 5% chance for line to be "roguefied"
         if rng < 6:
             order_id = num2words(order_id, to="ordinal")
