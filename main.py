@@ -43,7 +43,7 @@ def combine_csvs():
     payment_file.close()
     customer_file.close()
     data_file = open("data.csv", "w", encoding="utf-8")
-    for i in range(1, n):
+    for i in range(1, n+1):
         rng = random.randint(0, 101)
         order_id = str(i)
         customer_id = customer_list[i][0]
@@ -64,7 +64,6 @@ def combine_csvs():
         if rng < 6:
             order_id = num2words(order_id, to="ordinal")
             order_id = order_id.translate({ord(","): None})
-            print(order_id)
         data_file.write(
             f"{order_id}, {customer_id}, {customer_name}, {payment_type}, {country}, {city}, {payment_txn_id}, {payment_txn_success}, {failure_reason}\n"
         )
