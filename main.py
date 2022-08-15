@@ -15,6 +15,7 @@ def combine_csvs():
     for line in payment_file:
         tmp = line.split(",")
         payment_list.append(tmp)
+
     for line in customer_file:
         # For every file, we have to remove the newline character or else the data is split into new lines when generated.
         tmp = line.split(",")
@@ -22,7 +23,7 @@ def combine_csvs():
         rec2 = tmp[1]
         rec3 = tmp[2]
         rec4 = tmp[3]
-        rec5 = rec4[:-2]
+        rec5 = rec4[:-1]
         tmp = [rec1, rec2, rec3, rec5]
         customer_list.append(tmp)
         # for line in item_file:
@@ -41,10 +42,11 @@ def combine_csvs():
         # with open("data.csv", "w") as f:
     payment_file.close()
     customer_file.close()
-    data_file = open("data_csv", "w", encoding="utf-8")
+    data_file = open("data.csv", "w", encoding="utf-8")
     for i in range(1, n):
         rng = random.randint(0, 101)
-        order_id = customer_list[i][0]
+        order_id = str(i)
+        customer_id = customer_list[i][0]
         customer_name = customer_list[i][1]
         # product_id = product_list[i][0]
         # product_name = product_list[i][1]
@@ -59,10 +61,11 @@ def combine_csvs():
         payment_txn_success = payment_list[i][2]
         failure_reason = payment_list[i][3]
         # 5% chance for line to be "roguefied"
+        print(type(order_id))
         if rng < 6:
             order_id = num2words(order_id, to="ordinal")
         data_file.write(
-            f"{order_id}, {customer_name}, {payment_type}, {country}, {city}, {payment_txn_id}, {payment_txn_success}, {failure_reason}"
+            f"{order_id}, {customer_id}, {customer_name}, {payment_type}, {country}, {city}, {payment_txn_id}, {payment_txn_success}, {failure_reason}\n"
         )
 
     data_file.close()
