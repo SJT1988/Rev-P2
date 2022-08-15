@@ -28,6 +28,13 @@ def combine_csvs():
         # for line in item_file:
         #     tmp = line.split(",")
         #     item_list.append(tmp)
+        #     tmp = line.split(",")
+        #     rec1 = tmp[0]
+        #     rec2 = tmp[1]
+        #     rec3 = tmp[2]
+        #     rec4 = rec3[:-2]
+        #     tmp = [rec1, rec2, rec3, rec5]
+        #     item_list.append(tmp)
         # for line in qty_list:
         #     tmp = line.split(",")
         #     qty_list.append(tmp)
