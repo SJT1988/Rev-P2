@@ -14,7 +14,7 @@ def product_id(num):
         if id not in lst:
             lst.append(id)
         else:
-            i -= 1
+            i += 1
     return lst
     
 # Tech / Food / Clothes / Beverages / Appliances / Home Decor / Sports
