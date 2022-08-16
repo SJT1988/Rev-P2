@@ -23,7 +23,7 @@ dict_type = {tech:tuple(['Laptops', 'Hard Drives', 'Phones', 'Microwaves', 'Head
     school:tuple(['Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers'])}
 
 lastproduct_selection = random.choice(list(dict_type))
-product_type = cat_selection[0]
+product_type = lastproduct_selection[0]
 
 def tech():
     n = 1500
