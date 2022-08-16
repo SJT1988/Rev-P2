@@ -19,31 +19,31 @@ def generate_item_lookup_table():
     header_list = ['item category', 'item_name', 'unit_price']
     
     temp_list = []
-    
+    for cat in range(len(item_list)):
+        for i in range(len(item_list[cat])):
+            for j in color_list:
+                for k in adjective_list:
+                    item = f"{k[0]} {j} {item_list[cat][i][0]}"
+                    unit_price = item_list[cat][i][1]*k[1]
+                    category = None
+                    if cat == 0:
+                        category = 'appliances'
+                    if cat == 1:
+                        category = 'electronics'
+                    if cat == 2:
+                        category = 'furniture'
+                    if cat == 3:
+                        category = 'clothes'
+                    if cat == 4:
+                        category = 'fruit'
+                    temp_list.append([category, item, unit_price])     
+    random.shuffle(temp_list) # this will assist random selection later
+
     with open('item_lookup.csv','w') as f:
         writer = csv.writer(f,lineterminator='\n')
-
         writer.writerow(header_list)
-        
-        for cat in range(len(item_list)):
-            for i in range(len(item_list[cat])):
-                for j in color_list:
-                    for k in adjective_list:
-                        item = f"{k[0]} {j} {item_list[cat][i][0]}"
-                        unit_price = item_list[cat][i][1]*k[1]
-                        category = None
-                        if cat == 0:
-                            category = 'appliances'
-                        if cat == 1:
-                            category = 'electronics'
-                        if cat == 2:
-                            category = 'furniture'
-                        if cat == 3:
-                            category = 'clothes'
-                        if cat == 4:
-                            category = 'fruit'
-
-                        writer.writerow([category, item, f'${unit_price:.2f}'])
+        for row in temp_list:
+            writer.writerow([row[0], row[1], f'${row[2]:.2f}'])
     
     return
 
