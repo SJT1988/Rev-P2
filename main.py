@@ -117,22 +117,23 @@ def combine_csvs():
         rec5 = rec4[:-1]
         tmp = [rec1, rec2, rec3, rec5]
         customer_list.append(tmp)
-        for line in item_file:
-            tmp = line.split(",")
-            rec1 = tmp[0]
-            rec2 = tmp[1]
-            rec3 = tmp[2]
-            rec4 = rec3[:-1]
-            tmp = [rec1, rec2, rec4]
-            item_list.append(tmp)
-        for line in qty_file:
-            tmp = line.split(",")
-            rec1 = tmp[9].strip()
-            rec2 = f"${tmp[10].strip()}"
-            rec3 = tmp[11].strip()
-            rec4 = tmp[14].strip()
-            tmp = [rec1, rec2, rec3, rec4]
-            qty_list.append(tmp)
+    for line in item_file:
+        tmp = line.split(",")
+        print(tmp)
+        rec1 = tmp[0]
+        rec2 = tmp[1]
+        rec3 = tmp[2]
+        rec4 = rec3[:-1]
+        tmp = [rec1, rec2, rec4]
+        item_list.append(tmp)
+    for line in qty_file:
+        tmp = line.split(",")
+        rec1 = tmp[9].strip()
+        rec2 = f"${tmp[10].strip()}"
+        rec3 = tmp[11].strip()
+        rec4 = tmp[14].strip()
+        tmp = [rec1, rec2, rec3, rec4]
+        qty_list.append(tmp)
     payment_file.close()
     customer_file.close()
     data_file = open("data.csv", "w", encoding="utf-8")

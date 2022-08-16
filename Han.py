@@ -141,33 +141,32 @@ class productInfo:
             school_id.append(id)
 
         n = 15000
-        id = 0
         with open("product_info.csv", "w", encoding="utf-8", newline="") as file:
             writer = csv.writer(file)
             writer.writerow(["ID", "Product", "Category"])
 
             for i in range(n):
-                rng = random.randint(1, 5)
+                rng = random.randint(1, 4)
                 if rng == 1:
                     choice = random.choice(tech)
                     index = tech.index(choice)
                     id = tech_id[index]
-                    writer.writerow([id, choice, "Technology"])
+                    file.write(f"{id},{choice},Technology\n")
                 if rng == 2:
                     choice = random.choice(clothes)
                     index = clothes.index(choice)
                     id = clothes_id[index]
-                    writer.writerow([id, choice, "Clothes"])
+                    file.write(f"{id},{choice},Clothes\n")
                 if rng == 3:
                     choice = random.choice(furniture)
                     index = furniture.index(choice)
                     id = furniture_id[index]
-                    writer.writerow([id, choice, "Furniture"])
+                    file.write(f"{id},{choice},Furniture\n")
                 if rng == 4:
                     choice = random.choice(school)
                     index = school.index(choice)
                     id = school_id[index]
-                    writer.writerow([id, choice, "School Items"])
+                    file.write(f"{id},{choice},School Items\n")
 
             # for i in range(n):
             #     id += 1
