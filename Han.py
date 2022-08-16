@@ -23,25 +23,19 @@ dict_type = {tech:['Laptops', 'Hard Drives', 'Phones', 'Microwaves', 'Headphones
                 'Chest', 'Beds'], school:['Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers']}
 
 lastproduct_selection = random.choice(list(dict_type))
-product_type = last_selection[0]
+product_type = cat_selection[0]
 
 def product():
     n = 1500
     id = 0
-    with open('product_info.csv', 'w', encoding='utf-8', newline='') as file
+    with open('product_info.csv', 'w', encoding='utf-8', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['ID', 'Product', 'Category'])
 
         for i in range(n):
-            
-
-
-
-
-
-
-
-
+            id += 1
+            pID = 'file{id:05}'
+            writer.writerow([pID, random.choice(lastproduct_selection), product_type])
 
 
 
