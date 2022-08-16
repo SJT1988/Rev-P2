@@ -19,12 +19,14 @@ def generate_item_lookup_table():
     header_list = ['item category', 'item_name', 'unit_price']
     
     temp_list = []
+    accumulator = 1
     for cat in range(len(item_list)):
         for i in range(len(item_list[cat])):
             for j in color_list:
                 for k in adjective_list:
                     item = f"{k[0]} {j} {item_list[cat][i][0]}"
                     unit_price = item_list[cat][i][1]*k[1]
+                    p_id = 'p_' + f'{accumulator:05}'
                     category = None
                     if cat == 0:
                         category = 'appliances'
@@ -36,14 +38,15 @@ def generate_item_lookup_table():
                         category = 'clothes'
                     if cat == 4:
                         category = 'fruit'
-                    temp_list.append([category, item, unit_price])     
+                    temp_list.append([p_id, category, item, unit_price])
+                    accumulator+=1   
     random.shuffle(temp_list) # this will assist random selection later
 
-    with open('item_lookup.csv','w') as f:
+    with open('test/item_lookup.csv','w') as f:
         writer = csv.writer(f,lineterminator='\n')
         writer.writerow(header_list)
         for row in temp_list:
-            writer.writerow([row[0], row[1], f'${row[2]:.2f}'])
+            writer.writerow([row[0], row[1], row[2], f'${row[3]:.2f}'])
     
     return
 
