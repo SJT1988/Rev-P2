@@ -14,30 +14,35 @@ class productInfo():
 #    furniture:tuple(['Chairs', 'Couches', 'Recliners', 'Tables', 'Cabinets', 'Clocks', 'Bookcase', 'Dresser', 'Chest', 'Beds']), 
 #    school:tuple(['Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers'])}
 
-# lastproduct_selection = random.choice(list(dict_type))
-# product_type = lastproduct_selection[0]
-
-    item_lst = ['Laptops', 'Hard Drives', 'Phones', 'Microwaves', 'Headphones', 'Electronic Locks', 'Drones', 'Computers', 'Tablets', 'TVs', 'Remotes', 'Earbuds',
-                'Smart fridges', 'Mouse', 'Webcam', 'USB', 'Cables', 'Fridges', 'Monitors', 'Microwaves', 'Virtual Assistant', 'Jeans', 'Underwear', 'Shoes', 'Sandals', 'Formal Wear', 'Socks', 'Swimwear', 'Kahkis', 'Gowns', 'Dresses', 'T-shirts', 'Glasses', 'Sunglasses', 'Tracksuit',
-                    'Suits', 'Jackets', 'Coats', 'Ties', 'Briefs', 'Boxers', 'Bow-ties', 'Scarves', 'Earrings', 'Belts', 'Wallet', 'Cap', 'Watch', 'Chairs', 'Couches', 'Recliners', 'Tables', 'Cabinets', 'Clocks', 'Bookcase', 'Dresser', 'Chest', 'Beds', 'Ladders', 'Ottoman', 'Stool', 'Cupboard',
-                    'Cradle', 'Grandfather clock', 'Shelves','Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers', 'Crayons', 'Markers', 'Calculators',
-                'Uniforms', 'Sketchbooks', 'Notepads', 'Pens', 'Folders', 'Pencil Pouch', 'Glue Stick', 'Lunch Bags', 'Gym Bag', 'Sharpie pens', 'Lunchbox', 'Index cards']
+#lastproduct_selection = random.choice(list(dict_type))
+#product_type = lastproduct_selection[0]
 
     def main():
+        tech = ['Laptops', 'Hard Drives', 'Phones', 'Microwaves', 'Headphones', 'Electronic Locks', 'Drones', 'Computers', 'Tablets', 'TVs', 'Remotes', 'Earbuds',
+                'Smart fridges', 'Mouse', 'Webcam', 'USB', 'Cables', 'Fridges', 'Monitors', 'Microwaves', 'Virtual Assistant']
 
+        clothes = ['Jeans', 'Underwear', 'Shoes', 'Sandals', 'Formal Wear', 'Socks', 'Swimwear', 'Kahkis', 'Gowns', 'Dresses', 'T-shirts', 'Glasses', 'Sunglasses', 'Tracksuit',
+                    'Suits', 'Jackets', 'Coats', 'Ties', 'Briefs', 'Boxers', 'Bow-ties', 'Scarves', 'Earrings', 'Belts', 'Wallet', 'Cap', 'Watch']
+
+        furniture = ['Chairs', 'Couches', 'Recliners', 'Tables', 'Cabinets', 'Clocks', 'Bookcase', 'Dresser', 'Chest', 'Beds', 'Ladders', 'Ottoman', 'Stool', 'Cupboard',
+                    'Cradle', 'Grandfather clock', 'Shelves']
+
+        school = ['Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers', 'Crayons', 'Markers', 'Calculators',
+                'Uniforms', 'Sketchbooks', 'Notepads', 'Pens', 'Folders', 'Pencil Pouch', 'Glue Stick', 'Lunch Bags', 'Gym Bag', 'Sharpie pens', 'Lunchbox', 'Index cards'] 
+
+        n = 3750
+        id = 0
         with open('product_info.csv', 'w', encoding='utf-8', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(['ID', 'Product', 'Category'])
 
             for i in range(n):
                 id += 1
-                pid = 'p_' + f'{id:05}'
-                writer.writerow([pid, random.choice(tech), "Technology"])
+                writer.writerow([id, random.choice(tech), "Technology"])
 
             for i in range(n):
                 id += 1
-                pid = 'p_' + f'{id:05}'
-                writer.writerow([pid, random.choice(clothes), "Clothes"])
+                writer.writerow([id, random.choice(clothes), "Clothes"])
 
             for i in range(n):
                 id += 1
@@ -61,10 +66,7 @@ list_color = ['red','blue','green','orange']
 dict_type = {kitchen: ['toaster','microwave'],
 furniture: ['sofa','desk'],
 electronics: ['television','stereo'], fruit: ['pineapple','bannana']}
-
 last_selection = random.choice(list(dict_type))
-
 item_name=random.choice(list_size) + random.choice(list_color) + random.choice(last_selection[1])
-
 item_type = last_selection[0]
 '''
