@@ -28,7 +28,7 @@ class productInfo():
         school = ['Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers'] 
 
 
-        n = 1000
+        n = 300
         id = 0
         with open('product_info.csv', 'w', encoding='utf-8', newline='') as file:
             writer = csv.writer(file)
@@ -36,8 +36,20 @@ class productInfo():
 
             for i in range(n):
                 id += 1
-                pID = 'file{id:05}'
-                writer.writerow([pID, random.choice(tech), "Technology"])
+                writer.writerow([id, random.choice(tech), "Technology"])
+
+            for i in range(n):
+                id += 1
+                writer.writerow([id, random.choice(clothes), "Clothes"])
+
+            for i in range(n):
+                id += 1
+                writer.writerow([id, random.choice(furniture), "Furniture"])
+
+            for i in range(n):
+                id += 1
+                writer.writerow([id, random.choice(school), "School Items"])
+
 
 
 if __name__ == '__main__':
