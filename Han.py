@@ -8,14 +8,6 @@ import random
 
 class productInfo():
 # Generate at least a 1000 fake(?) products and product categories
-    tech = ['Laptops', 'Hard Drives', 'Phones', 'Microwaves', 'Headphones', 'Electronic Locks', 'Drones', 'Computers', 'Tablets', 'TVs', 'Remotes', 'Earbuds',
-                'Smart fridges', 'Mouse', 'Webcam', 'USB', 'Cables']
-
-    clothes = ['Jeans', 'Underwear', 'Shoes', 'Sandals', 'Formal Wear', 'Socks', 'Swimwear', 'Kahkis', 'Gowns', 'Dresses', 'T-shirts', 'Glasses', 'Sunglasses']
-
-    furniture = ['Chairs', 'Couches', 'Recliners', 'Tables', 'Cabinets', 'Clocks', 'Bookcase', 'Dresser', 'Chest', 'Beds']
-
-    school = ['Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers']
 
 #dict_type = {tech:tuple(['Laptops', 'Hard Drives', 'Phones', 'Microwaves', 'Headphones', 'Electronic Locks', 'Drones', 'Computers', 'Tablets', 'TVs', 'Remotes', 'Earbuds','Smart fridges', 'Mouse', 'Webcam', 'USB', 'Cables']), 
 #    clothes:tuple(['Jeans', 'Underwear', 'Shoes', 'Sandals', 'Formal Wear', 'Socks', 'Swimwear', 'Kahkis', 'Gowns', 'Dresses', 'T-shirts', 'Glasses', 'Sunglasses']), 
@@ -26,6 +18,16 @@ class productInfo():
 #product_type = lastproduct_selection[0]
 
     def main():
+        tech = ['Laptops', 'Hard Drives', 'Phones', 'Microwaves', 'Headphones', 'Electronic Locks', 'Drones', 'Computers', 'Tablets', 'TVs', 'Remotes', 'Earbuds',
+                'Smart fridges', 'Mouse', 'Webcam', 'USB', 'Cables']
+
+        clothes = ['Jeans', 'Underwear', 'Shoes', 'Sandals', 'Formal Wear', 'Socks', 'Swimwear', 'Kahkis', 'Gowns', 'Dresses', 'T-shirts', 'Glasses', 'Sunglasses']
+
+        furniture = ['Chairs', 'Couches', 'Recliners', 'Tables', 'Cabinets', 'Clocks', 'Bookcase', 'Dresser', 'Chest', 'Beds']
+
+        school = ['Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers'] 
+
+
         n = 1000
         id = 0
         with open('product_info.csv', 'w', encoding='utf-8', newline='') as file:
