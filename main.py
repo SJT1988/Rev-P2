@@ -158,6 +158,7 @@ def combine_csvs():
         # 5% chance for line to be "rogue field"
         if rng < 6:
             order_id = num2words(order_id, to="ordinal")
+            #We need to get rid of extra commas for longer num2words:
             order_id = order_id.translate({ord(","): None})
         data_file.write(
             f"{order_id}, {customer_id}, {customer_name}, {product_id}, {product_name}, {product_category}, {payment_type}, {qty}, {price}, {datetime}, {ecommerce_website_name}, {city}, {country}, {payment_txn_id}, {payment_txn_success}, {failure_reason}\n"
