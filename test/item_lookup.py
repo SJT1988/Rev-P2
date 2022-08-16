@@ -1,3 +1,4 @@
+# test by Spencer Trumbore
 import csv, random
 
 # adjectives have multipliers.
@@ -16,7 +17,7 @@ item_list = [
 
 # generate 2500 unique items
 def generate_item_lookup_table():
-    header_list = ['item category', 'item_name', 'unit_price']
+    header_list = ['product_id', 'product_category', 'product_name', 'unit_price']
     
     temp_list = []
     accumulator = 1
