@@ -30,7 +30,7 @@ class productInfo():
         school = ['Notebooks', 'Pencils', 'Mechanical Pencils', 'Erasers', 'Chromebooks', 'Textbooks', 'Backpacks', 'Bags', 'Rulers', 'Crayons', 'Markers', 'Calculators',
                 'Uniforms', 'Sketchbooks', 'Notepads', 'Pens', 'Folders', 'Pencil Pouch', 'Glue Stick', 'Lunch Bags', 'Gym Bag', 'Sharpie pens', 'Lunchbox', 'Index cards'] 
 
-        n = 500
+        n = 375
         id = 0
         with open('product_info.csv', 'w', encoding='utf-8', newline='') as file:
             writer = csv.writer(file)
