@@ -106,7 +106,6 @@ def combine_csvs():
     for line in payment_file:
         tmp = line.split(",")
         payment_list.append(tmp)
-
     for line in customer_file:
         # For every file, we have to remove the newline character or else the data is split into new lines when generated.
         tmp = line.split(",")
@@ -119,7 +118,6 @@ def combine_csvs():
         customer_list.append(tmp)
     for line in item_file:
         tmp = line.split(",")
-        print(tmp)
         rec1 = tmp[0]
         rec2 = tmp[1]
         rec3 = tmp[2]
@@ -155,14 +153,15 @@ def combine_csvs():
         ecommerce_website_name = qty_list[i][3]
         payment_txn_id = payment_list[i][1].strip()
         payment_txn_success = payment_list[i][2].strip()
-        failure_reason = payment_list[i][3].strip()
+        success = payment_list[i][3].strip()
+        failure_reason = payment_list[i][4].strip()
         # 5% chance for line to be "rogue field"
         if rng < 6:
             order_id = num2words(order_id, to="ordinal")
-            #We need to get rid of extra commas for longer num2words:
+            # We need to get rid of extra commas for longer num2words:
             order_id = order_id.translate({ord(","): None})
         data_file.write(
-            f"{order_id}, {customer_id}, {customer_name}, {product_id}, {product_name}, {product_category}, {payment_type}, {qty}, {price}, {datetime}, {ecommerce_website_name}, {city}, {country}, {payment_txn_id}, {payment_txn_success}, {failure_reason}\n"
+            f"{order_id}, {customer_id}, {customer_name}, {product_id}, {product_name}, {product_category}, {payment_type}, {qty}, {price}, {datetime}, {ecommerce_website_name}, {city}, {country}, {payment_txn_id}, {payment_txn_success}, {success}, {failure_reason}\n"
         )
 
     data_file.close()
