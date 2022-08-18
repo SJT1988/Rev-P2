@@ -151,8 +151,8 @@ def combine_csvs():
         country = customer_list[i][3]
         city = customer_list[i][2]
         ecommerce_website_name = qty_list[i][3]
-        payment_type = payment_list[i][1]
-        payment_txn_id = payment_list[i][2].strip()
+        payment_txn_id = payment_list[i][1].strip()
+        payment_txn_success = payment_list[i][2].strip()
         success = payment_list[i][3].strip()
         failure_reason = payment_list[i][4].strip()
         # 5% chance for line to be "rogue field"
@@ -161,8 +161,9 @@ def combine_csvs():
             # We need to get rid of extra commas for longer num2words:
             order_id = order_id.translate({ord(","): None})
         data_file.write(
-            f"{order_id}, {customer_id}, {customer_name}, {product_id}, {product_name}, {product_category}, {product_category}, {qty}, {price}, {datetime}, {country}, {city}, {ecommerce_website_name}, {payment_txn_id}, {success}, {failure_reason}\n"
+            f"{order_id}, {customer_id}, {customer_name}, {product_id}, {product_name}, {product_category}, {qty}, {price}, {datetime}, {ecommerce_website_name}, {city}, {country}, {payment_txn_id}, {payment_txn_success}, {success}, {failure_reason}\n"
         )
+
     data_file.close()
 
 
