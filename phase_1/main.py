@@ -94,10 +94,10 @@ item_prices = {
 
 
 def combine_csvs():
-    payment_file = open("payment_info.csv", "r", encoding="utf-8")
-    customer_file = open("customer_info.csv", "r", encoding="utf-8")
-    item_file = open("product_info.csv", "r")
-    qty_file = open("qty_info.csv", "r")
+    payment_file = open("phase_1/payment_info.csv", "r", encoding="utf-8")
+    customer_file = open("phase_1/customer_info.csv", "r", encoding="utf-8")
+    item_file = open("phase_1/product_info.csv", "r")
+    qty_file = open("phase_1/qty_info.csv", "r")
     n = 15000
     payment_list = []
     customer_list = []
@@ -134,7 +134,7 @@ def combine_csvs():
         qty_list.append(tmp)
     payment_file.close()
     customer_file.close()
-    data_file = open("data.csv", "w", encoding="utf-8")
+    data_file = open("phase_1/data.csv", "w", encoding="utf-8")
     for i in range(1, n + 1):
         rng = random.randint(0, 101)
         order_id = str(i)
@@ -161,7 +161,7 @@ def combine_csvs():
             # We need to get rid of extra commas for longer num2words:
             order_id = order_id.translate({ord(","): None})
         data_file.write(
-            f"{order_id}, {customer_id}, {customer_name}, {product_id}, {product_name}, {product_category}, {qty}, {price}, {datetime}, {ecommerce_website_name}, {city}, {country}, {payment_txn_id}, {payment_txn_success}, {success}, {failure_reason}\n"
+            f"{order_id}, {customer_id}, {customer_name}, {product_id}, {product_name}, {product_category}, {qty}, {price}, {datetime}, {country}, {city}, {ecommerce_website_name}, {payment_txn_id}, {payment_txn_success}, {success}, {failure_reason}\n"
         )
 
     data_file.close()
