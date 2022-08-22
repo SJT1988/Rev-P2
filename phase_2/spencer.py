@@ -3,6 +3,8 @@ from os import system, name
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql import HiveContext
+import csv
+import pandas
 
 spark = SparkSession.builder \
     .master ("local") \
@@ -99,7 +101,64 @@ df_product_lookup = spark.sql('SELECT DISTINCT CAST(product_id AS INT) AS iid, p
     price != \'null\' \
     ORDER BY iid')
 
-df_product_lookup.write.csv(root_path + dir_path + 'product_lookup')
+# df_product_lookup.write.csv(root_path + dir_path + 'product_lookup')
+# df_product_lookup.createOrReplaceTempView("lookup")
+
+# =================================================
+# Make list out of lookup dataframe to iterate through during reconstruction
+lookup_list = []
+for r in df_product_lookup.collect():
+    lookup_list.append(list(r))
+for x in lookup_list:
+    print(x)
+
+#=====================
+#=====================
+#=====================
+# From the original dataset, select the 4 columns containing null data,
+# cast the product_id to int (tricky, because the 'null' value (which is a string)
+# will break the whole column, causing no characters to be recorded in that field.
+# resolved with CASE statement) and sort by the integer casted product_id (iid).
+# This let's will help us fill in null values faster when we do the correction.
+'''
+df_old_sorted_cols = spark.sql('SELECT CAST( \
+    CASE \
+        WHEN product_id = \'null\' THEN \'0\' \
+        ELSE product_id \
+    END \
+    AS INT) \
+    AS iid, product_name, product_category, price FROM data ORDER BY iid')
+df_old_sorted_cols.write.csv(root_path + dir_path + 'old_sorted_cols')
+'''
+# This file needed to be renamed (to old_sorted_cols.csv) and put in phase_2 folder (DONE).
+
+def lookup_by_id(id: int, null_col: int) -> str:
+    return lookup_list[id][null_col]
+
+def lookup_by_name(name: str, null_col: int) -> str:
+    row = None
+    for record in lookup_list:
+        if name in record:
+            row = lookup_list.index(record)
+            return str(lookup_list[row][null_col])
+    print('ERROR: LOOKUP_BY_NAME: NAME NOT FOUND IN LOOKUP LIST')
+    return ''
+
+with open(root_path + dir_path + 'old_sorted_cols.csv', 'r', newline='') as rf, open(root_path + dir_path + 'null_null.csv', 'w') as wf:
+    csvreader = csv.reader(rf,delimiter=',')
+    csvwriter = csv.writer(wf,delimiter=',')
+    next(csvreader)
+    for line in csvreader:
+        old_record = line.split(',')
+        for each in old_record:
+            each.strip()
+        if old_record[0] == 0:
+            # use product_name to lookup
+            pass
+        elif old_record[1] == 'null':
+            # use product_id to lookup
+    
+#     pass
 
 # in console type spark-submit pythonfilename.py
 spark.stop()
