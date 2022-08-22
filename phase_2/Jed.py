@@ -23,7 +23,7 @@ sc = spark.sparkContext
 #                                   Rading the csv file into a RDD
 #
 #################################################################################################################
-rdd1 = spark.read.option('header',False).option('inferSchema',True).csv('file:/home/jed/p2_Team1_Data.csv')
+rdd1 = spark.read.option('header',False).option('inferSchema',True).csv('file:/home/strumunix/Rev-P2/phase_2/p2_Team1_Data.csv')
 
 #################################################################################################################
 #
@@ -111,7 +111,7 @@ df_Q1_3_3.show()
 #    in here you can directly write the data frame into a csv file 
 #    we can also convert this to an RDD and write it into a csv file. However, this requires aditional steps
 
-df_Q1_3_3.write.csv('file:/home/jed/out.csv')
+df_Q1_3_3.write.csv('file:/home/strumunix/Rev-P2/phase_2/out.csv')
 
 print ("CSV Printed")
 #                               End of Q1 for P2    
