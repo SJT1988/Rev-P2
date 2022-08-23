@@ -54,7 +54,34 @@ df1 = rdd1.toDF("order_id","customer_id","customer_name","product_id","product_n
 
 # Thank you Spencer for the examples
 
+#################################################################################################################
+#                                   TYPE-CAST
+#################################################################################################################
+df_typecast = spark.sql('SELECT \
+    CAST(order_id AS INT), \
+    CAST(customer_id AS INT), \
+    customer_name, \
+    CAST(product_id AS INT), \
+    product_name, \
+    product_category, \
+    payment_type, \
+    CAST(qty AS INT), \
+    CAST(price AS INT), \
+    CAST(datetime AS DATE), \
+    country, \
+    city, \
+    e_commerce_website_name, \
+    payment_tnx_id, \
+    payment_tnx_success, \
+    failure_reason \
+    FROM no_null')
+
 ###############################################################################################################################
 #                                       FILTER COUNTRY NAMES THAT ARE INCORRECT, AND REPLACE?                                 #
 ###############################################################################################################################
 
+# Countries are located in Col 11 of csv (12 is cities)
+# Note: It is listed as "country"
+'''
+
+'''
