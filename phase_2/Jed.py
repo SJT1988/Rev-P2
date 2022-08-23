@@ -1,7 +1,8 @@
-from operator import truediv
+from time import strptime
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql import HiveContext
+import datetime as dt
 
 spark = SparkSession.builder \
     .master ("local") \
@@ -10,6 +11,25 @@ spark = SparkSession.builder \
 
 spark.sparkContext.setLogLevel("WARN")
 sc = spark.sparkContext
+
+def Mydatetimeformatter(inputstring):
+    arr = str(inputstring).split(" ")
+    DateString = []
+    timestring = [] 
+    if len(arr[0]) == 8:
+        timestring = arr[0].split(":")
+    elif len(arr[0]) == 10:
+        DateString = arr[0].split(":")
+    if len(arr[1]) ==8:
+        timestring = arr[0].split(":")
+    elif len(arr[1]) ==10:
+        DateString = arr[0].split(":")
+
+    strdt = str(DateString[0]) + "-" + str(DateString[1]) + "-" + str(DateString[2]) + \
+    " "  + str(timestring[0]) + ":" + str(timestring[1]) + ":" + str(timestring[0])
+
+    return strdt
+
 #################################################################################################################
 #
 #                                   Create a Database
@@ -41,6 +61,42 @@ df_Q1_1 = rdd1.toDF("order_id","customer_id","customer_name","product_id","produ
 #################################################################################################################
 
 df_Q1_1.createOrReplaceTempView("mydata")
+#################################################################################################################
+#
+#  Filtering out null records from data
+#
+#################################################################################################################
+
+df_m = spark.sql("select * from mydata where order_id is not null and customer_id is not null and customer_name is not null and \
+    product_id is not null and product_name is not null and product_category is not null and payment_type is not null and \
+    qty is not null and price is not null and datetime is not null and country is not null and e_commerce_website_name is not null and \
+    payment_tnx_id is not null and payment_tnx_success is not null and failure_reason is not null")
+
+# filtering out null as string 
+#df_m.show(10)
+df_m.createOrReplaceTempView("mydata")
+
+
+
+df_m_1 = spark.sql("select * from mydata where product_id != 'null' and \
+product_name != 'null' and product_category != 'null' and \
+price !='null'")
+
+
+
+df_m_1.write.csv('file:/home/jed/cleaned.csv') # writing the cleaned reasults except for data time formatting
+
+
+#dt.datetime.strptime('2022-08-22 12:05:05','%Y/%m/%d %H:%M:%S').strftime('%Y-%m-%d %H:%M:%S')
+
+
+#################################################################################################################
+#
+#  saving the filtered results
+#
+#################################################################################################################
+
+df_m_1.createOrReplaceTempView("mydata")
 
 #################################################################################################################
 #
@@ -117,4 +173,22 @@ print ("CSV Printed")
 #                               End of Q1 for P2    
 #################################################################################################################
 # in console type spark-submit pythonfilename.py
+
+
+
+'''
+
+some dummy work
+
+
+
+
+
+
+'''
+
+
+
+#df_m_1.show(10)
+#df_m.printSchema()
 spark.stop()
