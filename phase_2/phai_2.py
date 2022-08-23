@@ -15,6 +15,7 @@ data_rdd = (
     .option("inferSchema", True)
     .csv("file:/home/phai597/no_null_casted.csv")
 )
+rdd1 = spark.read.option('header',False).option('inferSchema',True).csv("file:/home/phai597/no_null_casted.csv")
 
 data_df = data_rdd.toDF(
     "order_id",
@@ -34,13 +35,30 @@ data_df = data_rdd.toDF(
     "payment_txn_success",
     "failure_reason",
 )
-#new = data_df
-new = data_df.filter(
-                        (data_df.datetime[0:20].contains(" ")) &
-                        (data_df.datetime[0:9].contains("-"))                                                    
-)
+def Mydatetimeformatter(inputstring):
+    arr = str(inputstring['datetime']).split(" ")
+    strdt = ""
+    if len(arr[0]) == 8:
+        strdt = arr[1] + " " + arr[0]
+    elif len(arr[0]) == 10:
+        strdt = arr[0] + " " + arr[1]
+    elif len(arr[0]) == 1:
+        strdt = arr[0]
+    elif len(arr[0])==18:
+
+        
+        strdt = arr[0][0:10] + " " + arr[0][11:18]
+        #print (strdt)
+    
+    return strdt
+
+rdd2 = data_df.rdd.map(lambda x :  (x['order_id'],x['customer_id'],x['customer_name'],x['product_id'], \
+        x['product_name'],x['product_category'],x['payment_type'], x['qty'], x['price'],Mydatetimeformatter(x) , \
+        x['country'], x['city'],x['ecommerce_website_name'], x['payment_txn_id'], x['payment_txn_success'], \
+        x['failure_reason'])).toDF()
 
 
+rdd2.show(100000)
 
-new.toPandas().to_csv('phase_2/no_null_casted_datetime_formatted.csv')
+rdd2.toPandas().to_csv('phase_2/no_null_casted_datetime_formatted.csv', header= False, index = False)
 
