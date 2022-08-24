@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, to_str, substring
 from pyspark.sql.types import StringType
 
-_filepath = 'file:/home/phai597/'
+_filepath = "file:/home/phai597/"
 # _filepath = "file:/home/strumunix/Rev-P2/phase_2/"
 spark = SparkSession.builder.master("local").appName("data").getOrCreate()
 
@@ -120,6 +120,11 @@ count_by_country = spark.sql(
     "SELECT COUNT(product_name) AS amnt, country FROM data GROUP BY country ORDER BY amnt DESC"
 )  # Number 3 complete - displays the graph with all of the countries and how many sales in each.
 
+file = open("phase_2/Q3.csv", "w")
+file.write("sales,country\n")
+for row in count_by_country.collect():
+    file.write(f"{row['amnt']},{row['country']}\n")
+file.close()
 
 ####################################################################################
 #                                                                                  #
@@ -131,9 +136,9 @@ count_by_country = spark.sql(
 ####################################################################################
 
 
-    ####################################################################################################################
-    #                                                  Answers question 4a.                                            #
-    ####################################################################################################################
+####################################################################################################################
+#                                                  Answers question 4a.                                            #
+####################################################################################################################
 
 q4_a = spark.sql(
     "SELECT time, count_time FROM (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time)\
@@ -142,12 +147,14 @@ q4_a = spark.sql(
 )
 file = open("phase_2/Q4.csv", "w")
 file.write("time,count,country\n")
-file.write(f"{q4_a.collect()[0]['time']},{q4_a.collect()[0]['count_time']},all countries\n")
+file.write(
+    f"{q4_a.collect()[0]['time']},{q4_a.collect()[0]['count_time']},all countries\n"
+)
 # q4.show() #Run this to display answer for 4a.
 
-    ####################################################################################################################
-    #                                                  Answers question 4b.                                            #
-    ####################################################################################################################
+####################################################################################################################
+#                                                  Answers question 4b.                                            #
+####################################################################################################################
 
 df_lst = []  # List of dataframes displaying data from specific countries.
 df_lst_2 = []  # Dataframe that only displays the highest time of sales by country.
@@ -171,12 +178,12 @@ for i in range(len(ListCountry_Correct)):
         (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time))"
     )
     df_lst_2.append(q4_b)
-    time = df_lst_2[i].collect()[-1]['time']
-    freq = df_lst_2[i].collect()[-1]['count_time']
+    time = df_lst_2[i].collect()[-1]["time"]
+    freq = df_lst_2[i].collect()[-1]["count_time"]
     curr_country = ListCountry_Correct[i]
     file.write(f"{time},{freq},{curr_country}\n")
-    #print(f"Busiest hour(s) of {ListCountry_Correct[i]}: ") #Run these 2 to display answer from 4b.
-    #df_lst_2[i].show()
+    # print(f"Busiest hour(s) of {ListCountry_Correct[i]}: ") #Run these 2 to display answer from 4b.
+    # df_lst_2[i].show()
 
 file.close()
 # all = spark.sql("SELECT * FROM data")
