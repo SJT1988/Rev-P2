@@ -5,7 +5,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql import HiveContext
 import datetime as dt
 import os
-
+import countryNames_test # contribution from Kynghoon
+from difflib import SequenceMatcher 
 
 spark = SparkSession.builder \
     .master ("local") \
@@ -19,8 +20,90 @@ Out_Put_Path_for_Leading_in_qty = "file:/home/jed/qty_out"
 Out_Put_Path_for_Leading_in_value = "file:/home/jed/value_out"
 InPut_CSV_File_Path = "file:/home/jed/p2_Team1_Data.csv"
 _filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
+#################################################################################################################################
+#
+#
+#                                   CODE IMPLEMENTAION FROM KYUNGHOON                       
+#
+#
+#################################################################################################################################
+def get_most_similar(word,wordlist):
+     top_similarity = 0.0
+     most_similar_word = word
+     for candidate in wordlist:
+         similarity = SequenceMatcher(None,word,candidate).ratio()
+         if similarity > top_similarity:
+             top_similarity = similarity
+             most_similar_word = candidate
+     return most_similar_word
 
+# Now apply to 'country' column
+def Transform_from_incomming_RDD(RDDin):
 
+    corrected_CountryNames = {
+        "Angola",
+        "Argentina",
+        "Australia",
+        "Austria",
+        "Bangladesh",
+        "Bolivia",
+        "Brazil",
+        "Cote d'Ivoire",
+        "Cote d'Ivoire",
+        "Canada",
+        "China",
+        "Chile",
+        "China",
+        "Colombia",
+        "Congo (Kinshasa)",
+        "Egypt",
+        "France",
+        "Greece",
+        "India",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Japan",
+        "Japan",
+        "Kazakhstan",
+        "Kenya",
+        "Kuwait",
+        "Malaysia",
+        "Mali",
+        "Mexico",
+        "Mongolia",
+        "Morocco",
+        "Nigeria",
+        "Philippines",
+        "Pakistan",
+        "Peru",
+        "Philippines",
+        "Poland",
+        "Russia",
+        "Russia",
+        "Saudi Arabia",
+        "Senegal",
+        "South Korea",
+        "Sudan",
+        "Tanzania",
+        "Thailand",
+        "Togo",
+        "Turkey",
+        "United Kingdom",
+        "United States",
+        "Uzbekistan",
+        "Vietnam",
+        "Malaysia",
+    }
+
+    RDDin_1 = RDDin.rdd.map(lambda x :  (x['order_id'],x['customer_id'],x['customer_name'],x['product_id'], \
+        x['product_name'],x['product_category'],x['payment_type'], x['qty'], x['price'],x['datetime'], \
+        get_most_similar(x['country'],corrected_CountryNames),x['city'] ,x['e_commerce_website_name'], \
+        x['payment_tnx_id'], x['payment_tnx_success'],x['failure_reason']))
+
+    return RDDin_1
+#################################################################################################################################
+#################################################################################################################################
 def Mydatetimeformatter(inputstring):
     arr = str(inputstring['datetime']).split(" ")
     strdt = ""
@@ -223,19 +306,21 @@ def Get_Cleaned_Data(My_Linux_File_Path):
         "payment_type","qty","price","datetime","country","city","e_commerce_website_name","payment_tnx_id", \
         "payment_tnx_success","failure_reason"])
 
+#################################################################################################################################
+#
+#                                   USING KYUNGHOON'S IMPLEMENTAION
+#
+#################################################################################################################################
 
-    # Check for spellings of country and city
-    rddx_7 = rddx_6.rdd.map(lambda x :  (x['order_id'],x['customer_id'],x['customer_name'],x['product_id'], \
-        x['product_name'],x['product_category'],x['payment_type'], x['qty'], x['price'],x['datetime'], \
-        Check_spellings(x['country']),x['city'] ,x['e_commerce_website_name'], \
-        x['payment_tnx_id'], x['payment_tnx_success'],x['failure_reason']))
         
-
+    rddx_7 = Transform_from_incomming_RDD(rddx_6)        
 
     rddx_8 = rddx_7.toDF(["order_id","customer_id","customer_name","product_id","product_name","product_category", \
         "payment_type","qty","price","datetime","country","city","e_commerce_website_name","payment_tnx_id", \
         "payment_tnx_success","failure_reason"])
 
+#                                   THANK'S KYUNGHOON        
+#################################################################################################################################
     # Format DateTime
 
     rddx_9 = rddx_8.rdd.map(lambda x :  (x['order_id'],x['customer_id'],x['customer_name'],x['product_id'], \
