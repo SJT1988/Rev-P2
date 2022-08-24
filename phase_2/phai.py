@@ -178,10 +178,17 @@ for i in range(len(ListCountry_Correct)):
         (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time))"
     )
     df_lst_2.append(q4_b)
-    time = df_lst_2[i].collect()[-1]["time"]
-    freq = df_lst_2[i].collect()[-1]["count_time"]
-    curr_country = ListCountry_Correct[i]
-    file.write(f"{time},{freq},{curr_country}\n")
+
+    for elem in q4_b.collect():
+        time = elem['time']
+        freq = elem['count_time']
+        curr_country = ListCountry_Correct[i]
+        file.write(f"{time},{freq},{curr_country}\n")
+
+    # time = df_lst_2[i].collect()[-1]["time"]
+    # freq = df_lst_2[i].collect()[-1]["count_time"]
+    # curr_country = ListCountry_Correct[i]
+    # file.write(f"{time},{freq},{curr_country}\n")
     # print(f"Busiest hour(s) of {ListCountry_Correct[i]}: ") #Run these 2 to display answer from 4b.
     # df_lst_2[i].show()
 
