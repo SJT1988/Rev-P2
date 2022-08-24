@@ -87,7 +87,6 @@ ListCountry_Correct = [
     "Bolivia",
     "Brazil",
     "Cote d'Ivoire",
-    "Cote d'Ivoire",
     "Canada",
     "China",
     "Chile",
@@ -142,6 +141,7 @@ for i in range(len(ListCountry_Correct)):
     tmp = spark.sql(
         f"SELECT time, COUNT(time) AS cust FROM tmp_view GROUP BY time ORDER BY time ASC"
     )
+
     tmp_view_2 = tmp_df.createOrReplaceTempView("tmp_view_2")
     tmp_2 = spark.sql(
         "SELECT time, count_time FROM (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time) WHERE count_time = (SELECT MAX(count_time) FROM (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time))"
