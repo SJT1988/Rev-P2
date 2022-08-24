@@ -5,6 +5,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql import HiveContext
 import datetime as dt
 
+#_filepath = 'file:/home/jed/'
+_filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
 
 spark = SparkSession.builder \
     .master ("local") \
@@ -313,7 +315,7 @@ def Results_Q1(MyRDD):
     '''
     df_Q1_3_1 = spark.sql("select max(mycount) as mycount_n, country as country_n from P1 group by country order by country")
     df_Q1_3_1.show(10) # to display results
-    df_Q1_3_1.write.csv('/home/jed/out.csv.fullcategory')
+    df_Q1_3_1.write.csv(_filepath+'out.csv.fullcategory')
 
     df_Q1_3_2 = df_Q1_3_1.join(df_Q1_2,[df_Q1_2.mycount == df_Q1_3_1.mycount_n, df_Q1_2.country == df_Q1_3_1.country_n], 'inner')
     df_Q1_3_2.show()
@@ -329,7 +331,7 @@ def Results_Q1(MyRDD):
 #    in here you can directly write the data frame into a csv file 
 #    we can also convert this to an RDD and write it into a csv file. However, this requires aditional steps
 
-    df_Q1_3_3.write.csv('file:/home/jed/out.csv')
+    df_Q1_3_3.write.csv(_filepath+'out.csv')
 
     print ("CSV Printed")
 #                               End of Q1 for P2    
@@ -337,11 +339,11 @@ def Results_Q1(MyRDD):
 
     
 def main():
-    WriteCleanedData('file:/home/jed/p2_Team1_Data.csv','file:/home/jed/Cleaned')
-    Results_Q1(Get_Cleaned_Data('file:/home/jed/p2_Team1_Data.csv'))
+    WriteCleanedData(_filepath+'p2_Team1_Data.csv',_filepath+'Cleaned')
+    Results_Q1(Get_Cleaned_Data(_filepath+'p2_Team1_Data.csv'))
 
     # in console type spark-submit pythonfilename.py
 if __name__ == '__main__'  :
     main() 
-
+print('SUCCESS')
 spark.stop()
