@@ -4,9 +4,8 @@ from re import search
 from pyspark.sql import SparkSession
 from pyspark.sql import HiveContext
 import datetime as dt
+import os
 
-#_filepath = 'file:/home/jed/'
-_filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
 
 spark = SparkSession.builder \
     .master ("local") \
@@ -16,6 +15,10 @@ spark = SparkSession.builder \
 spark.sparkContext.setLogLevel("WARN")
 sc = spark.sparkContext
 
+Out_Put_Path_for_Leading_in_qty = "file:/home/jed/qty_out"
+Out_Put_Path_for_Leading_in_value = "file:/home/jed/value_out"
+InPut_CSV_File_Path = "file:/home/jed/p2_Team1_Data.csv"
+_filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
 
 
 def Mydatetimeformatter(inputstring):
@@ -252,22 +255,31 @@ def Get_Cleaned_Data(My_Linux_File_Path):
 
 def WriteCleanedData(CSV_FilePath,OutPut_FilePath):
     bb = Get_Cleaned_Data(CSV_FilePath)#'file:/home/jed/p2_Team1_Data.csv'
-    #bb.write.csv(OutPut_FilePath) #'file:/home/jed/Cleaned'
     bb.write.csv(OutPut_FilePath) #'file:/home/jed/Cleaned'
     print ("File Printed")
 
 def Results_Q1(MyRDD):
-#################################################################################################################
-#
-#  Query data for the first question:
-#	What is the top selling category of items? Per country?
-#
-#################################################################################################################
-    df_Q1_2 = spark.sql("select count(product_category) as mycount, product_category, country from mydata group by \
-    product_category,country order by country asc, mycount desc ")
-    #df_Q1_2.show(10) # the show statement diplays the results. within the brackets you can define the number of records you 
-    # want to see
+    #################################################################################################################
+    #
+    #  Query data for the first question:
+    #  What is the top selling category of items? Per country?
+    #  There are two possible avenues 
+    #  1. leadingLeading in terms of quantity sold,
+    #  2. leading in terms of value sold
+    #
+    #
+    #################################################################################################################
 
+    #################################################################################################################
+    #
+    #                       Leading interms of Quanity Sold
+    #
+    #################################################################################################################
+
+    df_Q1_2 = spark.sql("select sum(qty) as mycount, product_category, country from mydata group by \
+    product_category,country order by country asc, mycount desc ")
+    df_Q1_2.show(10) # the show statement diplays the results. within the brackets you can define the number of records
+    # you want to see
     #################################################################################################################
     #
     #  saving the filtered results
@@ -277,18 +289,20 @@ def Results_Q1(MyRDD):
     df_Q1_2.createOrReplaceTempView("P1")
 
     '''
-    ########################################################################################################################################
+    ##################################################################################################################
     LEARNING
 
     spark sql is slightly different to mysql
     in my experince 
-    In my experience, you cannot execute the same complex mysql queries in pyspark for example for Q1 in mysql you can run the following 
+    In my experience, you cannot execute the same complex mysql queries in pyspark for example for Q1 in mysql you can
+    run the following 
     command for a data table with the headings [‘mycoint’, ‘product_category’, ‘country’]
 
     select max(mycount), product_category, country from t1 group by country order by country; 
 
-    if you run the above mysql query in pyspark.sql it will warn you that product_category is not an aggregate function or is not within
-    the group by clause.If you include product_category into the group by clause you will have the same data frame as seen above
+    if you run the above mysql query in pyspark.sql it will warn you that product_category is not an aggregate function 
+    or is not within the group by clause.If you include product_category into the group by clause you will have the same 
+    data frame as seen above
 
     So,
     I used the following command and did a join
@@ -310,15 +324,19 @@ def Results_Q1(MyRDD):
     |       10|     Chdna|
     |        7|     Chile|
 
-    The benefit of providing column aliases is important to prevent column ambiguity in joining columns and later on selecting the
-    right columns from the joined table 
-
+    The benefit of providing column aliases is important to prevent column ambiguity in joining columns and later on 
+    selecting the right columns from the joined table 
+    ##################################################################################################################
     '''
     df_Q1_3_1 = spark.sql("select max(mycount) as mycount_n, country as country_n from P1 group by country order by country")
+    #df_Q1_3_1_Value = spark.sql("select max(mycount) as mycount_n, country as country_n from P2 group by country order by country")
     df_Q1_3_1.show(10) # to display results
     df_Q1_3_1.write.csv(_filepath+'out.csv.fullcategory')
+   #df_Q1_3_1_Value.show(10)
+    #df_Q1_3_1.write.csv('/home/jed/out.csv.fullcategory')
 
     df_Q1_3_2 = df_Q1_3_1.join(df_Q1_2,[df_Q1_2.mycount == df_Q1_3_1.mycount_n, df_Q1_2.country == df_Q1_3_1.country_n], 'inner')
+
     df_Q1_3_2.show()
     '''
 
@@ -328,21 +346,61 @@ def Results_Q1(MyRDD):
     df_Q1_3_3 = df_Q1_3_2.select([df_Q1_3_2.mycount, df_Q1_3_2.product_category, df_Q1_3_2.country]).orderBy(df_Q1_3_2.country)
     df_Q1_3_3.show()
 
-#    writing the results to a csv file
-#    in here you can directly write the data frame into a csv file 
-#    we can also convert this to an RDD and write it into a csv file. However, this requires aditional steps
+    #    writing the results to a csv file
+    #    in here you can directly write the data frame into a csv file 
+    #    we can also convert this to an RDD and write it into a csv file. However, this requires aditional steps
+
+    if os.path.exists(Out_Put_Path_for_Leading_in_qty) == True:
+        print ("Records not saved as the directory exists. Please delete it and re-run the code")
+    else:
+        df_Q1_3_3.write.csv(Out_Put_Path_for_Leading_in_qty)
 
     df_Q1_3_3.write.csv(_filepath+'out.csv')
+    #################################################################################################################
+    #
+    #                       Leading interms of Value Sold
+    #
+    #################################################################################################################   
+    df_Q1_2_Value = MyRDD.rdd.map(lambda x : (x['product_category'],round(float(x['qty'])*float(x['price']),2), \
+    x['country']))
+    df_Q1_2_Value_x = df_Q1_2_Value.toDF(['product_category','value','country'])
+    
+    print ("Value")
+    df_Q1_2_Value_x.show(10)
 
+    df_Q1_2_Value_x.createOrReplaceTempView("P2")
+    df_Q1_2_Value_x = spark.sql("select cast(value as float), country, product_Category from P2 order by country asc, value desc")
+    df_Q1_2_Value_x.createOrReplaceTempView("P2")
+  
+    df_Q1_2_Value_x.show()
+    df_Q1_2_Value_x_1 = spark.sql("select sum(value) as myvalue, product_category, country from P2 group by \
+    product_category,country order by country asc, myvalue desc ")
+    df_Q1_2_Value_x_1.createOrReplaceTempView("P2")
+
+    df_Q1_2_Value_x_2 = spark.sql('select max(myvalue) as value_n, country as country_n from P2 group by country order by country')
+
+    df_Q1_2_Value_x_3 = df_Q1_2_Value_x_2.join(df_Q1_2_Value_x_1,
+    [df_Q1_2_Value_x_1.myvalue == df_Q1_2_Value_x_2.value_n, df_Q1_2_Value_x_1.country == df_Q1_2_Value_x_2.country_n],"inner")
+
+    df_Q1_2_Value_x_4 = df_Q1_2_Value_x_3.select([df_Q1_2_Value_x_3.value_n, df_Q1_2_Value_x_3.product_category, 
+    df_Q1_2_Value_x_3.country]).orderBy(df_Q1_2_Value_x_3.country)
+    
+    print ("Display")
+    df_Q1_2_Value_x_4.show()
+
+    if os.path.exists(Out_Put_Path_for_Leading_in_value) == True:
+        print ("The File path exists. Records not saved. Please delete the folder and re-run the code")
+    df_Q1_2_Value_x_4.write.csv(Out_Put_Path_for_Leading_in_value) 
     print ("CSV Printed")
 #                               End of Q1 for P2    
 #################################################################################################################
 
     
 def main():
+    #WriteCleanedData('file:/home/jed/p2_Team1_Data.csv','file:/home/jed/Cleaned')
+    Results_Q1(Get_Cleaned_Data(InPut_CSV_File_Path))
     WriteCleanedData(_filepath+'p2_Team1_Data.csv',_filepath+'Cleaned')
     Results_Q1(Get_Cleaned_Data(_filepath+'p2_Team1_Data.csv'))
-
     # in console type spark-submit pythonfilename.py
 if __name__ == '__main__'  :
     main() 
