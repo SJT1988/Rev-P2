@@ -177,4 +177,4 @@ def get_most_similar(word,wordlist):
 
 # Now apply to 'country' column
 
-df['country'].apply(lambda x: get_most_similar(x, corrected_CountryNames)) # Maybe apply this to someone else's setup?
+df['country'].apply(lambda x: get_most_similar(x, corrected_CountryNames)) # Maybe apply to someone else's cases?
