@@ -5,6 +5,9 @@ from pyspark.sql.functions import col, to_str, substring, expr, when
 from pyspark.sql.types import StringType
 from datetime import datetime
 
+# _filepath = 'file:/home/phai597/'
+_filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
+
 spark = SparkSession.builder.master("local").appName("data").getOrCreate()
 
 sc = spark.sparkContext
@@ -13,9 +16,9 @@ sc.setLogLevel("WARN")
 data_rdd = (
     spark.read.option("header", False)
     .option("inferSchema", True)
-    .csv("file:/home/phai597/no_null_casted.csv")
+    .csv(_filepath+"no_null_casted.csv")
 )
-rdd1 = spark.read.option('header',False).option('inferSchema',True).csv("file:/home/phai597/no_null_casted.csv")
+rdd1 = spark.read.option('header',False).option('inferSchema',True).csv(_filepath + "no_null_casted.csv")
 
 data_df = data_rdd.toDF(
     "order_id",
@@ -64,5 +67,5 @@ rdd2 = data_df.rdd.map(lambda x :  (x['order_id'],x['customer_id'],x['customer_n
 
 
 
-rdd2.toPandas().to_csv('phase_2/testing.csv', header= False, index = False)
+rdd2.toPandas().to_csv(_filepath+'testing.csv', header= False, index = False)
 
