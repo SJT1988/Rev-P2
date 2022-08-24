@@ -46,7 +46,6 @@ only_time = data_df.withColumn(
 
 only_time_2 = only_time.select(["time", "country"])  # For writing to file purposes
 
-# only_time_2.toPandas().to_csv('phai_test.csv') #(deprecated?) COMMAND TO WRITE TO CSV!!!
 # only_time_2.write.csv(_filepath + 'phai_test') #COMMAND TO WRITE TO CSV!!!
 
 only_time_view = only_time.createOrReplaceTempView(
