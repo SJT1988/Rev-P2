@@ -9,6 +9,8 @@ from pyspark.sql.window import Window
 import csv
 import pandas
 
+from difflib import SequenceMatcher # Used for incorrect names in column countries
+
 # Try appling through visual studio for csv?
 
 
@@ -75,7 +77,7 @@ df_typecast = spark.sql('SELECT \
     payment_tnx_success, \
     failure_reason \
     FROM no_null')
-
+    # Borrowing from Spencer, apologies
 ###############################################################################################################################
 #                                       FILTER COUNTRY NAMES THAT ARE INCORRECT, AND REPLACE?                                 #
 ###############################################################################################################################
@@ -83,7 +85,28 @@ df_typecast = spark.sql('SELECT \
 # Countries are located in Col 11 of csv (12 is cities)
 # Note: It is listed as "country"
 '''
-ListCountry_Correct = [
+    "Angola","Argentina","Australia","Austria","Bangladesh","Bolivia","Brazil","Cote d'Ivoire","Cote d'Ivoire","Canada","China","Chile",
+    "China",
+    "Colombia",
+    "Congo (Kinshasa)",
+    "Egypt",
+    "France",
+    "Greece",
+    "India","Indonesia","Iran","Iraq","Japan","Japan","Kazakhstan","Kenya","Kuwait","Malaysia","Mali","Mexico","Mongolia","Morocco","Nigeria",
+    "Philippines",
+    "Pakistan",
+    "Peru",
+    "Philippines","Poland","Russia","Russia","Saudi Arabia","Senegal",
+    "South Korea",
+    "Sudan",
+    "Tanzania",
+    "Thailand",
+    "Togo",
+    "Turkey","United Kingdom","United States","Uzbekistan","Vietnam","Malaysia",
+  # Borrowed from Jed (and Phai) Thanks, needed the list.
+'''
+
+corrected_CountryNames = {
     "Angola",
     "Argentina",
     "Australia",
@@ -137,5 +160,21 @@ ListCountry_Correct = [
     "Uzbekistan",
     "Vietnam",
     "Malaysia",
-]  # Borrowed from Jed (and Phai) thanks needed the list.
-'''
+}
+
+
+# Note, for dataset, I found something called 'SequenceMatcher' from difflib. ratio() method for comparison rate of categories, could be helpful
+
+def get_most_similar(word,wordlist):
+     top_similarity = 0.0
+     most_similar_word = word
+     for candidate in wordlist:
+         similarity = SequenceMatcher(None,word,candidate).ratio()
+         if similarity > top_similarity:
+             top_similarity = similarity
+             most_similar_word = candidate
+     return most_similar_word
+
+# Now apply to 'country' column
+
+df['country'].apply(lambda x: get_most_similar(x, corrected_CountryNames)) # Maybe apply this to someone else's setup?
