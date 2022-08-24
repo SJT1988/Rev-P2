@@ -92,7 +92,7 @@
 103,208,Aureamp Fenduthe,49,Longbow,Weapons,Venmo,2,50.0,2022-08-04 13:15:05,Mexico,Mexico City,yeoldestore.com,13,Y,
 105,155,Plinong Ano,9,Ring Mail,Armor,Credit Card,10,30.0,2022-05-17 03:29:10,India,Delhi,Amazon.com,6,N,Card reported stolen
 107,445,Desiend Comedis,31,Greataxe,Weapons,Venmo,1,50.0,2022-01-08 05:56:25,Japan,Tokyo,Etsy.com,14,Y,
-108,654,Atofe Gegetat,13,Shield,Armor,Venmo,10,10.0,2022-01-07 0:18:54,United States,Los Angeles,LarpersTrove.com,15,N,Payment site timed out
+108,654,Atofe Gegetat,13,Shield,Armor,Venmo,10,10.0,2022-01-07 10:18:54,United States,Los Angeles,LarpersTrove.com,15,N,Payment site timed out
 109,945,Sancatherd Titmepsh,8,Half Plate,Armor,Google pay,7,750.0,2022-03-23 04:06:05,India,Bangalore,Walmart.com,13,N,Failed to Authenticate buyer
 110,938,Crounot Ercthaw,102,Potion of Healing,Gear,Cash app,4,50.0,2022-02-02 03:54:47,China,Chengdu,Amazon.com,11,N,Failed to Authenticate buyer
 112,513,Bioofitef Nsthe,67,Glass Bottle,Gear,Credit Card,4,2.0,2022-01-06 20:31:55,United States,Chicago,Amazon.com,7,Y,
@@ -210,7 +210,7 @@
 241,423,Onenke Ser,15,Dagger,Weapons,Credit Card,4,2.0,2022-02-22 13:11:44,United States,Los Angeles,Blacksmithery.com,21,N,Incorrect CCV
 242,43,Nederisth Socomi,9,Ring Mail,Armor,Apple pay,5,30.0,2022-03-27 14:32:22,United States,New York,Blacksmithery.com,36,Y,
 244,270,Colyo Pure,54,Blowgun Needles (50),Gear,Google pay,5,10.0,2022-06-04 09:30:12,Thailand,Bangkok,Hardhat.com,23,Y,
-246,348,Dorsi Sasme,4,Hide,Armor,Paypal,4,10.0,2022-07-08 0:27:58,France,Paris,Walmart.com,37,N,Payment site timed out
+246,348,Dorsi Sasme,4,Hide,Armor,Paypal,4,10.0,2022-07-08 20:27:58,France,Paris,Walmart.com,37,N,Payment site timed out
 247,612,Omate Lathasef,34,Lance,Weapons,Google pay,8,10.0,2022-03-09 14:20:22,United States,Atlanta,Hardhat.com,24,Y,
 248,833,Arr Ore,94,Hunting Trap,Gear,Venmo,3,5.0,2022-01-16 22:03:28,United States,Minneapolis,Hardhat.com,29,N,Insuffecient Funds
 250,613,Teror Oherint,65,Bedroll,Gear,Paypal,5,1000.0,2022-06-12 06:58:50,China,Zigong,LarpersTrove.com,38,N,Failed to Authenticate buyer
@@ -691,7 +691,7 @@
 792,162,Amydesc Sow,73,Chest,Gear,Paypal,9,5.0,2022-04-01 05:00:03,Mexico,Mexico City,Blacksmithery.com,112,N,Payment site timed out
 793,352,Twenf Dedoe,109,Waterskin,Gear,Cash app,8,2.0,2022-04-18 15:42:15,Japan,Tofyo,Amazon.com,89,Y,
 794,887,Edrif Jouryedi,93,Hourglass,Gear,Google pay,7,25.0,2022-05-08 13:57:40,China,Ji’an,Walmart.com,96,Y,
-795,892,Thiro Ndu,38,Pike,Weapons,Apple pay,6,5.0,2022-01-30 3:41:23,China,Quanzhou,Etsy.com,92,N,Payment site timed out
+795,892,Thiro Ndu,38,Pike,Weapons,Apple pay,6,5.0,2022-01-30 03:41:23,China,Quanzhou,Etsy.com,92,N,Payment site timed out
 796,452,Ato Tin,107,Torch,Gear,Cash app,7,1.0,2022-05-15 09:25:18,India,Mumbai,Etsy.com,90,N,Insuffecient Funds
 797,140,Otith Athemer,87,Sledgehammer,Gear,Paypal,5,2.0,2022-06-21 09:10:30,United States,Los Angeles,Blacksmithery.com,113,Y,
 798,726,Dareluca Apa,47,Hand Crossbow,Weapons,Google pay,2,75.0,2022-04-11 21:25:06,India,Delhi,Blacksmithery.com,97,N,Failed to Authenticate buyer
@@ -811,7 +811,7 @@
 927,366,Tengus Thongencla,52,Alchemist's Fire (flask),Gear,Credit Card,10,50.0,2022-04-07 02:44:54,South Korea,Seoul,Hardhat.com,122,N,Card Type Not Supported
 928,637,Tisadiv Kavands,51,Acid (vial),Gear,Venmo,2,25.0,2022-03-25 03:00:06,United States,Minneapolis,Etsy.com,113,Y,
 929,781,Sede Pha,83,Wooden Staff (Druidic Focus),Gear,Gift card,3,5.0,2022-04-19 13:45:42,Vietnam,Ho Chi Minh City,LarpersTrove.com,118,Y,
-930,465,Bind Atofo,58,Crystal (Arcane Focus),Gear,Venmo,3,10.0,2022-08-13 5:46:34,India,Lucknow,LarpersTrove.com,114,Y,
+930,465,Bind Atofo,58,Crystal (Arcane Focus),Gear,Venmo,3,10.0,2022-08-13 15:46:34,India,Lucknow,LarpersTrove.com,114,Y,
 931,61,Wnenecreab Ndresu,88,Healer's Kit,Gear,Paypal,8,5.0,2022-03-26 01:55:56,United States,New York,Hardhat.com,127,N,Payment site timed out
 932,676,Yithe Del,103,Rations (1 day),Gear,Gift card,7,5.0,2022-06-14 17:12:26,United States,New York,Hardhat.com,119,Y,
 933,875,Oncee Gasedo,89,Amulet (Holy Symbol),Gear,Google pay,6,5.0,2022-06-19 03:39:49,United States,New York,Walmart.com,114,N,Insuffecient Funds
@@ -1051,7 +1051,7 @@
 1197,990,Ethect Wasim,3,Studded Leather,Armor,Gift card,1,45.0,2022-03-08 01:33:57,United States,Washington,yeoldestore.com,162,Y,
 1198,353,Yimede Nfrengent,34,Lance,Weapons,Venmo,5,10.0,2022-02-05 04:01:25,United States,New York,Etsy.com,149,N,Payment site timed out
 1199,513,Bioofitef Nsthe,87,Sledgehammer,Gear,Google pay,8,2.0,2022-08-05 00:46:37,United States,Chicago,Hardhat.com,153,N,Failed to Authenticate buyer
-1200,434,ThapareOminenkn,82,Totem (Druidic Focus),Gear,Venmo,1,1.0,2022-06-05 3:42:27,China,Guangzhou,Walmart.com,150,Y,
+1200,434,ThapareOminenkn,82,Totem (Druidic Focus),Gear,Venmo,1,1.0,2022-06-05 13:42:27,China,Guangzhou,Walmart.com,150,Y,
 1201,357,Cighalshe Ssts,1,Padded,Armor,Credit Card,6,5.0,2022-02-04 03:54:38,United States,San Francisco,Blacksmithery.com,162,Y,
 1202,699,Sevet Wena,45,Whip,Weapons,Credit Card,10,2.0,2022-06-20 20:52:57,Brazil,Belém,Blacksmithery.com,163,Y,
 1204,273,Buct Pule,96,Ink Pen,Gear,Gift card,7,0.2,2022-01-16 08:30:42,United States,Dallas,Hardhat.com,164,N,Failed to Authenticate buyer
@@ -1085,7 +1085,7 @@
 1234,799,Iner Thonedec,12,Plate,Armor,Credit Card,8,1500.0,2022-02-26 03:55:39,South Korea,Busan,Hardhat.com,169,N,Incorrect CCV
 1235,150,Jorexh Edint,10,Chain Mail,Armor,Google pay,8,75.0,2022-08-11 21:30:34,United States,Los Angeles,Etsy.com,157,Y,
 1236,16,Indeds Eslisu,79,Component Pouch,Gear,Venmo,7,25.0,2022-04-21 07:11:52,United States,Los Angeles,Blacksmithery.com,152,Y,
-1237,464,Nthabr Meareeser,12,Plate,Armor,Apple pay,6,1500.0,2022-03-14 8:58:36,China,Changde,Etsy.com,157,N,Failed to Authenticate buyer
+1237,464,Nthabr Meareeser,12,Plate,Armor,Apple pay,6,1500.0,2022-03-14 08:58:36,China,Changde,Etsy.com,157,N,Failed to Authenticate buyer
 1238,262,Engubona Orkoungr,57,Antitoxin (vial),Gear,Souls of my Enemys,3,50.0,2022-08-06 00:13:42,United States,Los Angeles,yeoldestore.com,152,Y,None
 1239,8,Dlorenouc Offa,57,Antitoxin (vial),Gear,Apple pay,7,50.0,2022-01-18 09:24:15,Japan,Tokyo,Walmart.com,158,N,Insuffecient Funds
 1240,540,Stapo Cricled,35,Longsword,Weapons,Apple pay,8,15.0,2022-06-25 10:30:44,United States,New York,yeoldestore.com,159,Y,
@@ -1469,7 +1469,7 @@
 1678,117,Meren Hopa,26,Shortbow,Weapons,Apple pay,6,25.0,2022-01-15 20:33:13,Japan,Tokyo,LarpersTrove.com,203,N,Payment site timed out
 1679,542,Tin Fealeri,85,Grappling Hook,Gear,Credit Card,9,2.0,2022-04-18 14:34:34,United States,Atlanta,Amazon.com,218,N,Incorrect CCV
 1680,352,Twenf Dedoe,79,Component Pouch,Gear,Cash app,7,25.0,2022-07-02 21:17:28,Japan,Tofyo,Walmart.com,204,Y,
-1681,549,Thinedi Igersimof,10,Chain Mail,Armor,Google pay,4,75.0,2022-08-12 2:16:27,Iran,Tehran,Hardhat.com,206,N,Insuffecient Funds
+1681,549,Thinedi Igersimof,10,Chain Mail,Armor,Google pay,4,75.0,2022-08-12 22:16:27,Iran,Tehran,Hardhat.com,206,N,Insuffecient Funds
 1682,959,Blmesy Tyormerrp,25,Dart,Weapons,Apple pay,10,0.5,2022-03-13 12:53:00,United Kingdom,London,yeoldestore.com,204,N,Payment site timed out
 1683,373,Fiosortrin Dist,49,Longbow,Weapons,Souls of my Enemys,6,50.0,2022-07-28 20:48:10,China,Xinzhou,LarpersTrove.com,210,N,Insuffecient Souls
 1684,30,Ceyintost Alefoouth,86,Hammer,Gear,Credit Card,4,1.0,2022-04-08 12:31:27,India,Delhi,Amazon.com,219,Y,
@@ -1516,7 +1516,7 @@
 1732,12,Onthi The,89,Amulet (Holy Symbol),Gear,Apple pay,9,5.0,2022-05-10 10:52:16,United States,Salt Lake City,yeoldestore.com,211,Y,
 1733,11,Wandef Bld,81,Sprig of Mistletoe (Druidic Focus),Gear,Gift card,9,1.0,2022-03-02 17:31:13,Indonesia,Jakarta,Hardhat.com,233,N,Failed to Authenticate buyer
 1736,230,Phiateal Orer,28,Battleaxe,Weapons,Apple pay,4,10.0,2022-04-10 21:00:42,Mongolia,Ulaanbaatar,Amazon.com,213,N,Failed to Authenticate buyer
-1737,167,But Isinti,16,Greatclub,Weapons,Gift card,6,2.0,2022-05-02 6:41:04,Japan,Ōsaka,yeoldestore.com,234,Y,
+1737,167,But Isinti,16,Greatclub,Weapons,Gift card,6,2.0,2022-05-02 16:41:04,Japan,Ōsaka,yeoldestore.com,234,Y,
 1738,347,Hendei Ath,75,Common Clothes,Gear,Credit Card,3,5.0,2022-04-27 05:37:28,United States,Miami,Etsy.com,221,N,Failed to Authenticate buyer
 1739,708,Trandit Oseweme,93,Hourglass,Gear,Credit Card,9,25.0,2022-02-17 22:32:38,Peru,Lima,Walmart.com,222,N,Card Type Not Supported
 1740,946,Pinduate Sangi,13,Shield,Armor,Paypal,5,10.0,2022-03-02 15:15:39,China,Tongshan,Hardhat.com,206,N,Insuffecient Funds
@@ -2040,7 +2040,7 @@
 2333,885,Corel Ror,88,Healer's Kit,Gear,Gift card,4,5.0,2022-05-19 12:00:11,United States,New York,Hardhat.com,316,N,Failed to Authenticate buyer
 2334,265,Tithi Cugisi,62,Wand (Arcane Focus),Gear,Cash app,7,10.0,2022-02-12 00:22:54,United States,New York,Hardhat.com,284,Y,
 2335,293,Gel Fofou,25,Dart,Weapons,Gift card,2,0.5,2022-02-14 02:53:29,United States,New York,Hardhat.com,317,N,Insuffecient Funds
-2336,823,Shutt Rkano,96,Ink Pen,Gear,Apple pay,1,0.2,2022-03-28 1:53:23,United States,Seattle,yeoldestore.com,289,Y,
+2336,823,Shutt Rkano,96,Ink Pen,Gear,Apple pay,1,0.2,2022-03-28 01:53:23,United States,Seattle,yeoldestore.com,289,Y,
 2337,391,Ithens Tsinc,12,Plate,Armor,Cash app,8,1500.0,2022-05-27 20:41:53,China,Nanchang,Hardhat.com,285,Y,
 2338,20,Slaimant Ansucyont,5,Chain Shirt,Armor,Gift card,4,50.0,2022-02-11 17:32:06,China,Shenzhen,Hardhat.com,318,Y,
 2339,681,Ours Ceroff,5,Chain Shirt,Armor,Cash app,5,50.0,2022-01-03 17:42:13,Mexico,Mexico City,Amazon.com,286,N,Failed to Authenticate buyer
@@ -2058,14 +2058,14 @@
 2352,161,Serurryl Orinc,81,Sprig of Mistletoe (Druidic Focus),Gear,Cash app,8,1.0,2022-01-24 17:01:01,United States,Houston,Hardhat.com,290,Y,
 2353,1,Thenove Ontsiond,81,Sprig of Mistletoe (Druidic Focus),Gear,Cash app,5,1.0,2022-06-28 13:17:05,China,Pudong,Walmart.com,291,Y,
 2354,969,Depr Hes,17,Handaxe,Weapons,Apple pay,4,5.0,2022-02-06 11:16:27,Philippines,Manila,Hardhat.com,290,N,Payment site timed out
-2355,11,Wandef Bld,97,Lamp,Gear,Apple pay,6,5.0,2022-01-22 6:58:58,Indonesia,Jakarta,yeoldestore.com,291,Y,
+2355,11,Wandef Bld,97,Lamp,Gear,Apple pay,6,5.0,2022-01-22 06:58:58,Indonesia,Jakarta,yeoldestore.com,291,Y,
 2356,546,Usofo Isplysec,38,Pike,Weapons,Google pay,7,5.0,2022-04-01 08:11:07,United States,Los Angeles,Blacksmithery.com,292,Y,
 2357,955,Inder Rts,18,Javelin,Weapons,Paypal,5,5.0,2022-01-22 00:20:30,Indonesia,Jakarta,Amazon.com,287,Y,
 2358,502,Lshus Thefead,88,Healer's Kit,Gear,Cash app,7,5.0,2022-01-26 01:43:16,China,New York,Hardhat.com,292,Y,
 2359,227,Hencirme Asthe,83,Wooden Staff (Druidic Focus),Gear,Paypal,6,5.0,2022-04-01 07:50:55,Kazakhstan,Almaty,Amazon.com,288,Y,
 2360,964,Cherohe Rethed,96,Ink Pen,Gear,Cash app,4,0.2,2022-04-16 06:56:48,China,Zhengzhou,Blacksmithery.com,293,Y,
 2361,832,Ioatitop Theden,7,Breastplate,Armor,Apple pay,8,400.0,2022-05-25 02:30:34,United States,New York,Walmart.com,292,N,Insuffecient Funds
-2362,47,Latizescou Wetons,89,Amulet (Holy Symbol),Gear,Google pay,8,5.0,2022-07-12 0:57:34,China,Ningde,yeoldestore.com,293,N,Payment site timed out
+2362,47,Latizescou Wetons,89,Amulet (Holy Symbol),Gear,Google pay,8,5.0,2022-07-12 10:57:34,China,Ningde,yeoldestore.com,293,N,Payment site timed out
 2363,141,Mes Fameces,5,Chain Shirt,Armor,Apple pay,10,50.0,2022-02-04 03:07:59,Iran,Tehran,LarpersTrove.com,293,Y,
 2364,113,Fids Ntathadrto,71,Chain (10 ft),Gear,Google pay,6,5.0,2022-04-05 11:30:27,United States,Los Angeles,Walmart.com,294,N,Failed to Authenticate buyer
 2365,342,Rerent Ekeasshi,52,Alchemist's Fire (flask),Gear,Apple pay,8,50.0,2022-06-20 07:36:08,United States,Los Angeles,LarpersTrove.com,294,N,Payment site timed out
@@ -2224,7 +2224,7 @@
 2542,72,Ofome Reng,49,Longbow,Weapons,Souls of my Enemys,1,50.0,2022-07-15 00:32:17,India,Mumbai,Walmart.com,315,N,Insuffecient Souls
 2543,731,Stlare Felsis,97,Lamp,Gear,Google pay,8,5.0,2022-07-29 21:14:02,Mexico,Guadalajara,LarpersTrove.com,317,Y,
 2544,768,Ovesp Rerfore,58,Crystal (Arcane Focus),Gear,Gift card,7,10.0,2022-06-15 12:38:51,United States,New York,Blacksmithery.com,345,Y,
-2545,594,Stere Afrmbe,4,Hide,Armor,Souls of my Enemys,10,10.0,2022-01-18 0:10:41,United States,New York,Etsy.com,316,Y,
+2545,594,Stere Afrmbe,4,Hide,Armor,Souls of my Enemys,10,10.0,2022-01-18 00:10:41,United States,New York,Etsy.com,316,Y,
 2546,178,Duciom Fevith,1,Padded,Armor,Google pay,2,5.0,2022-01-01 03:13:37,United States,Los Angeles,Blacksmithery.com,318,N,Insuffecient Funds
 2547,173,Dalend Ker,5,Chain Shirt,Armor,Gift card,8,50.0,2022-05-02 10:18:57,China,Rizhao,Blacksmithery.com,346,Y,
 2548,172,Sendeediol Othth,22,Sickle,Weapons,Souls of my Enemys,3,1.0,2022-02-11 04:24:49,India,Delhi,LarpersTrove.com,317,Y,
@@ -2256,7 +2256,7 @@
 2578,911,Thofenex Mant,92,Holy Water (Flask),Gear,Apple pay,6,25.0,2022-03-11 09:22:58,Japan,Tokyo,Etsy.com,319,Y,
 2579,419,Hancans Bagrddon,3,Studded Leather,Armor,Gift card,6,45.0,2022-05-23 09:54:43,United States,San Francisco,yeoldestore.com,352,N,Insuffecient Funds
 2580,934,Athac Bluariede,2,Leather,Armor,Venmo,9,10.0,2022-05-06 20:05:11,China,Nanchong,LarpersTrove.com,305,Y,
-2581,883,Bonofierea Akecl,8,Half Plate,Armor,Apple pay,7,750.0,2022-01-28 2:19:03,United States,New York,Hardhat.com,320,Y,
+2581,883,Bonofierea Akecl,8,Half Plate,Armor,Apple pay,7,750.0,2022-01-28 12:19:03,United States,New York,Hardhat.com,320,Y,
 2582,727,Wiedi Vit,40,Scimitar,Weapons,Venmo,1,25.0,2022-01-23 13:30:08,United States,Jacksonville,Hardhat.com,306,Y,
 2584,109,Hiaybe Athomese,92,Holy Water (Flask),Gear,Apple pay,1,25.0,2022-03-03 22:54:11,China,Nanchang,yeoldestore.com,321,Y,
 2585,154,Itedouni Tindiorsa,30,Glaive,Weapons,Gift card,6,200.0,2022-02-11 17:14:22,China,Beijing,Etsy.com,353,Y,
@@ -2335,7 +2335,7 @@
 2673,109,Hiaybe Athomese,108,Vial,Gear,Apple pay,10,1.0,2022-06-30 22:14:20,China,Nanchang,Blacksmithery.com,332,N,Payment site timed out
 2674,81,Dmathem Condiofor,75,Common Clothes,Gear,Venmo,1,5.0,2022-07-27 02:17:37,Mexico,Mexico City,LarpersTrove.com,318,N,Payment site timed out
 2675,656,Hitov Tetrng,104,Robes,Gear,Credit Card,5,10.0,2022-02-17 13:36:18,Nigeria,Lagos,yeoldestore.com,329,N,Card Type Not Supported
-2676,474,Iser Ffigrcol,8,Half Plate,Armor,Souls of my Enemys,10,750.0,2022-04-05 1:13:16,China,Qingdao,LarpersTrove.com,338,Y,
+2676,474,Iser Ffigrcol,8,Half Plate,Armor,Souls of my Enemys,10,750.0,2022-04-05 21:13:16,China,Qingdao,LarpersTrove.com,338,Y,
 2678,654,Atofe Gegetat,79,Component Pouch,Gear,Apple pay,r,25.0,2022-02-14 00:41:32,United States,Los Angeles,Etsy.com,333,Y,
 2679,484,Reeve Thed,9,Ring Mail,Armor,Apple pay,9,30.0,2022-07-29 07:20:29,United Kingdom,London,LarpersTrove.com,334,N,Failed to Authenticate buyer
 2680,316,Wingr Idilantrty,1,Padded,Armor,Google pay,3,5.0,2022-04-30 13:36:26,China,Xinyang,Amazon.com,334,Y,
@@ -2376,7 +2376,7 @@
 2721,81,Dmathem Condiofor,52,Alchemist's Fire (flask),Gear,Souls of my Enemys,5,50.0,2022-01-26 22:38:01,Mexico,Mexico City,Etsy.com,344,N,What is this; Why is it screaming
 2722,625,Sowomedo Couas,79,Component Pouch,Gear,Credit Card,7,25.0,2022-03-20 04:15:24,United States,New York,Hardhat.com,334,Y,
 2723,10,Niec Lsys,97,Lamp,Gear,Cash app,7,5.0,2022-03-08 06:09:34,China,Handan,Amazon.com,341,N,Insuffecient Funds
-2724,766,Arn Rsce,11,Splint,Armor,Paypal,9,200.0,2022-02-27 9:20:40,India,Delhi,Blacksmithery.com,321,N,Failed to Authenticate buyer
+2724,766,Arn Rsce,11,Splint,Armor,Paypal,9,200.0,2022-02-27 19:20:40,India,Delhi,Blacksmithery.com,321,N,Failed to Authenticate buyer
 2725,817,Espi Athest,74,Climber's Kit,Gear,Credit Card,7,25.0,2022-01-13 03:19:29,United States,New York,LarpersTrove.com,335,N,Card reported stolen
 2726,770,Adidi Thedere,42,Trident,Weapons,Paypal,4,5.0,2022-07-22 17:26:30,United States,San Diego,Walmart.com,322,Y,
 2727,683,Dles Thie,93,Hourglass,Gear,Venmo,3,25.0,2022-07-05 11:06:45,United States,Miami,Blacksmithery.com,325,N,None
@@ -2948,7 +2948,7 @@
 3385,698,Don Engug,7,Breastplate,Armor,Venmo,5,400.0,2022-07-28 01:44:40,India,Chennai,Walmart.com,407,N,Failed to Authenticate buyer
 3386,900,Issta Cactheng,24,Light Crossbow,Weapons,Souls of my Enemys,7,25.0,2022-02-13 18:54:20,China,Weifang,Hardhat.com,425,N,Insuffecient Souls
 3387,389,Caytherodu Irannistsi,74,Climber's Kit,Gear,Paypal,1,25.0,2022-03-26 09:50:47,China,Chongqing,yeoldestore.com,409,Y,
-3388,861,Rombo Mofop,7,Breastplate,Armor,Souls of my Enemys,4,400.0,2022-07-09 2:31:25,Russia,Moscow,Walmart.com,426,Y,
+3388,861,Rombo Mofop,7,Breastplate,Armor,Souls of my Enemys,4,400.0,2022-07-09 12:31:25,Russia,Moscow,Walmart.com,426,Y,
 3389,133,Tini Tsuediafo,54,Blowgun Needles (50),Gear,Gift card,3,10.0,2022-02-16 15:26:23,United States,Chicago,Blacksmithery.com,461,N,Failed to Authenticate buyer
 3390,492,Wandiavit Duers,26,Shortbow,Weapons,Apple pay,3,25.0,2022-07-21 18:15:49,Iran,Tehran,Blacksmithery.com,424,Y,
 3391,825,Chowirm Thestanace,63,Backpack,Gear,Cash app,9,20.0,2022-02-26 10:52:46,United States,Brooklyn,Hardhat.com,417,Y,
@@ -3017,7 +3017,7 @@
 3461,548,Incalt Wabos,102,Potion of Healing,Gear,Credit Card,6,50.0,2022-06-17 02:51:42,Unixed States,Chicago,Walmart.com,422,N,Insuffecient Funds
 3462,770,Adidi Thedere,49,Longbow,Weapons,Google pay,7,50.0,2022-04-13 14:58:01,United States,San Diego,Hardhat.com,435,Y,
 3463,433,Custimary Ipthakini,2,Leather,Armor,Souls of my Enemys,5,10.0,2022-04-21 01:09:06,United States,Miami,LarpersTrove.com,434,Y,
-3464,110,They Catassuel,93,Hourglass,Gear,Gift card,6,25.0,2022-01-22 4:06:53,United States,Houston,Walmart.com,470,Y,
+3464,110,They Catassuel,93,Hourglass,Gear,Gift card,6,25.0,2022-01-22 04:06:53,United States,Houston,Walmart.com,470,Y,
 3465,161,Serurryl Orinc,104,Robes,Gear,Credit Card,10,10.0,2022-03-12 20:03:24,United States,Houston,Walmart.com,423,N,Failed to Authenticate buyer
 3466,740,Min Wan,44,Warhammer,Weapons,Credit Card,9,15.0,2022-08-01 07:55:56,United States,New York,Walmart.com,424,Y,
 3467,378,Ianc Silurv,27,Sling,Weapons,Paypal,10,1.0,2022-02-11 19:08:06,United States,Jacksonville,yeoldestore.com,417,N,Failed to Authenticate buyer
@@ -3437,7 +3437,7 @@
 3936,634,Muthir Sckedafe,77,Fine Clothes,Gear,Google pay,1,150.0,2022-05-31 02:30:58,United States,Manhattan,Blacksmithery.com,493,Y,
 3937,457,Yapome Thamec,58,Crystal (Arcane Focus),Gear,Google pay,10,10.0,2022-01-14 20:55:31,India,Delhi,Etsy.com,494,Y,
 3938,160,Seema Heego,103,Rations (1 day),Gear,Paypal,2,5.0,2022-07-04 14:47:07,Argentina,Buenos Aires,Hardhat.com,471,N,Failed to Authenticate buyer
-3940,229,Thit Bulome,5,Chain Shirt,Armor,Gift card,4,50.0,2022-05-12 8:10:35,India,Mumbai,yeoldestore.com,525,Y,
+3940,229,Thit Bulome,5,Chain Shirt,Armor,Gift card,4,50.0,2022-05-12 08:10:35,India,Mumbai,yeoldestore.com,525,Y,
 3941,815,Nsimpu Weeling,79,Component Pouch,Gear,Cash app,3,25.0,2022-05-13 16:48:36,China,Suqian,Blacksmithery.com,478,Y,
 3942,197,Thino Wexatheam,83,Wooden Staff (Druidic Focus),Gear,Venmo,5,5.0,2022-05-15 11:08:45,United States,San Francisco,Hardhat.com,479,Y,
 3943,277,Inlang The,58,Crystal (Arcane Focus),Gear,Cash app,8,10.0,2022-02-04 19:17:08,United States,Los Angeles,yeoldestore.com,479,N,Failed to Authenticate buyer
@@ -3492,10 +3492,10 @@
 4003,352,Twenf Dedoe,45,Whip,Weapons,Google pay,1,2.0,2022-01-25 20:59:27,Japan,Tofyo,Walmart.com,501,Y,
 4004,595,Thito Hessmblt,81,Sprig of Mistletoe (Druidic Focus),Gear,Google pay,3,1.0,2022-06-21 18:37:10,India,Kolkāta,Walmart.com,502,Y,
 4005,593,Dippdos Thisab,6,Scale Mail,Armor,Apple pay,2,50.0,2022-04-24 06:13:53,United States,New York,Hardhat.com,501,N,Insuffecient Funds
-4006,651,Mameto Feyecang,37,Morningstar,Weapons,Credit Card,3,15.0,2022-04-21 6:52:01,Thailand,Bangkok,yeoldestore.com,499,Y,
+4006,651,Mameto Feyecang,37,Morningstar,Weapons,Credit Card,3,15.0,2022-04-21 16:52:01,Thailand,Bangkok,yeoldestore.com,499,Y,
 4008,597,Olipo Fened,27,Sling,Weapons,Paypal,4,1.0,2022-06-18 13:35:26,Japan,Tokyo,yeoldestore.com,479,Y,
 4009,445,Desiend Comedis,104,Robes,Gear,Credit Card,6,10.0,2022-04-16 16:43:15,Japan,Tokyo,Blacksmithery.com,501,Y,
-4010,237,Thewhinsar Bofer,5,Chain Shirt,Armor,Google pay,8,50.0,2022-07-13 9:56:07,United States,Los Angeles,Hardhat.com,503,Y,
+4010,237,Thewhinsar Bofer,5,Chain Shirt,Armor,Google pay,8,50.0,2022-07-13 09:56:07,United States,Los Angeles,Hardhat.com,503,Y,
 4011,15,Cholint Sthd,17,Handaxe,Weapons,Apple pay,6,5.0,2022-06-26 11:20:27,India,Delhi,Walmart.com,502,N,Insuffecient Funds
 4012,994,Themaru Ngea,69,Caltrops (20),Gear,Credit Card,3,10.0,2022-04-04 18:05:39,United States,Washington,Walmart.com,502,Y,
 4013,491,Ptomie Owepemalal,90,Emblem (Holy Symbol),Gear,Venmo,8,5.0,2022-01-25 06:20:19,United States,Minneapolis,Blacksmithery.com,486,N,Insuffecient Funds
@@ -3635,7 +3635,7 @@
 4174,318,Heithe Tevaly,98,Bullseye Lantern,Gear,Venmo,8,10.0,2022-03-17 15:06:09,Japan,Nagoya,Hardhat.com,512,Y,
 4175,365,Stingeri Prst,68,Bucket,Gear,Venmo,8,1.5,2022-01-30 10:20:54,Indonesia,Jakarta,Blacksmithery.com,513,N,Insuffecient Funds
 4176,331,Funiasi Thoo,90,Emblem (Holy Symbol),Gear,Paypal,5,5.0,2022-07-11 18:15:45,China,Shangrao,Blacksmithery.com,498,Y,
-4177,335,Uipalth Irerinsale,59,Orb (Arcane Focus),Gear,Souls of my Enemys,8,20.0,2022-02-20 2:43:16,United States,New York,Walmart.com,530,N,Soul type not excepted
+4177,335,Uipalth Irerinsale,59,Orb (Arcane Focus),Gear,Souls of my Enemys,8,20.0,2022-02-20 02:43:16,United States,New York,Walmart.com,530,N,Soul type not excepted
 4178,580,Imedethe Blyeran,90,Emblem (Holy Symbol),Gear,Apple pay,10,5.0,2022-06-26 10:58:27,India,Mumbai,Blacksmithery.com,520,Y,
 4179,255,Tubenore Dingysi,107,Torch,Gear,Google pay,4,1.0,2022-02-23 08:06:38,United States,Los Angeles,Walmart.com,525,N,Failed to Authenticate buyer
 4180,373,Fiosortrin Dist,84,Yew Wand (Druidic Focus),Gear,Venmo,8,10.0,2022-07-23 05:35:09,China,Xinzhou,yeoldestore.com,514,Y,
@@ -3765,7 +3765,7 @@
 4320,352,Twenf Dedoe,2,Leather,Armor,Credit Card,7,10.0,2022-08-14 12:21:35,Japan,Tofyo,Blacksmithery.com,540,N,Failed to Authenticate buyer
 4321,141,Mes Fameces,5,Chain Shirt,Armor,Paypal,4,50.0,2022-05-19 11:54:07,Iran,Tehran,yeoldestore.com,516,Y,
 4323,281,Dear Llomermeg,89,Amulet (Holy Symbol),Gear,Google pay,2,5.0,2022-01-30 17:50:46,United States,New York,LarpersTrove.com,546,N,Insuffecient Funds
-4325,407,Redsegra Icondevex,7,Breastplate,Armor,Paypal,4,400.0,2022-07-16 0:39:12,United States,New York,Etsy.com,517,N,Insuffecient Funds
+4325,407,Redsegra Icondevex,7,Breastplate,Armor,Paypal,4,400.0,2022-07-16 00:39:12,United States,New York,Etsy.com,517,N,Insuffecient Funds
 4326,292,Dslen Wotofun,3,Studded Leather,Armor,Venmo,8,45.0,2022-02-11 13:43:43,Egypt,Cairo,Amazon.com,526,N,Failed to Authenticate buyer
 4327,615,Insst Ceo,4,Hide,Armor,Souls of my Enemys,9,10.0,2022-08-12 13:58:54,India,Delhi,Etsy.com,554,Y,
 4328,493,Whacat Retherro,43,War Pick,Weapons,Paypal,10,5.0,2022-06-26 22:49:14,United States,New York,LarpersTrove.com,518,N,Failed to Authenticate buyer
@@ -4039,7 +4039,7 @@
 4628,114,Aithu Oftusors,33,Halberd,Weapons,Apple pay,10,20.0,2022-01-27 05:48:21,China,Xiangyang,Amazon.com,569,N,Insuffecient Funds
 4629,586,Qusofonte Tticrsheno,3,Studded Leather,Armor,Apple pay,4,45.0,2022-01-18 09:36:31,China,Guangzhou,Etsy.com,570,N,Failed to Authenticate buyer
 4630,483,Techofti And,73,Chest,Gear,Paypal,2,5.0,2022-04-19 09:11:07,Philippines,Manila,LarpersTrove.com,559,Y,
-4632,383,Feseq Fofollrive,92,Holy Water (Flask),Gear,Google pay,9,25.0,2022-05-27 3:04:00,United States,Minneapolis,Etsy.com,585,Y,
+4632,383,Feseq Fofollrive,92,Holy Water (Flask),Gear,Google pay,9,25.0,2022-05-27 13:04:00,United States,Minneapolis,Etsy.com,585,Y,
 4633,363,Endedenge Dmbyov,80,Crowbar,Gear,Venmo,8,2.0,2022-06-26 04:17:49,United States,Minneapolis,yeoldestore.com,561,Y,
 4634,76,Timaris Eeingiof,69,Caltrops (20),Gear,Venmo,7,10.0,2022-05-13 15:10:33,Brazil,Rio de Janeiro,Amazon.com,562,Y,
 4635,953,Sioutol Shtya,14,Club,Weapons,Credit Card,6,1.0,2022-07-24 16:06:03,China,Hengyang,Blacksmithery.com,575,Y,
@@ -4317,7 +4317,7 @@
 4941,166,Heri Supith,61,Staff (Arcane Focus),Gear,Gift card,3,5.0,2022-01-09 05:25:42,Malaysia,Kuala Lumpur,Amazon.com,641,Y,
 4942,192,Satrtodo Fofr,20,Mace,Weapons,Google pay,9,5.0,2022-02-12 02:15:30,India,Dalian,Etsy.com,627,Y,
 4943,926,Far Ondents,32,Greatsword,Weapons,Gift card,7,50.0,2022-06-15 21:49:42,United States,New York,Hardhat.com,642,N,Payment site timed out
-4944,107,Thatwati Clidan,8,Half Plate,Armor,Apple pay,7,750.0,2022-06-14 7:08:01,Bangladesh,Dhaka,Etsy.com,610,N,Insuffecient Funds
+4944,107,Thatwati Clidan,8,Half Plate,Armor,Apple pay,7,750.0,2022-06-14 07:08:01,Bangladesh,Dhaka,Etsy.com,610,N,Insuffecient Funds
 4946,306,Asthy Meves,94,Hunting Trap,Gear,Gift card,6,5.0,2022-07-08 04:02:25,United States,Chicago,Amazon.com,643,Y,
 4947,836,Atrmaint Cor,19,Light Hammer,Weapons,Gift card,9,2.0,2022-08-07 01:37:23,United States,New York,Etsy.com,644,Y,
 4948,892,Thiro Ndu,59,Orb (Arcane Focus),Gear,Apple pay,8,20.0,2022-06-08 13:28:53,China,Quanzhou,LarpersTrove.com,611,Y,
@@ -4549,13 +4549,13 @@
 5200,790,Balican Imagond,39,Rapier,Weapons,Google pay,2,25.0,2022-02-27 09:42:11,Pakistan,Karachi,LarpersTrove.com,656,Y,
 5202,901,Fon Monefra,83,Wooden Staff (Druidic Focus),Gear,Cash app,2,5.0,2022-03-14 00:09:52,United States,New York,Amazon.com,659,N,Insuffecient Funds
 5203,634,Muthir Sckedafe,96,Ink Pen,Gear,Cash app,1,0.2,2022-06-16 00:07:42,United States,Manhattan,Etsy.com,660,N,Insuffecient Funds
-5204,195,Attise Geshora,108,Vial,Gear,Souls of my Enemys,9,1.0,2022-04-13 3:53:16,Indonesia,Jakarta,Etsy.com,667,Y,
+5204,195,Attise Geshora,108,Vial,Gear,Souls of my Enemys,9,1.0,2022-04-13 03:53:16,Indonesia,Jakarta,Etsy.com,667,Y,
 5205,609,Pterupi Ehengho,83,Wooden Staff (Druidic Focus),Gear,Cash app,5,5.0,2022-07-03 20:31:03,Indonesia,Jakarta,Amazon.com,661,Y,
 5206,470,Soteresere Thowanf,11,Splint,Armor,Paypal,7,200.0,2022-01-30 17:41:15,Pakistan,Karachi,Hardhat.com,623,N,Failed to Authenticate buyer
 5207,240,Langhi Vows,59,Orb (Arcane Focus),Gear,Cash app,10,20.0,2022-03-11 21:28:06,China,Weifang,LarpersTrove.com,662,N,Payment site timed out
 5208,344,Mprieretin Grp,28,Battleaxe,Weapons,Souls of my Enemys,10,10.0,2022-04-21 20:01:57,United States,Baltimore,Hardhat.com,668,Y,
 5209,337,Porec Shewem,23,Spear,Weapons,Paypal,1,10.0,2022-07-19 08:01:42,Mexico,Mexico City,LarpersTrove.com,624,N,Payment site timed out
-5210,585,Thithend Wsalpo,62,Wand (Arcane Focus),Gear,Paypal,7,10.0,2022-03-22 6:24:17,China,Putian,LarpersTrove.com,625,N,Payment site timed out
+5210,585,Thithend Wsalpo,62,Wand (Arcane Focus),Gear,Paypal,7,10.0,2022-03-22 06:24:17,China,Putian,LarpersTrove.com,625,N,Payment site timed out
 5211,917,Surentutou Wnso,71,Chain (10 ft),Gear,Google pay,4,5.0,2022-06-19 01:01:43,Thailand,Bangkok,Amazon.com,657,Y,
 5212,148,Dinge Itindes,67,Glass Bottle,Gear,Venmo,5,2.0,2022-01-22 04:37:47,United States,Washington,LarpersTrove.com,633,Y,
 5213,740,Min Wan,46,Blowgun,Weapons,Google pay,10,10.0,2022-02-21 17:08:56,United States,New York,Blacksmithery.com,658,Y,
@@ -4744,7 +4744,7 @@
 5425,322,Tinyin Therath,90,Emblem (Holy Symbol),Gear,Souls of my Enemys,4,5.0,2022-03-01 18:15:53,Brazil,São Paulo,Etsy.com,691,N,Insuffecient Souls
 5426,537,Wir Trec,3,Studded Leather,Armor,Cash app,9,45.0,2022-03-24 17:59:46,United States,Washington,Etsy.com,687,N,Payment site timed out
 5427,129,Tal The6e,8,Half Plate,Armor,Gift card,10,750.0,2022-04-05 19:25:37,India,Delhi,Amazon.com,700,Y,
-5428,602,Gelokenea Inde,42,Trident,Weapons,Cash app,2,5.0,2022-06-14 5:53:13,Côte d'Ivoire,Abidjan,Hardhat.com,688,N,Payment site timed out
+5428,602,Gelokenea Inde,42,Trident,Weapons,Cash app,2,5.0,2022-06-14 05:53:13,Côte d'Ivoire,Abidjan,Hardhat.com,688,N,Payment site timed out
 5429,190,Any Helioueres,74,Climber's Kit,Gear,Google pay,10,25.0,2022-01-17 11:46:55,Vietnam,Ho Chi Minh City,Walmart.com,678,Y,
 5430,837,FerehAid,16,Greatclub,Weapons,Venmo,9,2.0,2022-01-30 13:18:44,China,Shanwei,Hardhat.com,665,N,Payment site timed out
 5433,639,Ivew Spion,88,Healer's Kit,Gear,Venmo,4,5.0,2022-06-06 13:23:20,United States,Philadelphia,Etsy.com,666,N,Failed to Authenticate buyer
@@ -4853,7 +4853,7 @@
 5550,841,Wheting Squte,20,Mace,Weapons,Souls of my Enemys,3,5.0,2022-07-05 03:51:52,China,Shanghai,Blacksmithery.com,706,Y,
 5551,390,Miont Thede,104,Robes,Gear,Google pay,10,10.0,2022-01-06 15:07:37,Malaysia,Kuala Lumpur,Blacksmithery.com,690,Y,
 5552,170,Inticavea Inoni,6,Scale Mail,Armor,Credit Card,9,50.0,2022-02-02 13:08:34,Iran,Tehran,Blacksmithery.com,680,N,Incorrect CCV
-5553,749,Tof Wensa,1,Padded,Armor,Souls of my Enemys,1,5.0,2022-04-16 1:09:43,India,Murbai,Etsy.com,707,Y,
+5553,749,Tof Wensa,1,Padded,Armor,Souls of my Enemys,1,5.0,2022-04-16 11:09:43,India,Murbai,Etsy.com,707,Y,
 5554,831,Siead Hyofi,8,Half Plate,Armor,Souls of my Enemys,1,750.0,2022-06-21 09:34:21,Indonesia,Jakarta,Etsy.com,708,N,Insuffecient Souls
 5555,872,Mesth Iarkorenan,109,Waterskin,Gear,Credit Card,9,2.0,2022-04-03 18:58:55,United States,Boston,Hardhat.com,681,N,Card Type Not Supported
 5557,651,Mameto Feyecang,75,Common Clothes,Gear,Google pay,7,5.0,2022-07-20 09:10:10,Thailand,Bangkok,Walmart.com,692,N,Failed to Authenticate buyer
@@ -5035,7 +5035,7 @@
 5765,311,Prede Myonisi,30,Glaive,Weapons,Google pay,3,200.0,2022-04-22 09:34:03,Argentina,Buenos Aires,Etsy.com,717,Y,
 5766,338,Dingear All,16,Greatclub,Weapons,Google pay,9,2.0,2022-07-25 06:48:40,Australia,Adelaide,Amazon.com,718,Y,
 5767,846,Vine Icare,2,Leather,Armor,Credit Card,6,10.0,2022-04-23 09:11:35,United States,New York,Etsy.com,703,Y,
-5768,971,Ocari Cerki,12,Plate,Armor,Souls of my Enemys,3,1500.0,2022-01-12 7:07:32,United States,New York,Amazon.com,734,Y,
+5768,971,Ocari Cerki,12,Plate,Armor,Souls of my Enemys,3,1500.0,2022-01-12 17:07:32,United States,New York,Amazon.com,734,Y,
 5769,599,Foysen Thimet,51,Acid (vial),Gear,Paypal,3,25.0,2022-05-27 21:23:45,Turkey,Istanbul,yeoldestore.com,702,N,Payment site timed out
 5770,238,Iases Acasis,88,Healer's Kit,Gear,Souls of my Enemys,6,5.0,2022-08-15 14:18:33,United States,Los Angeles,Etsy.com,735,N,Insuffecient Souls
 5771,971,Ocari Cerki,16,Greatclub,Weapons,Credit Card,6,2.0,2022-04-09 09:05:41,United States,New York,Etsy.com,704,N,Card reported stolen
@@ -5227,7 +5227,7 @@
 5986,271,Hera Cethan,5,Chain Shirt,Armor,Credit Card,10,50.0,2022-06-20 04:23:09,United States,Richmond,Hardhat.com,720,N,Card Type Not Supported
 5987,681,Ours Ceroff,31,Greataxe,Weapons,Souls of my Enemys,5,50.0,2022-02-03 03:37:49,Mexico,Mexico City,Blacksmithery.com,766,Y,
 5988,941,Sched Onepevion,85,Grappling Hook,Gear,Cash app,2,2.0,2022-02-19 14:17:50,India,Delhi,yeoldestore.com,778,Y,
-5989,495,Hinofs Angeof,28,Battleaxe,Weapons,Souls of my Enemys,9,10.0,2022-06-19 5:55:46,Japan,Ōsaka,Hardhat.com,767,N,Insuffecient Souls
+5989,495,Hinofs Angeof,28,Battleaxe,Weapons,Souls of my Enemys,9,10.0,2022-06-19 15:55:46,Japan,Ōsaka,Hardhat.com,767,N,Insuffecient Souls
 5990,398,Uther Erowio,107,Torch,Gear,Apple pay,4,1.0,2022-08-15 11:14:13,China,Guangzhou,Hardhat.com,739,N,Insuffecient Funds
 5991,994,Themaru Ngea,65,Bedroll,Gear,Venmo,y,1000.0,2022-04-25 18:23:15,United States,Washington,Etsy.com,735,N,Payment site timed out
 5992,319,Orocrk Cedial,49,Longbow,Weapons,Paypal,8,50.0,2022-05-08 04:57:35,United States,Chicago,Hardhat.com,730,N,Failed to Authenticate buyer
@@ -5421,7 +5421,7 @@
 6215,864,Oofueti Shen,84,Yew Wand (Druidic Focus),Gear,Souls of my Enemys,7,10.0,2022-08-09 20:30:38,India,Delhi,Walmart.com,800,Y,
 6216,958,Meton Dan,70,Candle,Gear,Credit Card,6,1.0,2022-02-19 12:46:28,China,Shangqiu,Walmart.com,742,N,Failed to Authenticate buyer
 6217,758,Wandell Ovindiec,89,Amulet (Holy Symbol),Gear,Gift card,4,5.0,2022-01-09 08:06:46,United States,Los Angeles,Walmart.com,793,Y,
-6218,452,Ato Tin,14,Club,Weapons,Gift card,5,1.0,2022-06-04 3:12:54,India,Mumbai,LarpersTrove.com,794,Y,
+6218,452,Ato Tin,14,Club,Weapons,Gift card,5,1.0,2022-06-04 03:12:54,India,Mumbai,LarpersTrove.com,794,Y,
 6219,777,Gapong Waser,9,Ring Mail,Armor,Apple pay,9,30.0,2022-04-19 08:36:12,United States,Los Angeles,Blacksmithery.com,773,N,Failed to Authenticate buyer
 6221,133,Tini Tsuediafo,82,Totem (Druidic Focus),Gear,Apple pay,7,1.0,2022-08-02 19:51:56,United States,Chicago,Etsy.com,774,N,Payment site timed out
 6222,917,Surentutou Wnso,11,Splint,Armor,Cash app,5,200.0,2022-02-21 10:22:15,Thailand,Bangkok,Walmart.com,808,Y,
@@ -5509,7 +5509,7 @@
 6323,680,Bonlt Thasa,107,Torch,Gear,Apple pay,6,1.0,2022-06-23 21:47:15,Pakistan,Karachi,Blacksmithery.com,783,Y,
 6324,516,Rcerermp Her,49,Longbow,Weapons,Cash app,8,50.0,2022-02-11 13:12:02,China,Kunming,LarpersTrove.com,821,Y,
 6325,184,Offoug:g Reavornt,40,Scimitar,Weapons,Gift card,2,25.0,2022-07-27 12:56:04,Brazil,São Paulo,LarpersTrove.com,804,N,Failed to Authenticate buyer
-6327,715,Athesee Setp,3,Studded Leather,Armor,Gift card,3,45.0,2022-05-15 2:43:38,Thailand,Bangkok,Blacksmithery.com,805,N,Insuffecient Funds
+6327,715,Athesee Setp,3,Studded Leather,Armor,Gift card,3,45.0,2022-05-15 02:43:38,Thailand,Bangkok,Blacksmithery.com,805,N,Insuffecient Funds
 6328,325,Theninch Whet,47,Hand Crossbow,Weapons,Gift card,6,75.0,2022-06-13 11:35:17,Iraq,Baghdad,LarpersTrove.com,806,Y,
 6329,642,Cat Pthauted,94,Hunting Trap,Gear,Venmo,10,5.0,2022-05-29 21:44:35,India,Mumbai,Amazon.com,779,N,Failed to Authenticate buyer
 6330,746,Daldips Ptinc,106,Spellbook,Gear,Credit Card,9,50.0,2022-01-14 08:24:46,China,Zhumadian,Walmart.com,750,Y,
@@ -5542,7 +5542,7 @@
 6360,318,Heithe Tevaly,90,Emblem (Holy Symbol),Gear,Cash app,1,5.0,2022-03-03 02:22:41,Japan,Nagoya,Hardhat.com,824,Y,
 6362,654,Atofe Gegetat,98,Bullseye Lantern,Gear,Souls of my Enemys,7,10.0,2022-04-22 14:57:17,United States,Los Angeles,LarpersTrove.com,819,N,What is this; Why is it screaming
 6363,996,Anns Nditithe,65,Bedroll,Gear,Apple pay,7,1000.0,2022-02-09 21:23:39,United States,New York,Amazon.com,787,N,Insuffecient Funds
-6364,862,Isetape Arer,47,Hand Crossbow,Weapons,Paypal,1,75.0,2022-06-27 6:30:00,United States,Atlanta,yeoldestore.com,781,Y,
+6364,862,Isetape Arer,47,Hand Crossbow,Weapons,Paypal,1,75.0,2022-06-27 16:30:00,United States,Atlanta,yeoldestore.com,781,Y,
 6365,177,Bulom Prdan,94,Hunting Trap,Gear,Paypal,3,5.0,2022-02-14 12:08:24,Brazil,Nanyang,Hardhat.com,782,Y,
 6366,611,Mowal Tarmbsl,53,Arrows (20),Gear,Souls of my Enemys,2,10.0,2022-08-16 22:01:20,United States,New York,Hardhat.com,820,N,Soul type not excepted
 6367,366,Tengus Thongencla,37,Morningstar,Weapons,Gift card,4,15.0,2022-03-17 04:04:28,South Korea,Seoul,Etsy.com,818,Y,
@@ -5783,7 +5783,7 @@
 6639,920,Thuthearye Toueo,6,Scale Mail,Armor,Credit Card,3,50.0,2022-04-19 04:52:36,United States,Seattle,Blacksmithery.com,787,Y,
 6640,586,Qusofonte Tticrsheno,1,Padded,Armor,Cash app,10,5.0,2022-06-06 06:04:13,China,Guangzhou,Amazon.com,859,Y,
 6642,42,Bema Ounar,54,Blowgun Needles (50),Gear,Cash app,3,10.0,2022-06-19 20:14:34,Indonesia,Jakarta,Etsy.com,860,Y,
-6643,739,Ldem Ino,24,Light Crossbow,Weapons,Souls of my Enemys,1,25.0,2022-05-08 8:09:33,China,Xianyang,Etsy.com,853,Y,
+6643,739,Ldem Ino,24,Light Crossbow,Weapons,Souls of my Enemys,1,25.0,2022-05-08 18:09:33,China,Xianyang,Etsy.com,853,Y,
 6644,298,Angordi Ond,64,Ball Bearings (100),Gear,Paypal,6,20.0,2022-02-04 10:49:58,Mali,Bamako,Etsy.com,813,N,Failed to Authenticate buyer
 6645,764,Maten Whrofim,63,Backpack,Gear,Cash app,5,20.0,2022-01-17 06:41:55,China,Shenzhen,Etsy.com,861,N,Payment site timed out
 6646,333,Keseng Onofo,8,Half Plate,Armor,Apple pay,10,750.0,2022-05-23 09:39:34,China,Dazhou,LarpersTrove.com,818,Y,
@@ -5869,7 +5869,7 @@
 6735,688,Peca Rectechi,3,Studded Leather,Armor,Gift card,1,45.0,2022-06-05 14:25:10,United States,San Diego,Amazon.com,868,Y,
 6736,190,Any Helioueres,12,Plate,Armor,Venmo,1,1500.0,2022-05-31 13:13:01,Vietnam,Ho Chi Minh City,Hardhat.com,831,Y,
 6737,800,Woflo Pofinendu,30,Glaive,Weapons,Google pay,9,200.0,2022-03-27 20:41:07,United States,Seattle,Amazon.com,839,Y,
-6738,619,Teepe Arat,22,Sickle,Weapons,Google pay,9,1.0,2022-07-08 5:03:09,Brazil,Iguaçu,Hardhat.com,840,Y,
+6738,619,Teepe Arat,22,Sickle,Weapons,Google pay,9,1.0,2022-07-08 05:03:09,Brazil,Iguaçu,Hardhat.com,840,Y,
 6739,875,Oncee Gasedo,11,Splint,Armor,Souls of my Enemys,7,200.0,2022-02-28 12:32:01,United States,New York,Walmart.com,867,N,What is this; Why is it screaming
 6740,242,Iteralt Mond,36,Maul,Weapons,Apple pay,4,10.0,2022-06-01 10:11:12,United States,New York,yeoldestore.com,827,N,Insuffecient Funds
 6741,114,Aithu Oftusors,90,Emblem (Holy Symbol),Gear,Google pay,6,5.0,2022-07-18 13:02:53,China,Xiangyang,Hardhat.com,841,N,Payment site timed out
@@ -5959,7 +5959,7 @@
 6846,623,Wathanunth Wendsthnt,103,Rations (1 day),Gear,Apple pay,7,5.0,2022-01-11 17:03:44,France,Paris,yeoldestore.com,843,N,Insuffecient Funds
 6847,181,Soudi Wnsuispro,101,Basic Poison (Vial),Gear,Venmo,7,100.0,2022-03-21 12:56:03,Japan,Tokyo,Etsy.com,844,N,Failed to Authenticate buyer
 6848,341,Preng Mersitili,27,Sling,Weapons,Apple pay,9,1.0,2022-07-16 08:20:51,United States,Phoenix,Hardhat.com,844,N,Failed to Authenticate buyer
-6849,434,ThapareOminenkn,60,Rod (Arcane Focus),Gear,Souls of my Enemys,2,10.0,2022-08-02 9:23:36,China,Guangzhou,yeoldestore.com,879,Y,
+6849,434,ThapareOminenkn,60,Rod (Arcane Focus),Gear,Souls of my Enemys,2,10.0,2022-08-02 19:23:36,China,Guangzhou,yeoldestore.com,879,Y,
 6850,610,Ilemev Verkiofin,100,Oil (Flask),Gear,Gift card,6,1.0,2022-01-13 22:15:51,United States,New York,Walmart.com,884,N,Insuffecient Funds
 6851,592,Thendsedim Theroton,82,Totem (Druidic Focus),Gear,Cash app,7,1.0,2022-05-04 04:07:05,India,Delhi,Etsy.com,888,Y,
 6852,394,Ifinde Nth,104,Robes,Gear,Google pay,8,10.0,2022-01-11 08:10:49,United States,New York,yeoldestore.com,854,N,Insuffecient Funds
@@ -5969,7 +5969,7 @@
 6856,448,Nfecen Tietural,65,Bedroll,Gear,Paypal,10,1000.0,2022-03-16 07:06:25,United States,Philadelphia,Walmart.com,839,Y,
 6857,321,Cldorent Ayofioffia,6,Scale Mail,Armor,Credit Card,4,50.0,2022-05-03 22:48:48,China,Baoding,Etsy.com,815,Y,
 6858,725,Tont Ereroleea,48,Heavy Crossbow,Weapons,Paypal,9,50.0,2022-01-30 18:57:55,Egypt,Cairo,yeoldestore.com,840,N,Payment site timed out
-6859,117,Meren Hopa,78,Traveler's Clothes,Gear,Venmo,6,20.0,2022-03-09 0:25:42,Japan,Tokyo,LarpersTrove.com,846,N,Insuffecient Funds
+6859,117,Meren Hopa,78,Traveler's Clothes,Gear,Venmo,6,20.0,2022-03-09 10:25:42,Japan,Tokyo,LarpersTrove.com,846,N,Insuffecient Funds
 6860,675,Geven Mperb,6,Scale Mail,Armor,Souls of my Enemys,8,50.0,2022-01-14 12:35:45,Bangladesh,Dhaka,Walmart.com,881,Y,
 6861,900,Issta Cactheng,9,Ring Mail,Armor,Google pay,3,30.0,2022-02-13 18:12:11,China,Weifang,LarpersTrove.com,855,Y,None
 6862,778,Ulven Edoweeri,67,Glass Bottle,Gear,Venmo,5,2.0,2022-06-13 17:20:25,United States,Chicago,Etsy.com,847,N,Failed to Authenticate buyer
@@ -6313,7 +6313,7 @@
 7255,649,Horse Rumati,93,Hourglass,Gear,Google pay,4,25.0,2022-05-19 04:12:41,Bangladesh,Dhaka,Etsy.com,906,N,Insuffecient Funds
 7256,820,Pafypr Phughe,5,Chain Shirt,Armor,Venmo,7,50.0,2022-05-19 22:02:35,United States,Las Vegas,Amazon.com,896,Y,
 7257,396,Sibikved Nymys,30,Glaive,Weapons,Gift card,8,200.0,2022-05-31 20:00:42,Colombia,Bogotá,Blacksmithery.com,930,N,Failed to Authenticate buyer
-7258,211,Tau Twisemeng,36,Maul,Weapons,Souls of my Enemys,1,10.0,2022-06-20 3:29:57,Indonesia,Jakarta,Hardhat.com,932,Y,
+7258,211,Tau Twisemeng,36,Maul,Weapons,Souls of my Enemys,1,10.0,2022-06-20 13:29:57,Indonesia,Jakarta,Hardhat.com,932,Y,
 7259,569,Than Impstap,26,Shortbow,Weapons,Paypal,8,25.0,2022-01-29 19:29:42,China,Linyi,Hardhat.com,894,Y,
 7260,649,Horse Rumati,82,Totem (Druidic Focus),Gear,Gift card,6,1.0,2022-07-29 01:31:18,Bangladesh,Dhaka,Blacksmithery.com,931,N,Payment site timed out
 7261,144,Mie Alar,41,Shortsword,Weapons,Apple pay,1,10.0,2022-01-26 16:56:44,United States,Tgmpa,Amazon.com,894,Y,
@@ -6365,7 +6365,7 @@
 7317,462,Eine Ilel,91,Reliquary (Holy Symbol),Gear,Google pay,1,5.0,2022-07-27 02:45:48,United States,Baltimore,Hardhat.com,914,N,Failed to Authenticate buyer
 7319,178,Duciom Fevith,30,Glaive,Weapons,Gift card,8,200.0,2022-05-19 20:34:40,United States,Los Angeles,Etsy.com,937,Y,
 7320,914,Owa Ianaro,10,Chain Mail,Armor,Credit Card,9,75.0,2022-06-17 20:11:01,United States,Houston,Hardhat.com,877,N,Card reported stolen
-7321,467,Ted Worouldog,72,Chalk (10 piece),Gear,Apple pay,7,1.0,2022-06-19 0:28:58,China,Jinan,Amazon.com,907,Y,
+7321,467,Ted Worouldog,72,Chalk (10 piece),Gear,Apple pay,7,1.0,2022-06-19 00:28:58,China,Jinan,Amazon.com,907,Y,
 7322,596,Oiti Brore,36,Maul,Weapons,Google pay,9,10.0,2022-07-21 04:42:00,United States,Detroit,Blacksmithery.com,915,Y,
 7323,299,Matinof Teltyof,5,Chain Shirt,Armor,Cash app,1,50.0,2022-07-21 21:58:42,China,Shantou,Walmart.com,937,Y,
 7324,548,Incalt Wabos,40,Scimitar,Weapons,Apple pay,8,25.0,2022-02-16 04:16:41,Unixed States,Chicago,Blacksmithery.com,908,N,Payment site timed out
@@ -6484,7 +6484,7 @@
 7450,654,Atofe Gegetat,109,Waterskin,Gear,Google pay,5,2.0,2022-02-09 11:47:39,United States,Los Angeles,Walmart.com,931,Y,
 7451,339,Plath Patath,5,Chain Shirt,Armor,Venmo,f,50.0,2022-04-07 01:57:00,China,Beijing,Hardhat.com,918,N,Insuffecient Funds
 7452,103,Thendal Ceenifobu,47,Hand Crossbow,Weapons,Credit Card,5,75.0,2022-02-02 05:56:14,China,Sanzhou,yeoldestore.com,897,Y,
-7453,342,Rerent Ekeasshi,2,Leather,Armor,Gift card,9,10.0,2022-02-22 6:33:54,United States,Los Angeles,yeoldestore.com,945,N,Failed to Authenticate buyer
+7453,342,Rerent Ekeasshi,2,Leather,Armor,Gift card,9,10.0,2022-02-22 06:33:54,United States,Los Angeles,yeoldestore.com,945,N,Failed to Authenticate buyer
 7454,990,Ethect Wasim,99,Hooded Lantern,Gear,Apple pay,6,5.0,2022-04-14 17:03:20,United States,Washington,Blacksmithery.com,930,N,Payment site timed out
 7455,711,Atugint Thitai,30,Glaive,Weapons,Gift card,2,200.0,2022-08-06 13:13:04,Egypt,Cairo,Hardhat.com,946,Y,
 7456,961,Oulinym Crgour,70,Candle,Gear,Google pay,5,1.0,2022-07-31 18:45:19,Iran,Tehran,Hardhat.com,932,N,Failed to Authenticate buyer
@@ -6929,7 +6929,7 @@
 7957,788,Rorev Bjanenord,46,Blowgun,Weapons,Paypal,6,10.0,2022-05-06 12:17:06,Bangladesh,Tokyo,Hardhat.com,982,Y,
 7958,109,Hiaybe Athomese,48,Heavy Crossbow,Weapons,Google pay,1,50.0,2022-06-24 17:39:36,China,Nanchang,Walmart.com,990,N,Insuffecient Funds
 7960,589,Ind Worrequ,7,Breastplate,Armor,Paypal,7,400.0,2022-03-08 02:34:01,Japan,Tokyo,Walmart.com,983,N,None
-7961,169,Schers Fefer,59,Orb (Arcane Focus),Gear,Souls of my Enemys,1,20.0,2022-07-17 8:29:39,Japan,Tokyo,Blacksmithery.com,1012,N,Insuffecient Souls
+7961,169,Schers Fefer,59,Orb (Arcane Focus),Gear,Souls of my Enemys,1,20.0,2022-07-17 18:29:39,Japan,Tokyo,Blacksmithery.com,1012,N,Insuffecient Souls
 7962,816,Tortherar Terol,43,War Pick,Weapons,Credit Card,5,5.0,2022-01-21 07:30:50,China,Shenzhen,yeoldestore.com,962,Y,
 7963,264,Eusin Heaco,100,Oil (Flask),Gear,Credit Card,7,1.0,2022-05-03 16:22:10,United States,Chicago,Etsy.com,963,Y,
 7964,71,Wackn Dlld,35,Longsword,Weapons,Cash app,1,15.0,2022-06-06 09:24:58,United States,New York,Etsy.com,1033,N,Payment site timed out
@@ -6957,7 +6957,7 @@
 7987,830,Mialeresu Atom,104,Robes,Gear,Gift card,3,10.0,2022-07-29 22:16:47,Indonesia,Jakarta,Amazon.com,1013,Y,
 7988,830,Mialeresu Atom,81,Sprig of Mistletoe (Druidic Focus),Gear,Venmo,9,1.0,2022-06-28 00:38:06,Indonesia,Jakarta,Walmart.com,981,Y,
 7989,489,Someigi Coyrlaitin,91,Reliquary (Holy Symbol),Gear,Credit Card,2,5.0,2022-05-27 11:08:53,United States,New York,Blacksmithery.com,966,Y,
-7990,407,Redsegra Icondevex,23,Spear,Weapons,Gift card,5,10.0,2022-06-25 5:21:19,United States,New York,Walmart.com,1014,Y,
+7990,407,Redsegra Icondevex,23,Spear,Weapons,Gift card,5,10.0,2022-06-25 15:21:19,United States,New York,Walmart.com,1014,Y,
 7991,302,Crida Acusemer,69,Caltrops (20),Gear,Gift card,10,10.0,2022-07-05 06:44:08,Bangladesh,Dhaka,Walmart.com,1015,Y,
 7993,168,Omeacound Kereyopug,46,Blowgun,Weapons,Apple pay,7,10.0,2022-08-11 05:03:52,China,Chengdu,Hardhat.com,993,N,Insuffecient Funds
 7994,727,Wiedi Vit,46,Blowgun,Weapons,Credit Card,8,10.0,2022-04-18 05:00:25,United States,Jacksonville,Etsy.com,967,N,Incorrect CCV
@@ -6985,7 +6985,7 @@
 8019,691,Uloars Tho,96,Ink Pen,Gear,Souls of my Enemys,2,0.2,2022-01-06 04:25:20,China,Cangzhou,Walmart.com,1020,N,Insuffecient Souls
 8020,381,Foft Cea,95,Ink (1 ounce bottle),Gear,Paypal,6,1.0,2022-04-12 14:57:34,United States,Philadelphia,Hardhat.com,989,Y,
 8021,601,Athecofell Wecomimo,24,Light Crossbow,Weapons,Apple pay,10,25.0,2022-02-23 17:29:46,Austria,Vienna,Amazon.com,996,Y,
-8022,596,Oiti Brore,3,Studded Leather,Armor,Cash app,k,45.0,2022-05-05 9:52:01,United States,Detroit,Walmart.com,1041,N,Payment site timed out
+8022,596,Oiti Brore,3,Studded Leather,Armor,Cash app,k,45.0,2022-05-05 19:52:01,United States,Detroit,Walmart.com,1041,N,Payment site timed out
 8023,517,Thisurse Ofi,100,Oil (Flask),Gear,Cash app,1,1.0,2022-02-23 14:56:55,China,Zhengzhou,Blacksmithery.com,1042,Y,
 8025,722,Isss Rernglla,92,Holy Water (Flask),Gear,Venmo,8,25.0,2022-01-12 02:39:39,United States,New York,Hardhat.com,984,N,Insuffecient Funds
 8026,956,Anleealb Etoyofeve,74,Climber's Kit,Gear,Apple pay,5,25.0,2022-06-28 14:14:28,United States,New York,Walmart.com,997,Y,
@@ -7001,7 +7001,7 @@
 8038,446,Besin Teinsume,92,Holy Water (Flask),Gear,Souls of my Enemys,1,25.0,2022-04-24 18:19:04,China,Huaihua,Amazon.com,1022,Y,
 8039,3,Syowilse Armabrer,103,Rations (1 day),Gear,Google pay,7,5.0,2022-02-27 09:51:04,China,Zhanjiang,Etsy.com,1001,N,Insuffecient Funds
 8040,482,Jupedeyof Cesilr,78,Traveler's Clothes,Gear,Souls of my Enemys,9,20.0,2022-05-30 10:25:41,China,Xinpu,yeoldestore.com,1023,N,Insuffecient Souls
-8041,580,Imedethe Blyeran,86,Hammer,Gear,Google pay,7,1.0,2022-07-15 9:57:22,India,Mumbai,yeoldestore.com,1002,N,Failed to Authenticate buyer
+8041,580,Imedethe Blyeran,86,Hammer,Gear,Google pay,7,1.0,2022-07-15 09:57:22,India,Mumbai,yeoldestore.com,1002,N,Failed to Authenticate buyer
 8043,682,Are Touldler,90,Emblem (Holy Symbol),Gear,Apple pay,8,5.0,2022-04-17 11:16:16,China,Pingdu,Hardhat.com,998,Y,
 8044,5,Elirplur Sturma,105,Rope (50 ft),Gear,Google pay,1,10.0,2022-04-07 10:59:11,United States,New York,Blacksmithery.com,1003,Y,
 8045,644,Perc Dantha,39,Rapier,Weapons,Souls of my Enemys,8,25.0,2022-02-24 11:30:16,United States,Boston,yeoldestore.com,1025,N,Soul type not excepted
@@ -7052,9 +7052,9 @@
 8097,159,Chegame Ppp,41,Shortsword,Weapons,Gift card,3,10.0,2022-07-11 20:26:25,United States,Houston,LarpersTrove.com,1025,Y,
 8098,261,Kersosto Eriva,13,Shield,Armor,Cash app,2,10.0,2022-04-27 03:06:59,Japan,Ōsaka,Etsy.com,1052,N,Insuffecient Funds
 8100,426,Pruatha Qun,77,Fine Clothes,Gear,Gift card,5,150.0,2022-07-22 06:00:26,China,Chongqing,Hardhat.com,1026,Y,
-8101,225,Fessth Tela,43,War Pick,Weapons,Paypal,2,5.0,2022-05-29 5:01:34,Mexico,Mexico City,Hardhat.com,998,Y,
+8101,225,Fessth Tela,43,War Pick,Weapons,Paypal,2,5.0,2022-05-29 05:01:34,Mexico,Mexico City,Hardhat.com,998,Y,
 8102,626,Tise Itoru,71,Chain (10 ft),Gear,Gift card,8,5.0,2022-04-26 18:05:16,Thailand,Bangkok,Etsy.com,1027,Y,
-8103,448,Nfecen Tietural,7,Breastplate,Armor,Venmo,3,400.0,2022-02-14 1:16:05,United States,Philadelphia,Blacksmithery.com,993,Y,
+8103,448,Nfecen Tietural,7,Breastplate,Armor,Venmo,3,400.0,2022-02-14 21:16:05,United States,Philadelphia,Blacksmithery.com,993,Y,
 8104,651,Mameto Feyecang,42,Trident,Weapons,Google pay,5,5.0,2022-04-06 01:17:26,Thailand,Bangkok,LarpersTrove.com,1011,N,Payment site timed out
 8105,179,Allab Fffat,6,Scale Mail,Armor,Souls of my Enemys,4,50.0,2022-01-07 15:04:41,China,Nanyang,yeoldestore.com,1034,Y,
 8106,70,Ryousl Hiomont,97,Lamp,Gear,Venmo,6,5.0,2022-07-18 11:48:19,Egypt,Cairo,yeoldestore.com,994,Y,
@@ -7092,7 +7092,7 @@
 8145,602,Gelokenea Inde,62,Wand (Arcane Focus),Gear,Google pay,7,10.0,2022-05-26 20:47:56,Côte d'Ivoire,Abidjan,Blacksmithery.com,1018,Y,
 8146,778,Ulven Edoweeri,28,Battleaxe,Weapons,Credit Card,8,10.0,2022-06-17 12:58:16,United States,Chicago,Blacksmithery.com,982,N,Card reported stolen
 8147,484,Reeve Thed,100,Oil (Flask),Gear,Venmo,7,1.0,2022-01-01 22:17:11,United Kingdom,London,Blacksmithery.com,998,Y,
-8148,994,Themaru Ngea,87,Sledgehammer,Gear,Cash app,5,2.0,2022-07-19 7:46:26,United States,Washington,LarpersTrove.com,1055,Y,
+8148,994,Themaru Ngea,87,Sledgehammer,Gear,Cash app,5,2.0,2022-07-19 07:46:26,United States,Washington,LarpersTrove.com,1055,Y,
 8149,662,Ourero Fitufe,25,Dart,Weapons,Souls of my Enemys,4,0.5,2022-08-09 06:57:06,United States,Brooklyn,Etsy.com,1039,N,Insuffecient Souls
 8150,559,Itedensth Nensony,44,Warhammer,Weapons,Venmo,2,15.0,2022-05-28 05:00:48,China,Xinyang,yeoldestore.com,999,Y,
 8151,685,Cen Engr,4,Hide,Armor,Google pay,8,10.0,2022-04-25 07:36:29,United States,Los Angeles,yeoldestore.com,1019,N,Insuffecient Funds
@@ -7211,7 +7211,7 @@
 8290,103,Thendal Ceenifobu,23,Spear,Weapons,Apple pay,2,10.0,2022-01-02 02:41:08,China,Sanzhou,Walmart.com,1039,N,Payment site timed out
 8291,170,Inticavea Inoni,28,Battleaxe,Weapons,Venmo,4,10.0,2022-04-17 06:17:23,Iran,Tehran,Blacksmithery.com,1013,Y,
 8292,543,Nineno Antedreran,58,Crystal (Arcane Focus),Gear,Venmo,8,10.0,2022-04-24 04:19:12,Brazil,Rio de Janeiro,LarpersTrove.com,1014,N,Insuffecient Funds
-8293,189,Sante Fremme,68,Bucket,Gear,Google pay,5,1.5,2022-02-15 4:53:21,Congo (Kinshasa),Kinshasa,Walmart.com,1042,N,Payment site timed out
+8293,189,Sante Fremme,68,Bucket,Gear,Google pay,5,1.5,2022-02-15 04:53:21,Congo (Kinshasa),Kinshasa,Walmart.com,1042,N,Payment site timed out
 8294,153,Telinsc Ter,86,Hammer,Gear,Paypal,7,1.0,2022-08-08 20:52:31,India,Delhi,Blacksmithery.com,1015,Y,
 8295,739,Ldem Ino,87,Sledgehammer,Gear,Cash app,8,2.0,2022-07-21 13:41:44,China,Xianyang,Amazon.com,1071,N,Insuffecient Funds
 8296,940,Wionincu Precofis,44,Warhammer,Weapons,Credit Card,10,15.0,2022-03-21 14:24:11,United States,San Francisco,yeoldestore.com,997,Y,
@@ -7432,7 +7432,7 @@
 8543,521,Uiv Aro,100,Oil (Flask),Gear,Souls of my Enemys,3,1.0,2022-05-10 17:03:13,United States,Miami,Walmart.com,1087,N,Insuffecient Souls
 8544,17,Verthe Lind,74,Climber's Kit,Gear,Google pay,10,25.0,2022-01-12 07:05:52,United States,New York,Amazon.com,1073,Y,
 8545,333,Keseng Onofo,95,Ink (1 ounce bottle),Gear,Venmo,8,1.0,2022-02-05 21:09:25,China,Dazhou,Etsy.com,1043,Y,
-8546,860,Rusedinde Sanghiss,48,Heavy Crossbow,Weapons,Google pay,7,50.0,2022-06-23 0:16:50,zalaysia,Kuala Lumpur,Hardhat.com,1074,Y,
+8546,860,Rusedinde Sanghiss,48,Heavy Crossbow,Weapons,Google pay,7,50.0,2022-06-23 20:16:50,zalaysia,Kuala Lumpur,Hardhat.com,1074,Y,
 8547,468,Atikse Thevededi,88,Healer's Kit,Gear,Apple pay,7,5.0,2022-02-01 00:06:26,China,Xingtai,Amazon.com,1076,Y,
 8548,495,Hinofs Angeof,109,Waterskin,Gear,Apple pay,10,2.0,2022-02-25 14:40:15,Japan,Ōsaka,yeoldestore.com,1077,N,Payment site timed out
 8550,285,Hoth Ypiorymp,101,Basic Poison (Vial),Gear,Google pay,3,100.0,2022-01-13 04:46:47,United States,Dallas,Walmart.com,1075,Y,
@@ -7600,7 +7600,7 @@
 8732,551,Foflat Fut,35,Longsword,Weapons,Apple pay,10,15.0,2022-05-04 03:31:41,India,Kolkāta,Amazon.com,1098,Y,
 8733,961,Oulinym Crgour,51,Acid (vial),Gear,Apple pay,7,25.0,2022-04-20 00:48:27,Iran,Tehran,Amazon.com,1099,Y,
 8734,311,Prede Myonisi,81,Sprig of Mistletoe (Druidic Focus),Gear,Credit Card,10,1.0,2022-06-21 01:51:36,Argentina,Buenos Aires,Amazon.com,1045,N,Card Type Not Supported
-8736,420,Bendonel Tovabo,58,Crystal (Arcane Focus),Gear,Credit Card,3,10.0,2022-03-22 6:42:10,China,Shanghai,yeoldestore.com,1046,N,Card reported stolen
+8736,420,Bendonel Tovabo,58,Crystal (Arcane Focus),Gear,Credit Card,3,10.0,2022-03-22 06:42:10,China,Shanghai,yeoldestore.com,1046,N,Card reported stolen
 8737,832,Ioatitop Theden,85,Grappling Hook,Gear,Gift card,9,2.0,2022-02-04 19:01:47,United States,New York,LarpersTrove.com,1116,Y,
 8738,482,Jupedeyof Cesilr,20,Mace,Weapons,Paypal,1,5.0,2022-03-30 18:44:43,China,Xinpu,Hardhat.com,1068,N,Payment site timed out
 8739,147,Toubl Gura,22,Sickle,Weapons,Souls of my Enemys,5,1.0,2022-07-03 16:22:30,Japan,Tokyo,yeoldestore.com,1109,Y,
@@ -8636,7 +8636,7 @@
 9950,278,Inesffi Oulfew,81,Sprig of Mistletoe (Druidic Focus),Gear,Gift card,7,1.0,2022-05-17 09:28:01,Japan,Tokyo,Walmart.com,1265,Y,
 9951,404,Sanyodde Mpre,30,Glaive,Weapons,Paypal,7,200.0,2022-08-04 03:31:38,China,Bengbu,yeoldestore.com,1213,N,Insuffecient Funds
 9952,748,Ctheg Ofeato,24,Light Crossbow,Weapons,Google pay,2,25.0,2022-04-21 13:44:20,United States,New York,Amazon.com,1250,N,Payment site timed out
-9953,444,Want Ouathypu,21,Quarterstaff,Weapons,Paypal,7,2.0,2022-01-08 4:57:01,India,Hyderābād,yeoldestore.com,1214,Y,
+9953,444,Want Ouathypu,21,Quarterstaff,Weapons,Paypal,7,2.0,2022-01-08 04:57:01,India,Hyderābād,yeoldestore.com,1214,Y,
 9954,888,Mec Mmise,28,Battleaxe,Weapons,Souls of my Enemys,5,10.0,2022-07-16 02:57:36,China,Heze,Blacksmithery.com,1258,N,Insuffecient Souls
 9955,530,Ipparen Lanofofer,68,Bucket,Gear,Souls of my Enemys,2,1.5,2022-06-26 05:27:06,China,Shanghai,Walmart.com,1259,Y,
 9956,417,Okeaving Ricon,46,Blowgun,Weapons,Paypal,2,10.0,2022-06-24 19:53:09,Kuwait,Kuwait City,yeoldestore.com,1215,Y,
@@ -8753,7 +8753,7 @@
 10077,640,Souagaj Terdi,106,Spellbook,Gear,Credit Card,4,50.0,2022-03-09 21:11:39,China,Shenyang,LarpersTrove.com,1217,N,Insuffecient Funds
 10078,689,Rurastala Ith,98,Bullseye Lantern,Gear,Cash app,1,10.0,2022-04-02 21:00:17,Sudan,Khartoum,Amazon.com,1289,Y,
 10079,382,Tyges Wheleni,59,Orb (Arcane Focus),Gear,Google pay,9,20.0,2022-04-19 14:05:43,China,Taizhou,Hardhat.com,1266,Y,
-10080,343,Abli Medur,51,Acid (vial),Gear,Souls of my Enemys,10,25.0,2022-01-31 5:35:10,United States,Los Angeles,Amazon.com,1267,N,Insuffecient Souls
+10080,343,Abli Medur,51,Acid (vial),Gear,Souls of my Enemys,10,25.0,2022-01-31 05:35:10,United States,Los Angeles,Amazon.com,1267,N,Insuffecient Souls
 10081,579,Isesuseeam Mansher,5,Chain Shirt,Armor,Paypal,2,50.0,2022-06-07 20:48:48,Egypt,Cairo,Etsy.com,1230,Y,
 10082,258,Ofesa Ayoren,13,Shield,Armor,Credit Card,2,10.0,2022-05-31 17:08:24,China,Shangrao,yeoldestore.com,1218,Y,
 10083,779,Thise Grdil,8,Half Plate,Armor,Apple pay,8,750.0,2022-05-22 07:55:25,United States,Pittsburgh,yeoldestore.com,1280,Y,
@@ -9893,14 +9893,14 @@
 11359,124,Surrsur Rdurt,3,Studded Leather,Armor,Google pay,10,45.0,2022-06-09 04:48:51,Saudi Arabia,Jeddah,yeoldestore.com,1398,Y,
 11360,784,Ctomitoor Ist,74,Climber's Kit,Gear,Google pay,9,25.0,2022-06-05 00:26:42,India,Delhi,Amazon.com,1399,Y,
 11361,933,Dinitis Taneanc,57,Antitoxin (vial),Gear,Credit Card,7,50.0,2022-05-13 12:09:08,China,Anshan,Amazon.com,1384,Y,
-11362,263,Pidec Evexug,23,Spear,Weapons,Gift card,3,10.0,2022-07-19 2:30:22,India,Allahābād,Hardhat.com,1458,N,Failed to Authenticate buyer
+11362,263,Pidec Evexug,23,Spear,Weapons,Gift card,3,10.0,2022-07-19 02:30:22,India,Allahābād,Hardhat.com,1458,N,Failed to Authenticate buyer
 11363,315,Thersi Ong,105,Rope (50 ft),Gear,Credit Card,3,10.0,2022-06-25 22:35:34,India,Delhi,yeoldestore.com,1385,N,Incorrect CCV
 11364,31,Wisiripp Hndivisod,27,Sling,Weapons,Google pay,1,1.0,2022-05-12 11:57:44,Japan,Tokyo,Blacksmithery.com,1400,N,Payment site timed out
 11366,981,Ddedendul Astathangi_i,9,Ring Mail,Armor,Credit Card,6,30.0,2022-08-06 10:47:07,Kazakhstan,Nur-Sultan,LarpersTrove.com,1386,Y,
 11367,694,Rdele Tygor,23,Spear,Weapons,Apple pay,7,10.0,2022-08-05 09:27:09,United States,New York,yeoldestore.com,1435,N,Insuffecient Funds
 11368,301,Calas Smexur,10,Chain Mail,Armor,Apple pay,7,75.0,2022-04-06 16:29:18,United States,Los Angeles,Etsy.com,1436,Y,
 11369,269,Ene Tis,72,Chalk (10 piece),Gear,Souls of my Enemys,8,1.0,2022-02-09 05:11:35,China,Taizhou,Etsy.com,1430,Y,
-11370,62,Yoco Ppopi,32,Greatsword,Weapons,Google pay,2,50.0,2022-06-17 1:47:45,China,Yiyang,LarpersTrove.com,1402,N,Insuffecient Funds
+11370,62,Yoco Ppopi,32,Greatsword,Weapons,Google pay,2,50.0,2022-06-17 21:47:45,China,Yiyang,LarpersTrove.com,1402,N,Insuffecient Funds
 11372,818,Bof Teth,67,Glass Bottle,Gear,Google pay,2,2.0,2022-04-14 05:41:45,India,Delhi,Blacksmithery.com,1403,N,Payment site timed out
 11374,87,Nvaneret Weroug,28,Battleaxe,Weapons,Venmo,2,10.0,2022-02-27 12:09:29,United States,Minneapolis,Walmart.com,1417,Y,None
 11375,411,Borit Mophect,4,Hide,Armor,Apple pay,3,10.0,2022-04-17 08:39:12,United States,New York,Etsy.com,1438,N,Insuffecient Funds
@@ -9933,7 +9933,7 @@
 11405,45,Wegesctofo Thead,72,Chalk (10 piece),Gear,Google pay,8,1.0,2022-06-08 05:34:05,Mexico,Mexico City,yeoldestore.com,1406,Y,
 11407,439,Mperunass Ssolyod,15,Dagger,Weapons,Apple pay,3,2.0,2022-06-18 15:55:03,India,Delhi,Walmart.com,1442,N,Payment site timed out
 11408,586,Qusofonte Tticrsheno,62,Wand (Arcane Focus),Gear,Google pay,7,10.0,2022-06-12 19:09:47,China,Guangzhou,Etsy.com,1407,Y,
-11409,678,Tindg Tenc,75,Common Clothes,Gear,Souls of my Enemys,3,5.0,2022-03-17 3:38:10,Japan,Tokyo,yeoldestore.com,1436,Y,
+11409,678,Tindg Tenc,75,Common Clothes,Gear,Souls of my Enemys,3,5.0,2022-03-17 13:38:10,Japan,Tokyo,yeoldestore.com,1436,Y,
 11410,609,Pterupi Ehengho,49,Longbow,Weapons,Google pay,1,50.0,2022-01-19 11:07:50,Indonesia,Jakarta,LarpersTrove.com,1408,N,Payment site timed out
 11411,8,Dlorenouc Offa,105,Rope (50 ft),Gear,Souls of my Enemys,4,10.0,2022-05-03 12:40:52,Japan,Tokyo,Blacksmithery.com,1437,Y,
 11412,212,Fongns Want,8,Half Plate,Armor,Apple pay,8,750.0,2022-07-28 21:07:14,Japan,Ōsaka,Etsy.com,1443,Y,
@@ -10052,7 +10052,7 @@
 11536,977,Jeryovo Tiav,79,Component Pouch,Gear,Souls of my Enemys,7,25.0,2022-04-02 13:48:37,United States,New York,Amazon.com,1456,Y,
 11537,326,Dssim Giemp,63,Backpack,Gear,Cash app,6,20.0,2022-08-16 07:02:40,United States,Atlanta,Walmart.com,1467,Y,
 11538,215,Intyofac Astired,47,Hand Crossbow,Weapons,Venmo,9,75.0,2022-03-05 01:59:53,China,Guangzhou,Etsy.com,1441,Y,
-11539,762,Bjulouegss Isidup,14,Club,Weapons,Apple pay,8,1.0,2022-05-10 2:35:26,United States,New York,Hardhat.com,1462,N,Insuffecient Funds
+11539,762,Bjulouegss Isidup,14,Club,Weapons,Apple pay,8,1.0,2022-05-10 22:35:26,United States,New York,Hardhat.com,1462,N,Insuffecient Funds
 11540,775,Asi Cieclede,18,Javelin,Weapons,Credit Card,1,5.0,2022-05-08 00:53:13,China,Beijing,Etsy.com,1406,Y,
 11541,448,Nfecen Tietural,28,Battleaxe,Weapons,Paypal,2,10.0,2022-02-15 17:18:55,United States,Philadelphia,LarpersTrove.com,1409,Y,
 11542,737,Ferincu Distia,25,Dart,Weapons,Cash app,7,0.5,2022-03-13 01:24:16,United States,Washington,LarpersTrove.com,1468,N,Insuffecient Funds
@@ -10188,7 +10188,7 @@
 11691,99,Wieurreee Ivident,10,Chain Mail,Armor,Cash app,5,75.0,2022-03-12 08:46:46,China,Yuncheng,Blacksmithery.com,1483,N,Payment site timed out
 11692,660,Teshessede Pla,104,Robes,Gear,Google pay,6,10.0,2022-08-10 11:55:27,Bangladesh,Dhaka,Blacksmithery.com,1445,N,Payment site timed out
 11693,651,Mameto Feyecang,51,Acid (vial),Gear,Google pay,7,25.0,2022-04-25 22:33:42,Thailand,Bangkok,LarpersTrove.com,1446,Y,
-11694,288,Anofon Itowofob,79,Component Pouch,Gear,Gift card,1,25.0,2022-06-29 8:00:31,United States,Boston,Etsy.com,1480,Y,
+11694,288,Anofon Itowofob,79,Component Pouch,Gear,Gift card,1,25.0,2022-06-29 08:00:31,United States,Boston,Etsy.com,1480,Y,
 11695,679,Fia Athen,86,Hammer,Gear,Apple pay,1,1.0,2022-02-23 08:50:06,Brazil,São Paulo,Hardhat.com,1478,N,Insuffecient Funds
 11696,699,Sevet Wena,11,Splint,Armor,Google pay,10,200.0,2022-04-05 02:28:16,Brazil,Belém,Walmart.com,1447,Y,
 11697,429,Alvav Randabursc,73,Chest,Gear,Gift card,7,5.0,2022-04-10 11:13:47,Mexico,Mexico City,Hardhat.com,1481,N,Payment site timed out
@@ -10390,7 +10390,7 @@
 11921,813,Thever Theaco,23,Spear,Weapons,Gift card,6,10.0,2022-07-10 17:30:07,United States,New York,LarpersTrove.com,1509,N,Insuffecient Funds
 11922,393,Ict Ichec,24,Light Crossbow,Weapons,Paypal,3,25.0,2022-03-25 21:06:07,China,Jieyang,Amazon.com,1454,Y,
 11923,37,Aravendeex Enghe,44,Warhammer,Weapons,Paypal,3,15.0,2022-04-17 20:07:40,United States,Los Angeles,Amazon.com,1455,Y,
-11924,578,Esim Mesin,67,Glass Bottle,Gear,Cash app,2,2.0,2022-03-04 7:47:28,United States,New York,LarpersTrove.com,1518,Y,
+11924,578,Esim Mesin,67,Glass Bottle,Gear,Cash app,2,2.0,2022-03-04 07:47:28,United States,New York,LarpersTrove.com,1518,Y,
 11925,376,Padirend Okelan,6,Scale Mail,Armor,Gift card,1,50.0,2022-03-31 10:09:38,China,Handan,Etsy.com,1510,N,Failed to Authenticate buyer
 11927,362,Witste Mpla,7,Breastplate,Armor,Cash app,7,400.0,2022-04-19 11:10:21,United States,Dallas,LarpersTrove.com,1519,N,Failed to Authenticate buyer
 11928,822,Tats Theal,57,Antitoxin (vial),Gear,Paypal,8,50.0,2022-07-09 07:53:12,China,Zhoukou,Walmart.com,1456,Y,
@@ -10604,7 +10604,7 @@
 12167,501,Alyso Thatonitr,39,Rapier,Weapons,Gift card,10,25.0,2022-06-05 21:18:47,Egypt,Cairo,Walmart.com,1539,Y,
 12169,382,Tyges Wheleni,11,Splint,Armor,Souls of my Enemys,2,200.0,2022-04-20 04:45:01,China,Taizhou,Amazon.com,1522,N,Soul type not excepted
 12170,636,Onmov Frec,82,Totem (Druidic Focus),Gear,Cash app,7,1.0,2022-07-24 10:23:05,Vietnam,Cần Thơ,Etsy.com,1548,Y,
-12171,824,Tarandur Thexe,5,Chain Shirt,Armor,Google pay,4,50.0,2022-03-17 7:54:59,United States,Los Angeles,Walmart.com,1518,Y,
+12171,824,Tarandur Thexe,5,Chain Shirt,Armor,Google pay,4,50.0,2022-03-17 07:54:59,United States,Los Angeles,Walmart.com,1518,Y,
 12172,107,Thatwati Clidan,9,Ring Mail,Armor,Venmo,3,30.0,2022-07-23 15:32:45,Bangladesh,Dhaka,Blacksmithery.com,1524,Y,
 12173,576,Towante Wommu,57,Antitoxin (vial),Gear,Google pay,1,50.0,2022-02-02 07:26:51,Turkey,Istanbul,Walmart.com,1519,N,Payment site timed out
 12174,69,Sen Ppprcr,10,Chain Mail,Armor,Paypal,1,75.0,2022-08-08 05:03:33,United States,Los Angeles,yeoldestore.com,1492,Y,
@@ -10644,7 +10644,7 @@
 12210,456,Nente Sonoreto,26,Shortbow,Weapons,Souls of my Enemys,8,25.0,2022-07-09 05:40:23,United States,Seattle,Amazon.com,1527,N,Insuffecient Souls
 12211,912,Duemes Cefon,61,Staff (Arcane Focus),Gear,Apple pay,9,5.0,2022-07-11 19:17:39,Philippines,Manila,Etsy.com,1547,Y,
 12212,850,Agedow Thonest,49,Longbow,Weapons,Gift card,8,50.0,2022-03-05 15:52:13,China,Guangzhou,Walmart.com,1545,Y,
-12213,409,Fik Thexa,16,Greatclub,Weapons,Venmo,8,2.0,2022-06-04 0:27:43,Iran,Tehran,Etsy.com,1528,N,Failed to Authenticate buyer
+12213,409,Fik Thexa,16,Greatclub,Weapons,Venmo,8,2.0,2022-06-04 20:27:43,Iran,Tehran,Etsy.com,1528,N,Failed to Authenticate buyer
 12214,875,Oncee Gasedo,71,Chain (10 ft),Gear,Souls of my Enemys,4,5.0,2022-02-24 14:53:31,United States,New York,Hardhat.com,1528,Y,
 12216,294,Ampic Pssuthi,69,Caltrops (20),Gear,Google pay,4,10.0,2022-07-02 09:02:36,United States,New York,yeoldestore.com,1527,Y,
 12217,230,Phiateal Orer,47,Hand Crossbow,Weapons,Cash app,6,75.0,2022-05-25 00:31:54,Mongolia,Ulaanbaatar,Blacksmithery.com,1553,Y,
@@ -10663,7 +10663,7 @@
 12230,3,Syowilse Armabrer,59,Orb (Arcane Focus),Gear,Souls of my Enemys,10,20.0,2022-07-10 09:50:05,China,Zhanjiang,LarpersTrove.com,1530,N,Soul type not excepted
 12231,174,Thendarppa Pechar,57,Antitoxin (vial),Gear,Souls of my Enemys,5,50.0,2022-02-28 21:19:38,China,Beijing,Hardhat.com,1531,N,What is this; Why is it screaming
 12232,625,Sowomedo Couas,87,Sledgehammer,Gear,Venmo,9,2.0,2022-01-28 03:41:06,United States,New York,LarpersTrove.com,1530,N,Payment site timed out
-12233,166,Heri Supith,5,Chain Shirt,Armor,Souls of my Enemys,1,50.0,2022-05-24 3:09:40,Malaysia,Kuala Lumpur,Blacksmithery.com,1532,N,What is this; Why is it screaming
+12233,166,Heri Supith,5,Chain Shirt,Armor,Souls of my Enemys,1,50.0,2022-05-24 13:09:40,Malaysia,Kuala Lumpur,Blacksmithery.com,1532,N,What is this; Why is it screaming
 12234,41,Hepee Rrbepoe,73,Chest,Gear,Venmo,6,5.0,2022-02-03 00:38:36,China,Baoding,Etsy.com,1531,Y,
 12235,925,Per Giceve,81,Sprig of Mistletoe (Druidic Focus),Gear,Gift card,4,1.0,2022-04-02 02:29:28,China,Suzhou,Amazon.com,1546,N,Payment site timed out
 12236,568,Tichieryo Mis,47,Hand Crossbow,Weapons,Google pay,8,75.0,2022-04-24 12:19:22,United States,New York,Hardhat.com,1530,Y,
@@ -10978,7 +10978,7 @@
 12588,227,Hencirme Asthe,10,Chain Mail,Armor,Apple pay,6,75.0,2022-04-08 12:44:54,Kazakhstan,Almaty,yeoldestore.com,1596,N,Insuffecient Funds
 12589,118,Ikigave Sthatrthen,59,Orb (Arcane Focus),Gear,Venmo,3,20.0,2022-01-13 11:53:53,United States,New York,Etsy.com,1573,N,Insuffecient Funds
 12590,638,Vetin Obbmed,58,Crystal (Arcane Focus),Gear,Cash app,9,10.0,2022-05-12 09:40:52,Turkey,Istanbul,Blacksmithery.com,1596,N,Insuffecient Funds
-12591,196,Ctyod Theeacoub,18,Javelin,Weapons,Apple pay,3,5.0,2022-02-08 0:10:54,China,Shenzhen,LarpersTrove.com,1597,N,Insuffecient Funds
+12591,196,Ctyod Theeacoub,18,Javelin,Weapons,Apple pay,3,5.0,2022-02-08 10:10:54,China,Shenzhen,LarpersTrove.com,1597,N,Insuffecient Funds
 12592,993,Onso Mos,4,Hide,Armor,Gift card,5,10.0,2022-03-31 12:09:21,Philippines,Manila,Etsy.com,1590,N,Payment site timed out
 12593,76,Timaris Eeingiof,6,Scale Mail,Armor,Paypal,3,50.0,2022-05-16 11:50:14,Brazil,Rio de Janeiro,Walmart.com,1550,Y,
 12595,286,Femered Con,51,Acid (vial),Gear,Apple pay,1,25.0,2022-08-16 20:23:17,Japan,Tokyo,Hardhat.com,1598,Y,
@@ -11033,7 +11033,7 @@
 12655,504,Weppu Witlysale,75,Common Clothes,Gear,Credit Card,4,5.0,2022-07-07 00:49:54,United States,Chicago,yeoldestore.com,1547,Y,
 12656,209,Tiemou Ryoryori,48,Heavy Crossbow,Weapons,Google pay,9,50.0,2022-07-19 02:37:48,United States,New York,Amazon.com,1579,N,Failed to Authenticate buyer
 12658,136,Ingui Scons,79,Component Pouch,Gear,Paypal,7,25.0,2022-02-21 02:47:11,United States,Houston,LarpersTrove.com,1554,Y,
-12659,672,Hino Hecondero,7,Breastplate,Armor,Google pay,1,400.0,2022-04-22 2:57:12,Bolivia,Santa Cruz,Blacksmithery.com,1580,N,Insuffecient Funds
+12659,672,Hino Hecondero,7,Breastplate,Armor,Google pay,1,400.0,2022-04-22 22:57:12,Bolivia,Santa Cruz,Blacksmithery.com,1580,N,Insuffecient Funds
 12660,835,Leverchi Pofofuner,103,Rations (1 day),Gear,Souls of my Enemys,3,5.0,2022-02-19 14:39:37,United States,New York,Etsy.com,1582,N,None
 12661,943,Vem Tre,79,Component Pouch,Gear,Credit Card,6,25.0,2022-02-15 12:22:15,United States,New York,Blacksmithery.com,1549,Y,
 12662,381,Foft Cea,43,War Pick,Weapons,Venmo,8,5.0,2022-03-30 18:54:14,United States,Philadelphia,LarpersTrove.com,1584,N,Payment site timed out
@@ -11064,7 +11064,7 @@
 12691,607,Teic Thuld,12,Plate,Armor,Google pay,1,1500.0,2022-01-13 15:46:08,United States,New York,Etsy.com,1584,Y,
 12692,403,Cerfr Ishino,17,Handaxe,Weapons,Souls of my Enemys,2,5.0,2022-08-13 20:13:51,Congo (Kinshasa),Kinshasa,Etsy.com,1587,Y,
 12693,27,Finc Miti,73,Chest,Gear,Credit Card,7,5.0,2022-02-15 11:43:14,China,Shenzhen,Hardhat.com,1553,Y,
-12694,391,Ithens Tsinc,21,Quarterstaff,Weapons,Venmo,1,2.0,2022-07-18 9:40:46,China,Nanchang,Etsy.com,1589,Y,
+12694,391,Ithens Tsinc,21,Quarterstaff,Weapons,Venmo,1,2.0,2022-07-18 19:40:46,China,Nanchang,Etsy.com,1589,Y,
 12695,935,Ishe Coti,4,Hide,Armor,Credit Card,2,10.0,2022-03-25 01:53:47,Pakistan,Karachi,Blacksmithery.com,1554,N,Insuffecient Funds
 12697,353,Yimede Nfrengent,58,Crystal (Arcane Focus),Gear,Google pay,7,10.0,2022-03-07 13:34:03,United States,New York,yeoldestore.com,1586,N,Insuffecient Funds
 12698,386,Asif Aypredan,40,Scimitar,Weapons,Apple pay,5,25.0,2022-03-27 12:58:09,United States,New York,Etsy.com,1605,Y,
@@ -11681,7 +11681,7 @@
 13408,715,Athesee Setp,79,Component Pouch,Gear,Souls of my Enemys,2,25.0,2022-02-01 03:58:07,Thailand,Bangkok,Etsy.com,1675,Y,
 13409,978,Angessth Angh,78,Traveler's Clothes,Gear,Gift card,7,20.0,2022-07-03 01:02:09,Brazil,São Paulo,Blacksmithery.com,1691,N,Insuffecient Funds
 13410,214,Satel Ryoffrayn,73,Chest,Gear,Souls of my Enemys,3,5.0,2022-06-07 19:31:06,United States,New York,LarpersTrove.com,1676,Y,
-13411,950,Pilaldvin Aruander,61,Staff (Arcane Focus),Gear,Google pay,5,5.0,2022-04-14 0:18:22,United States,Miami,Walmart.com,1669,Y,
+13411,950,Pilaldvin Aruander,61,Staff (Arcane Focus),Gear,Google pay,5,5.0,2022-04-14 00:18:22,United States,Miami,Walmart.com,1669,Y,
 13412,897,Ichervem Thwectsed,63,Backpack,Gear,Paypal,10,20.0,2022-07-20 18:53:16,Japan,Tokyo,Blacksmithery.com,1663,N,Failed to Authenticate buyer
 13413,31,Wisiripp Hndivisod,100,Oil (Flask),Gear,Paypal,7,1.0,2022-01-07 20:34:04,Japan,Tokyo,Blacksmithery.com,1664,Y,
 13414,435,Ivaronea Ofionyl,14,Club,Weapons,Credit Card,1,1.0,2022-05-07 22:41:28,India,Mumbai,Etsy.com,1661,N,Insuffecient Funds
@@ -11725,7 +11725,7 @@
 13461,142,Dsem Reprathd,72,Chalk (10 piece),Gear,Credit Card,9,1.0,2022-01-07 10:09:19,South Korea,Seoul,LarpersTrove.com,1665,Y,
 13462,650,Andathero Thesu,99,Hooded Lantern,Gear,Google pay,10,5.0,2022-03-27 21:43:38,India,Pune,Amazon.com,1675,Y,
 13463,215,Intyofac Astired,54,Blowgun Needles (50),Gear,Google pay,6,10.0,2022-07-14 00:51:05,China,Guangzhou,Amazon.com,1676,N,Insuffecient Funds
-13464,627,Medsesen Batr,38,Pike,Weapons,Venmo,3,5.0,2022-03-01 7:47:22,Argentina,Buenos Aires,Walmart.com,1669,Y,
+13464,627,Medsesen Batr,38,Pike,Weapons,Venmo,3,5.0,2022-03-01 17:47:22,Argentina,Buenos Aires,Walmart.com,1669,Y,
 13465,744,Conges Mungec,96,Ink Pen,Gear,Venmo,3,0.2,2022-04-08 11:03:41,India,Delhi,yeoldestore.com,1670,N,Failed to Authenticate buyer
 13466,785,Ronss Reyipha,42,Trident,Weapons,Apple pay,9,5.0,2022-07-31 07:11:27,United States,Portland,Walmart.com,1701,N,Insuffecient Funds
 13467,848,Concl Ronu,67,Glass Bottle,Gear,Credit Card,6,2.0,2022-03-15 16:37:25,Egypt,Cairo,Amazon.com,1666,N,Incorrect CCV
@@ -11999,7 +11999,7 @@
 13772,237,Thewhinsar Bofer,48,Heavy Crossbow,Weapons,Paypal,5,50.0,2022-08-02 18:40:13,United States,Los Angeles,Hardhat.com,1707,N,Insuffecient Funds
 13773,719,Gmero Agise,19,Light Hammer,Weapons,Souls of my Enemys,10,2.0,2022-07-22 02:44:25,India,Guwāhāti,LarpersTrove.com,1725,N,Soul type not excepted
 13774,404,Sanyodde Mpre,2,Leather,Armor,Apple pay,8,10.0,2022-07-23 05:45:44,China,Bengbu,Blacksmithery.com,1745,N,Insuffecient Funds
-13775,458,Frali Dinu,11,Splint,Armor,Credit Card,9,200.0,2022-07-22 9:23:55,United States,New York,yeoldestore.com,1713,Y,
+13775,458,Frali Dinu,11,Splint,Armor,Credit Card,9,200.0,2022-07-22 19:23:55,United States,New York,yeoldestore.com,1713,Y,
 13776,717,Dsese Hedems,36,Maul,Weapons,Souls of my Enemys,4,10.0,2022-01-26 19:22:27,Kenya,Nairobi,yeoldestore.com,1726,Y,
 13777,908,Nmur Iory,73,Chest,Gear,Venmo,9,5.0,2022-07-11 21:38:24,Pakistan,Lahore,Amazon.com,1714,N,Payment site timed out
 13778,853,Avealeds Lorvesth,30,Glaive,Weapons,Paypal,8,200.0,2022-06-08 21:42:48,United States,Los Angeles,LarpersTrove.com,1708,Y,
@@ -12351,7 +12351,7 @@
 14184,543,Nineno Antedreran,40,Scimitar,Weapons,Gift card,1,25.0,2022-04-23 10:09:07,Brazil,Rio de Janeiro,Blacksmithery.com,1784,N,Insuffecient Funds
 14186,307,Bogisi Vesil,31,Greataxe,Weapons,Paypal,2,50.0,2022-05-14 02:21:22,China,Jiangguanchi,Amazon.com,1762,Y,
 14187,893,Wheredin Inudi,86,Hammer,Gear,Venmo,8,1.0,2022-05-28 07:42:16,China,Guangzhou,yeoldestore.com,1774,N,Payment site timed out
-14188,587,Mpib Anmucev,107,Torch,Gear,Cash app,2,1.0,2022-06-03 8:57:54,United States,Atlanta,Amazon.com,1767,N,Failed to Authenticate buyer
+14188,587,Mpib Anmucev,107,Torch,Gear,Cash app,2,1.0,2022-06-03 08:57:54,United States,Atlanta,Amazon.com,1767,N,Failed to Authenticate buyer
 14189,853,Avealeds Lorvesth,32,Greatsword,Weapons,Paypal,3,50.0,2022-06-23 08:14:28,United States,Los Angeles,Hardhat.com,1763,Y,
 14190,561,Ickri Sofo,10,Chain Mail,Armor,Cash app,7,75.0,2022-04-22 16:42:59,United States,New York,Amazon.com,1768,Y,
 14192,518,Travast Tenn,108,Vial,Gear,Gift card,1,1.0,2022-07-26 12:31:04,Indonesia,Jakarta,Etsy.com,1785,Y,
@@ -12525,7 +12525,7 @@
 14385,38,Iveios Esthalisu,61,Staff (Arcane Focus),Gear,Paypal,9,5.0,2022-06-20 15:11:06,United States,Boston,Etsy.com,1796,Y,
 14388,814,Wir Nddcra,21,Quarterstaff,Weapons,Paypal,5,2.0,2022-04-07 14:54:38,Japan,Tokyo,Blacksmithery.com,1797,N,Insuffecient Funds
 14389,556,Oft Al~lor,72,Chalk (10 piece),Gear,Gift card,7,1.0,2022-04-02 19:30:11,China,Beijing,Etsy.com,1817,N,Failed to Authenticate buyer
-14390,877,Ains Cluappa,39,Rapier,Weapons,Apple pay,1,25.0,2022-04-04 0:38:04,United States,New York,yeoldestore.com,1814,Y,
+14390,877,Ains Cluappa,39,Rapier,Weapons,Apple pay,1,25.0,2022-04-04 10:38:04,United States,New York,yeoldestore.com,1814,Y,
 14391,815,Nsimpu Weeling,89,Amulet (Holy Symbol),Gear,Venmo,10,5.0,2022-01-01 21:18:02,China,Suqian,Walmart.com,1793,N,Insuffecient Funds
 14392,232,Let Tesensin,12,Plate,Armor,Venmo,1,1500.0,2022-08-16 13:38:32,China,Zhanjiang,LarpersTrove.com,1794,N,Failed to Authenticate buyer
 14393,968,Eseste Gathen,35,Longsword,Weapons,Gift card,8,15.0,2022-03-12 11:06:37,Russia,Moscow,Etsy.com,1818,N,Failed to Authenticate buyer
@@ -12798,7 +12798,7 @@
 14708,45,Wegesctofo Thead,12,Plate,Armor,Venmo,5,1500.0,2022-04-15 03:43:23,Mexico,Mexico City,LarpersTrove.com,1845,Y,
 14709,372,Wimbes Tomauxtu,11,Splint,Armor,Souls of my Enemys,9,200.0,2022-02-24 08:11:31,India,Mumbai,Amazon.com,1829,Y,
 14710,644,Perc Dantha,12,Plate,Armor,Apple pay,3,1500.0,2022-07-17 15:39:10,United States,Boston,Walmart.com,1857,N,Insuffecient Funds
-14711,998,Wiseseiet Iffer,55,Crossbow Bolts (20),Gear,Souls of my Enemys,4,10.0,2022-08-13 7:13:22,United States,Philadelphia,Blacksmithery.com,1830,N,Insuffecient Souls
+14711,998,Wiseseiet Iffer,55,Crossbow Bolts (20),Gear,Souls of my Enemys,4,10.0,2022-08-13 17:13:22,United States,Philadelphia,Blacksmithery.com,1830,N,Insuffecient Souls
 14712,175,Uspy Flinti,38,Pike,Weapons,Souls of my Enemys,2,5.0,2022-01-03 10:15:19,United States,Boston,Walmart.com,1831,Y,
 14713,452,Ato Tin,76,Costume Clothes,Gear,Paypal,10,15.0,2022-08-07 01:15:14,India,Mumbai,Walmart.com,1838,N,Payment site timed out
 14714,582,And Cia,13,Shield,Armor,Credit Card,8,10.0,2022-06-15 04:05:13,China,Heze,Walmart.com,1835,Y,
@@ -12818,7 +12818,7 @@
 14730,256,Tinther Fornacusth,27,Sling,Weapons,Souls of my Enemys,4,1.0,2022-02-19 16:54:55,United States,Los Angeles,Hardhat.com,1832,Y,
 14731,509,Ingempp Teeetherta,54,Blowgun Needles (50),Gear,Gift card,2,10.0,2022-04-24 16:49:02,China,Cangzhou,Walmart.com,1850,Y,
 14732,313,Fudsth Aticofl,88,Healer's Kit,Gear,Gift card,2,5.0,2022-06-04 04:35:59,Japan,Yokohama,yeoldestore.com,1851,Y,
-14733,276,Isoua Foner,17,Handaxe,Weapons,Cash app,9,5.0,2022-01-04 8:21:49,China,Tianjin,Hardhat.com,1835,N,Failed to Authenticate buyer
+14733,276,Isoua Foner,17,Handaxe,Weapons,Cash app,9,5.0,2022-01-04 08:21:49,China,Tianjin,Hardhat.com,1835,N,Failed to Authenticate buyer
 14734,422,Geym Tunkine,1,Padded,Armor,Google pay,6,5.0,2022-04-16 03:37:34,China,Shangqiu,yeoldestore.com,1822,N,Insuffecient Funds
 14735,247,Iro Grio,9,Ring Mail,Armor,Cash app,9,30.0,2022-08-16 03:05:01,United States,New York,Amazon.com,1836,Y,
 14736,307,Bogisi Vesil,42,Trident,Weapons,Souls of my Enemys,2,5.0,2022-02-23 05:54:51,China,Jiangguanchi,LarpersTrove.com,1833,Y,
@@ -12972,7 +12972,7 @@
 14898,656,Hitov Tetrng,109,Waterskin,Gear,Credit Card,9,2.0,2022-04-22 22:32:39,Nigeria,Lagos,Etsy.com,1861,N,Failed to Authenticate buyer
 14899,3,Syowilse Armabrer,82,Totem (Druidic Focus),Gear,Souls of my Enemys,4,1.0,2022-02-19 09:31:58,China,Zhanjiang,LarpersTrove.com,1856,N,Soul type not excepted
 14900,762,Bjulouegss Isidup,45,Whip,Weapons,Souls of my Enemys,2,2.0,2022-06-01 01:15:42,United States,New York,Amazon.com,1857,Y,
-14901,544,Tlethue Anthenin,34,Lance,Weapons,Credit Card,7,10.0,2022-02-16 1:13:47,United States,Los Angeles,Amazon.com,1862,Y,
+14901,544,Tlethue Anthenin,34,Lance,Weapons,Credit Card,7,10.0,2022-02-16 01:13:47,United States,Los Angeles,Amazon.com,1862,Y,
 14902,218,Heeme Thes,16,Greatclub,Weapons,Credit Card,2,2.0,2022-05-12 09:26:08,China,Chongqing,Blacksmithery.com,1863,Y,
 14903,523,Oretiv Inothata,82,Totem (Druidic Focus),Gear,Venmo,2,1.0,2022-08-01 13:11:37,China,Guangzhou,LarpersTrove.com,1868,N,Insuffecient Funds
 14904,89,Curea Tengi,13,Shield,Armor,Paypal,4,10.0,2022-03-09 22:53:39,United States,Chicago,Amazon.com,1866,Y,

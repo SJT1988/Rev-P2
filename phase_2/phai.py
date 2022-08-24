@@ -1,3 +1,4 @@
+from os import lseek
 from xml.dom.minicompat import StringTypes
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, to_str, substring
@@ -77,6 +78,80 @@ count_by_country = spark.sql(
 #                                                                                  #
 ####################################################################################
 
+ListCountry_Correct = [
+    "Angola",
+    "Argentina",
+    "Australia",
+    "Austria",
+    "Bangladesh",
+    "Bolivia",
+    "Brazil",
+    "Cote d'Ivoire",
+    "Cote d'Ivoire",
+    "Canada",
+    "China",
+    "Chile",
+    "China",
+    "Colombia",
+    "Congo (Kinshasa)",
+    "Egypt",
+    "France",
+    "Greece",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Japan",
+    "Japan",
+    "Kazakhstan",
+    "Kenya",
+    "Kuwait",
+    "Malaysia",
+    "Mali",
+    "Mexico",
+    "Mongolia",
+    "Morocco",
+    "Nigeria",
+    "Philippines",
+    "Pakistan",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Russia",
+    "Russia",
+    "Saudi Arabia",
+    "Senegal",
+    "South Korea",
+    "Sudan",
+    "Tanzania",
+    "Thailand",
+    "Togo",
+    "Turkey",
+    "United Kingdom",
+    "United States",
+    "United States",
+    "Uzbekistan",
+    "Vietnam",
+    "Malaysia",
+]  # Borrowed from Jed hehe, you da mvp
+
+df_lst = []
+df_lst_2 = []
+for i in range(len(ListCountry_Correct)):
+    tmp_df = only_time.filter(data_df.country == f"{ListCountry_Correct[i]}")
+    tmp_view = tmp_df.createOrReplaceTempView("tmp_view")
+    tmp = spark.sql(
+        f"SELECT time, COUNT(time) AS cust FROM tmp_view GROUP BY time ORDER BY time ASC"
+    )
+    tmp_view_2 = tmp_df.createOrReplaceTempView("tmp_view_2")
+    tmp_2 = spark.sql(
+        "SELECT time, count_time FROM (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time) WHERE count_time = (SELECT MAX(count_time) FROM (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time))"
+    )
+    # df_lst.append(tmp)
+    # df_lst[i].show()
+    df_lst_2.append(tmp_2)
+    print("Busiest hour: ")
+    df_lst_2[i].show()
 
 
 # all = spark.sql("SELECT * FROM data")
@@ -84,7 +159,7 @@ count_by_country = spark.sql(
 # count.show()
 # highest_location_of_sales.show()
 # highest_time_of_sales.show()
-highest_time_of_sales_by_country.show(14999)
+# highest_time_of_sales_by_country.show(14999)
 # all.show()
-#all_countries.show(500)
+# all_countries.show(500)
 spark.stop()
