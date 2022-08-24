@@ -4,6 +4,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, to_str, substring
 from pyspark.sql.types import StringType
 
+#_filepath = 'file:/home/phai597/'
+_filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
 spark = SparkSession.builder.master("local").appName("data").getOrCreate()
 
 sc = spark.sparkContext
@@ -12,7 +14,7 @@ sc.setLogLevel("WARN")
 data_rdd = (
     spark.read.option("header", False)
     .option("inferSchema", False)
-    .csv("file:/home/phai597/no_null_casted_datetime_formatted.csv")
+    .csv(_filepath+"no_null_casted_datetime_formatted.csv")
 )
 
 data_df = data_rdd.toDF(
@@ -44,7 +46,8 @@ only_time = data_df.withColumn(
 
 only_time_2 = only_time.select(["time", "country"])  # For writing to file purposes
 
-# only_time_2.toPandas().to_csv('phai_test.csv') #COMMAND TO WRITE TO CSV!!!
+# only_time_2.toPandas().to_csv('phai_test.csv') #(deprecated?) COMMAND TO WRITE TO CSV!!!
+# only_time_2.write.csv(_filepath + 'phai_test') #COMMAND TO WRITE TO CSV!!!
 
 only_time_view = only_time.createOrReplaceTempView(
     "data_2"
@@ -53,7 +56,7 @@ only_time_view = only_time.createOrReplaceTempView(
 count = spark.sql("SELECT product_name, country FROM data ORDER BY country ASC")
 
 highest_location_of_sales = spark.sql(
-    "SELECT COUNT(product_name) AS sales, COUNTRY FROM data GROUP BY country ORDER BY sales DESC"
+    "SELECT COUNT(product_name) AS sales, country FROM data GROUP BY country ORDER BY sales DESC"
 )  # Attempt at number 1.
 
 

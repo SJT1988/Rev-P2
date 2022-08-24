@@ -67,5 +67,6 @@ rdd2 = data_df.rdd.map(lambda x :  (x['order_id'],x['customer_id'],x['customer_n
 
 
 
-rdd2.toPandas().to_csv(_filepath+'testing.csv', header= False, index = False)
-
+#rdd2.toPandas().to_csv(_filepath+'testing.csv', header= False, index = False)
+rdd2.write.csv(_filepath + 'testing')
+print("done")
