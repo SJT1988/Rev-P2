@@ -28,7 +28,8 @@ sc = spark.sparkContext
 root_path = 'file:/home/jed/'#'file:/home/khan5203/Rev-P2/'
 dir_path = ''#'phase_2/'
 filename = 'p2_Team1_Data.csv'
-filepath = root_path + dir_path + filename
+#filepath = root_path + dir_path + filename
+filepath = "file:/home/phai597/no_null_casted_datetime_formatted.csv" 
 
 # Ubuntu code:
 #def clear():
@@ -38,7 +39,7 @@ filepath = root_path + dir_path + filename
 #print('\n\n\n')
 def Read_Data_into_Spark_Instnace(filepath):
 
-    rdd1 = spark.read.option('header',False).option('inferSchema',True).csv(filepath)
+    rdd1 = spark.read.option('header',False).option('inferSchema',False).csv(filepath)
 
     df1 = rdd1.toDF("order_id","customer_id","customer_name","product_id","product_name","product_category", \
         "payment_type","qty","price","datetime","country","city","e_commerce_website_name","payment_tnx_id", \
@@ -168,15 +169,15 @@ def Read_Data_into_Spark_Instnace(filepath):
     #df['country'].apply(lambda x: get_most_similar(x, corrected_CountryNames)) # Maybe apply to someone else's cases?
     transformed = df_typecast.rdd.map(lambda x : (x["order_id"],x["customer_id"],x["customer_name"],x["product_id"], \
         x["product_name"],x["product_category"],x["payment_type"],x["qty"],x["price"],x["datetime"],get_most_similar(x["country"],corrected_CountryNames),\
-        x["city"],x["e_commerce_website_name"],x["payment_tnx_id"], x["payment_tnx_success"],x["failure_reason"])) 
+        x["city"],x["e_commerce_website_name"],x["payment_tnx_id"], x["payment_tnx_success"],x["failure_reason"])).toDF()
     # Note, for dataset, I found something called 'SequenceMatcher' from difflib. ratio() method for comparison rate of categories, could be helpful
     #print (transformed.collect())
     
-    final = transformed.toDF(["order_id","customer_id","customer_name","product_id","product_name","product_category", \
-        "payment_type","qty","price","datetime","country","city","e_commerce_website_name","payment_tnx_id", \
-        "payment_tnx_success","failure_reason"])
+#   final = transformed.toDF(["order_id","customer_id","customer_name","product_id","product_name","product_category", \
+#      "payment_type","qty","price","datetime","country","city","e_commerce_website_name","payment_tnx_id", \
+#     "payment_tnx_success","failure_reason"])
     
-    return final
+    return transformed
 
 def get_most_similar(word,wordlist):
      top_similarity = 0.0
@@ -256,6 +257,7 @@ def Transform_from_incomming_RDD(RDDin):
     
 def main():
     ReturnValue = Read_Data_into_Spark_Instnace(filepath)
+    ReturnValue.toPandas().to_csv("phase_2/final_data.csv", header= False, index = False)
     #print ("ret: ",ReturnValue.show(10))
 
 
