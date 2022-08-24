@@ -186,8 +186,8 @@ input_country_list=list(df['Country'])
 input_country_list=[element.upper() for element in input_country_list];
 def country_name_check():
 pycntrylst = list(countries)
-alpha_2 = []
-alpha_3 = []
+x = []
+y = []
 name = []
 common_name = []
 official_name = []
