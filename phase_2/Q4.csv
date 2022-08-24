@@ -8,7 +8,6 @@ time,count,country
 05,12,Bangladesh
 07,4,Bolivia
 11,25,Brazil
-05,3,Côte d'Ivoire
 15,3,Canada
 08,159,China
 16,4,Chile
@@ -29,7 +28,9 @@ time,count,country
 13,26,Indonesia
 22,10,Iran
 04,3,Iraq
+15,37,Japan
 14,37,Japan
+15,37,Japan
 14,37,Japan
 07,3,Kazakhstan
 08,3,Kazakhstan
@@ -37,8 +38,8 @@ time,count,country
 09,2,Kenya
 06,2,Kuwait
 14,2,Kuwait
-01,5,Malaysia
-05,5,Malaysia
+01,6,Malaysia
+05,6,Malaysia
 04,3,Mali
 11,18,Mexico
 09,2,Mongolia
@@ -46,12 +47,16 @@ time,count,country
 00,4,Morocco
 22,9,Nigeria
 05,11,Philippines
+12,11,Philippines
+21,11,Philippines
 07,11,Pakistan
 12,5,Peru
 05,11,Philippines
+12,11,Philippines
+21,11,Philippines
 00,2,Poland
-13,10,Russia
-13,10,Russia
+13,12,Russia
+13,12,Russia
 07,2,Saudi Arabia
 22,2,Saudi Arabia
 08,2,Saudi Arabia
@@ -74,5 +79,5 @@ time,count,country
 07,228,United States
 02,3,Uzbekistan
 16,9,Vietnam
-01,5,Malaysia
-05,5,Malaysia
+01,6,Malaysia
+05,6,Malaysia

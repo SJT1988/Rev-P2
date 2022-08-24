@@ -1,28 +1,28 @@
 sales,country
-4641,United States
-3151,China
+4652,United States
+3162,China
 1139,India
-626,Japan
+640,Japan
 444,Indonesia
 361,Brazil
 215,Mexico
 188,South Korea
+179,Philippines
 179,Egypt
-167,Philippines
 164,Bangladesh
 163,Pakistan
 140,Argentina
 140,Iran
+117,Russia
 112,United Kingdom
 108,Vietnam
-106,Russia
 99,Congo (Kinshasa)
 96,Turkey
 94,Thailand
 89,France
 70,Nigeria
+64,Malaysia
 52,Peru
-51,Malaysia
 36,Sudan
 31,Kazakhstan
 28,Tanzania
@@ -37,17 +37,11 @@ sales,country
 15,Mongolia
 15,Canada
 14,Kuwait
-14,Jhpan
 14,Uzbekistan
 14,Mali
-13,zalaysia
 13,Senegal
-12,Côte d'Ivoire
 12,Angola
-12,ohilippines
-11,Rassia
-11,Chdna
-11,Unixed States
+12,Cote d'Ivoire
 9,Togo
 9,Kenya
 9,Austria
