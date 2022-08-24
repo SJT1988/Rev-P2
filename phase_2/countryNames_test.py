@@ -178,3 +178,18 @@ def get_most_similar(word,wordlist):
 # Now apply to 'country' column
 
 df['country'].apply(lambda x: get_most_similar(x, corrected_CountryNames)) # Maybe apply to someone else's cases?
+
+
+
+'''
+input_country_list=list(df['Country'])
+input_country_list=[element.upper() for element in input_country_list];
+def country_name_check():
+pycntrylst = list(countries)
+alpha_2 = []
+alpha_3 = []
+name = []
+common_name = []
+official_name = []
+invalid_countrynames =[]
+'''
