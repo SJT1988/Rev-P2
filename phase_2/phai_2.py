@@ -36,18 +36,23 @@ data_df = data_rdd.toDF(
     "failure_reason",
 )
 def Mydatetimeformatter(inputstring):
+    #Date first then time
     arr = str(inputstring['datetime']).split(" ")
     strdt = ""
     if len(arr[0]) == 8:
+        if ':' in arr[0][:2]:
+            arr[0] =  f"0{arr[0]}"
         strdt = arr[1] + " " + arr[0]
     elif len(arr[0]) == 10:
+        if ':' in arr[1][:2]:
+            arr[1] = f"0{arr[1]}"
         strdt = arr[0] + " " + arr[1]
     elif len(arr[0]) == 1:
         strdt = arr[0]
     elif len(arr[0])==18:
 
         
-        strdt = arr[0][0:10] + " " + arr[0][11:18]
+        strdt = arr[0][0:10] + " " + arr[0][10:18]
         #print (strdt)
     
     return strdt
@@ -58,7 +63,6 @@ rdd2 = data_df.rdd.map(lambda x :  (x['order_id'],x['customer_id'],x['customer_n
         x['failure_reason'])).toDF()
 
 
-rdd2.show(100000)
 
-rdd2.toPandas().to_csv('phase_2/no_null_casted_datetime_formatted.csv', header= False, index = False)
+rdd2.toPandas().to_csv('phase_2/testing.csv', header= False, index = False)
 
