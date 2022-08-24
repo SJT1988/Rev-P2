@@ -141,6 +141,7 @@ q4_a = spark.sql(
     (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time))"
 )
 file = open("phase_2/Q4.csv", "w")
+file.write("time,count,country\n")
 file.write(f"{q4_a.collect()[0]['time']},{q4_a.collect()[0]['count_time']},all countries\n")
 # q4.show() #Run this to display answer for 4a.
 
