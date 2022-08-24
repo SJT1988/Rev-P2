@@ -72,7 +72,7 @@ def Read_Data_into_Spark_Instnace(filepath):
         CAST (payment_type as string), \
         CAST(qty AS INT), \
         CAST(price AS INT), \
-        CAST(datetime AS DATE), \
+        datetime, \
         CAST (country as string), \
         CAST (city as string) , \
         CAST (e_commerce_website_name as string), \

@@ -14,7 +14,7 @@ sc.setLogLevel("WARN")
 data_rdd = (
     spark.read.option("header", False)
     .option("inferSchema", False)
-    .csv(_filepath + "no_null_casted_datetime_formatted.csv")
+    .csv(_filepath + "final_data.csv")
 )
 
 ListCountry_Correct = [
@@ -181,6 +181,7 @@ for i in range(len(ListCountry_Correct)):
 
     for elem in q4_b.collect():
         time = elem['time']
+        print(time)
         freq = elem['count_time']
         curr_country = ListCountry_Correct[i]
         file.write(f"{time},{freq},{curr_country}\n")
