@@ -253,6 +253,7 @@ def Get_Cleaned_Data(My_Linux_File_Path):
 def WriteCleanedData(CSV_FilePath,OutPut_FilePath):
     bb = Get_Cleaned_Data(CSV_FilePath)#'file:/home/jed/p2_Team1_Data.csv'
     #bb.write.csv(OutPut_FilePath) #'file:/home/jed/Cleaned'
+    bb.write.csv(OutPut_FilePath) #'file:/home/jed/Cleaned'
     print ("File Printed")
 
 def Results_Q1(MyRDD):
