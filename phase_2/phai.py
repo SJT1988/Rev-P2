@@ -25,7 +25,7 @@ ListCountry_Correct = [
     "Bangladesh",
     "Bolivia",
     "Brazil",
-    "Cote d'Ivoire",
+    "Côte d'Ivoire",
     "Canada",
     "China",
     "Chile",
@@ -140,6 +140,8 @@ q4_a = spark.sql(
     WHERE count_time = (SELECT MAX(count_time) FROM \
     (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time))"
 )
+file = open("phase_2/Q4.csv", "w")
+file.write(f"{q4_a.collect()[0]['time']},{q4_a.collect()[0]['count_time']},all countries\n")
 # q4.show() #Run this to display answer for 4a.
 
     ####################################################################################################################
@@ -161,7 +163,6 @@ for i in range(len(ListCountry_Correct)):
     # df_lst.append(tmp)
     # df_lst[i].show()
 
-
     tmp_view_2 = tmp_df.createOrReplaceTempView("tmp_view_2")
     q4_b = spark.sql(
         "SELECT time, count_time FROM (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time)\
@@ -169,15 +170,18 @@ for i in range(len(ListCountry_Correct)):
         (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time))"
     )
     df_lst_2.append(q4_b)
+    time = df_lst_2[i].collect()[-1]['time']
+    freq = df_lst_2[i].collect()[-1]['count_time']
+    curr_country = ListCountry_Correct[i]
+    file.write(f"{time},{freq},{curr_country}\n")
     #print(f"Busiest hour(s) of {ListCountry_Correct[i]}: ") #Run these 2 to display answer from 4b.
     #df_lst_2[i].show()
 
-
+file.close()
 # all = spark.sql("SELECT * FROM data")
 # count_by_country.show()
 # count.show()
 # highest_location_of_sales.show()
 # highest_time_of_sales.show()
 # all.show()
-# all_countries.show(500)
 spark.stop()
