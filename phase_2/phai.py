@@ -17,65 +17,6 @@ data_rdd = (
     .csv(_filepath + "no_null_casted_datetime_formatted.csv")
 )
 
-data_df = data_rdd.toDF(
-    "order_id",
-    "customer_id",
-    "customer_name",
-    "product_id",
-    "product_name",
-    "product_category",
-    "payment_type",
-    "qty",
-    "price",
-    "datetime",
-    "country",
-    "city",
-    "ecommerce_website_name",
-    "payment_txn_id",
-    "payment_txn_success",
-    "failure_reason",
-)
-
-data_sql = data_df.createOrReplaceTempView(
-    "data"
-)  # Makes an SQL-friendly data table to run SQL queries on
-
-only_time = data_df.withColumn(
-    "time", substring("datetime", 12, 2)
-)  # Creates a new dataframe that is our normal dataframe, but with a new column 'time' that gives only the hour
-
-only_time_2 = only_time.select(["time", "country"])  # For writing to file purposes
-
-# only_time_2.write.csv(_filepath + 'phai_test') #COMMAND TO WRITE TO CSV!!!
-
-only_time_view = only_time.createOrReplaceTempView(
-    "data_2"
-)  # SQL-friendly view of our new table with the 'time' column
-
-count = spark.sql("SELECT product_name, country FROM data ORDER BY country ASC")
-
-highest_location_of_sales = spark.sql(
-    "SELECT COUNT(product_name) AS sales, country FROM data GROUP BY country ORDER BY sales DESC"
-)  # Attempt at number 1.
-
-
-all_countries = spark.sql("SELECT DISTINCT country FROM data ")
-
-
-count_by_country = spark.sql(
-    "SELECT COUNT(product_name) AS amnt, country FROM data GROUP BY country ORDER BY amnt DESC"
-)  # Number 3 complete - displays the graph with all of the countries and how many sales in each.
-
-
-####################################################################################
-#                                                                                  #
-#                                                                                  #
-#                               QUESTION 4                                         #
-#                                                                                  #
-#                                                                                  #
-#                                                                                  #
-####################################################################################
-
 ListCountry_Correct = [
     "Angola",
     "Argentina",
@@ -130,12 +71,74 @@ ListCountry_Correct = [
     "Vietnam",
     "Malaysia",
 ]  # Borrowed from Jed hehe, you da mvp
+
+data_df = data_rdd.toDF(
+    "order_id",
+    "customer_id",
+    "customer_name",
+    "product_id",
+    "product_name",
+    "product_category",
+    "payment_type",
+    "qty",
+    "price",
+    "datetime",
+    "country",
+    "city",
+    "ecommerce_website_name",
+    "payment_txn_id",
+    "payment_txn_success",
+    "failure_reason",
+)
+
+data_sql = data_df.createOrReplaceTempView(
+    "data"
+)  # Makes an SQL-friendly data table to run SQL queries on
+
+only_time = data_df.withColumn(
+    "time", substring("datetime", 12, 2)
+)  # Creates a new dataframe that is our normal dataframe, but with a new column 'time' that gives only the hour
+
+only_time_2 = only_time.select(["time", "country"])  # For writing to file purposes
+
+# only_time_2.write.csv(_filepath + 'phai_test') #COMMAND TO WRITE TO CSV!!!
+
+only_time_view = only_time.createOrReplaceTempView(
+    "data_2"
+)  # SQL-friendly view of our new table with the 'time' column
+
+####################################################################################
+#                                                                                  #
+#                                                                                  #
+#                               QUESTION 3                                         #
+#                                                                                  #
+#                                                                                  #
+#                                                                                  #
+####################################################################################
+
+count_by_country = spark.sql(
+    "SELECT COUNT(product_name) AS amnt, country FROM data GROUP BY country ORDER BY amnt DESC"
+)  # Number 3 complete - displays the graph with all of the countries and how many sales in each.
+
+
+####################################################################################
+#                                                                                  #
+#                                                                                  #
+#                               QUESTION 4                                         #
+#                                                                                  #
+#                                                                                  #
+#                                                                                  #
+####################################################################################
+
+
     ####################################################################################################################
     #                                                  Answers question 4a.                                            #
     ####################################################################################################################
 
-q4 = spark.sql(
-    "SELECT time, count_time FROM (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time) WHERE count_time = (SELECT MAX(count_time) FROM (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time))"
+q4_a = spark.sql(
+    "SELECT time, count_time FROM (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time)\
+    WHERE count_time = (SELECT MAX(count_time) FROM \
+    (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time))"
 )
 # q4.show() #Run this to display answer for 4a.
 
@@ -160,12 +163,12 @@ for i in range(len(ListCountry_Correct)):
 
 
     tmp_view_2 = tmp_df.createOrReplaceTempView("tmp_view_2")
-    tmp_2 = spark.sql(
+    q4_b = spark.sql(
         "SELECT time, count_time FROM (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time)\
         WHERE count_time = (SELECT MAX(count_time) FROM \
         (SELECT time, COUNT(time) AS count_time FROM tmp_view_2 GROUP BY time))"
     )
-    df_lst_2.append(tmp_2)
+    df_lst_2.append(q4_b)
     #print(f"Busiest hour(s) of {ListCountry_Correct[i]}: ") #Run these 2 to display answer from 4b.
     #df_lst_2[i].show()
 
