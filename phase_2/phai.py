@@ -129,7 +129,6 @@ ListCountry_Correct = [
     "Turkey",
     "United Kingdom",
     "United States",
-    "United States",
     "Uzbekistan",
     "Vietnam",
     "Malaysia",
@@ -150,7 +149,7 @@ for i in range(len(ListCountry_Correct)):
     # df_lst.append(tmp)
     # df_lst[i].show()
     df_lst_2.append(tmp_2)
-    print("Busiest hour: ")
+    print(f"Busiest hour(s) of {ListCountry_Correct[i]}: ")
     df_lst_2[i].show()
 
 
