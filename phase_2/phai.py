@@ -190,8 +190,8 @@ for i in range(len(ListCountry_Correct)):
     quarter_2_country = quarter_2.filter(quarter_2.country == curr_country)
     quarter_3_country = quarter_3.filter(quarter_3.country == curr_country)
     quarter_1_country_view = quarter_1_country.createOrReplaceTempView("q1_country")
-    quarter_2_country_view = quarter_1_country.createOrReplaceTempView("q2_country")
-    quarter_3_country_view = quarter_1_country.createOrReplaceTempView("q3_country")
+    quarter_2_country_view = quarter_2_country.createOrReplaceTempView("q2_country")
+    quarter_3_country_view = quarter_3_country.createOrReplaceTempView("q3_country")
 
     pop_q1_country = spark.sql(
         "SELECT COUNT(product_name) AS amnt, product_name FROM q1_country GROUP BY product_name ORDER BY amnt DESC"
@@ -226,12 +226,12 @@ for i in range(len(ListCountry_Correct)):
     df_q2_lst.append(pop_q2_country)
     df_q3_lst.append(pop_q3_country)
     
-    # print(f"Q1 data for {curr_country}:")
-    # pop_q1_country.show()
-    # print(f"Q2 data for {curr_country}:")
-    # pop_q2_country.show()
-    # print(f"Q3 data for {curr_country}:")
-    # pop_q3_country.show()
+    print(f"Q1 data for {curr_country}:")
+    pop_q1_country.show()
+    print(f"Q2 data for {curr_country}:")
+    pop_q2_country.show()
+    print(f"Q3 data for {curr_country}:")
+    pop_q3_country.show()
 file.close()
 file2.close()
 ####################################################################################################################
