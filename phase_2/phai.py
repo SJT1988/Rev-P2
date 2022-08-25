@@ -181,9 +181,7 @@ for i in range(5):
 ####################################################################################################################
 #                                                  Answers question 2b.                                            #
 ####################################################################################################################
-df_q1_lst = []
-df_q2_lst = []
-df_q3_lst = []
+
 for i in range(len(ListCountry_Correct)):
     curr_country = ListCountry_Correct[i]
     quarter_1_country = quarter_1.filter(quarter_1.country == curr_country)
@@ -203,35 +201,32 @@ for i in range(len(ListCountry_Correct)):
         "SELECT COUNT(product_name) AS amnt, product_name FROM q3_country GROUP BY product_name ORDER BY amnt DESC"
     )
 
-    for j in range(5):
-        if j < len(pop_q1_country.collect()):
-            amnt = pop_q1_country.collect()[j]['amnt']
-            product = pop_q1_country.collect()[j]['product_name']
-            quarter = 1
-            file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
-    for j in range(5):
-        if j < len(pop_q2_country.collect()):
-            amnt = pop_q2_country.collect()[j]['amnt']
-            product = pop_q2_country.collect()[j]['product_name']
-            quarter = 2
-            file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
-    for j in range(5):
-        if j < len(pop_q3_country.collect()):
-            amnt = pop_q3_country.collect()[j]['amnt']
-            product = pop_q3_country.collect()[j]['product_name']
-            quarter = 3
-            file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
+    # for j in range(5):
+    #     if j < len(pop_q1_country.collect()):
+    #         amnt = pop_q1_country.collect()[j]['amnt']
+    #         product = pop_q1_country.collect()[j]['product_name']
+    #         quarter = 1
+    #         file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
+    # for j in range(5):
+    #     if j < len(pop_q2_country.collect()):
+    #         amnt = pop_q2_country.collect()[j]['amnt']
+    #         product = pop_q2_country.collect()[j]['product_name']
+    #         quarter = 2
+    #         file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
+    # for j in range(5):
+    #     if j < len(pop_q3_country.collect()):
+    #         amnt = pop_q3_country.collect()[j]['amnt']
+    #         product = pop_q3_country.collect()[j]['product_name']
+    #         quarter = 3
+    #         file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
 
-    df_q1_lst.append(pop_q1_country)
-    df_q2_lst.append(pop_q2_country)
-    df_q3_lst.append(pop_q3_country)
-    
-    print(f"Q1 data for {curr_country}:")
-    pop_q1_country.show()
-    print(f"Q2 data for {curr_country}:")
-    pop_q2_country.show()
-    print(f"Q3 data for {curr_country}:")
-    pop_q3_country.show()
+
+    # print(f"Q1 data for {curr_country}:")
+    # pop_q1_country.show()
+    # print(f"Q2 data for {curr_country}:")
+    # pop_q2_country.show()
+    # print(f"Q3 data for {curr_country}:")
+    # pop_q3_country.show()
 file.close()
 file2.close()
 ####################################################################################################################
