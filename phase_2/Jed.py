@@ -15,11 +15,11 @@ spark = SparkSession.builder \
 
 spark.sparkContext.setLogLevel("WARN")
 sc = spark.sparkContext
+_filepath = 'file:/home/jed/' #'file:/home/strumunix/Rev-P2/phase_2/'
+Out_Put_Path_for_Leading_in_qty = _filepath + "qty_out"
+Out_Put_Path_for_Leading_in_value = _filepath +"value_out"
+InPut_CSV_File_Path = _filepath +"p2_Team1_Data.csv"
 
-Out_Put_Path_for_Leading_in_qty = "file:/home/jed/qty_out"
-Out_Put_Path_for_Leading_in_value = "file:/home/jed/value_out"
-InPut_CSV_File_Path = "file:/home/jed/p2_Team1_Data.csv"
-_filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
 #################################################################################################################################
 #
 #
@@ -416,8 +416,8 @@ def Results_Q1(MyRDD):
     df_Q1_3_1 = spark.sql("select max(mycount) as mycount_n, country as country_n from P1 group by country order by country")
     #df_Q1_3_1_Value = spark.sql("select max(mycount) as mycount_n, country as country_n from P2 group by country order by country")
     df_Q1_3_1.show(10) # to display results
-    df_Q1_3_1.write.csv(_filepath+'out.csv.fullcategory')
-   #df_Q1_3_1_Value.show(10)
+    #df_Q1_3_1.write.csv(_filepath+'out.csv.fullcategory')
+    #df_Q1_3_1_Value.show(10)
     #df_Q1_3_1.write.csv('/home/jed/out.csv.fullcategory')
 
     df_Q1_3_2 = df_Q1_3_1.join(df_Q1_2,[df_Q1_2.mycount == df_Q1_3_1.mycount_n, df_Q1_2.country == df_Q1_3_1.country_n], 'inner')
@@ -440,7 +440,7 @@ def Results_Q1(MyRDD):
     else:
         df_Q1_3_3.write.csv(Out_Put_Path_for_Leading_in_qty)
 
-    df_Q1_3_3.write.csv(_filepath+'out.csv')
+    #df_Q1_3_3.write.csv(_filepath+'out.csv')
     #################################################################################################################
     #
     #                       Leading interms of Value Sold
@@ -475,8 +475,9 @@ def Results_Q1(MyRDD):
 
     if os.path.exists(Out_Put_Path_for_Leading_in_value) == True:
         print ("The File path exists. Records not saved. Please delete the folder and re-run the code")
-    df_Q1_2_Value_x_4.write.csv(Out_Put_Path_for_Leading_in_value) 
-    print ("CSV Printed")
+    else:
+        df_Q1_2_Value_x_4.write.csv(Out_Put_Path_for_Leading_in_value) 
+        print ("CSV Printed")
 #                               End of Q1 for P2    
 #################################################################################################################
 
@@ -485,7 +486,6 @@ def main():
     #WriteCleanedData('file:/home/jed/p2_Team1_Data.csv','file:/home/jed/Cleaned')
     Results_Q1(Get_Cleaned_Data(InPut_CSV_File_Path))
     WriteCleanedData(_filepath+'p2_Team1_Data.csv',_filepath+'Cleaned')
-    Results_Q1(Get_Cleaned_Data(_filepath+'p2_Team1_Data.csv'))
     # in console type spark-submit pythonfilename.py
 if __name__ == '__main__'  :
     main() 
