@@ -91,6 +91,7 @@ data_df = data_rdd.toDF(
     "failure_reason",
 )
 
+
 data_sql = data_df.createOrReplaceTempView(
     "data"
 )  # Makes an SQL-friendly data table to run SQL queries on
@@ -98,6 +99,20 @@ data_sql = data_df.createOrReplaceTempView(
 only_time = data_df.withColumn(
     "time", substring("datetime", 12, 2)
 )  # Creates a new dataframe that is our normal dataframe, but with a new column 'time' that gives only the hour
+
+only_date = data_df.withColumn(
+    "month", substring("datetime", 6, 2)
+)  # Creates a new dataframe similar to only_time, but with the month of sale
+
+only_month = only_date.createOrReplaceTempView("only_month_view")
+
+only_month_casted = spark.sql(
+    "SELECT order_id, customer_id, customer_name, product_id, product_name, product_category, payment_type, qty, price, datetime, country, city, ecommerce_website_name, payment_txn_id, payment_txn_success, failure_reason, CAST(month AS INT) FROM only_month_view"
+)
+
+
+only_month_casted_view = only_month_casted.createOrReplaceTempView("only_month_casted")
+
 
 only_time_2 = only_time.select(["time", "country"])  # For writing to file purposes
 
@@ -107,6 +122,121 @@ only_time_view = only_time.createOrReplaceTempView(
     "data_2"
 )  # SQL-friendly view of our new table with the 'time' column
 
+
+####################################################################################
+#                                                                                  #
+#                                                                                  #
+#                               QUESTION 2                                         #
+#                                                                                  #
+#                                                                                  #
+#                                                                                  #
+####################################################################################
+
+####################################################################################################################
+#                                                  Answers question 2a.                                            #
+####################################################################################################################
+file = open('phase_2/Q2_a.csv', 'w')
+file2 = open('phase_2/Q2_b.csv', 'w')
+quarter_1 = only_month_casted.filter(only_month_casted.month < 4)  # Months 1-3
+quarter_2 = only_month_casted.filter((only_month_casted.month < 7) & (only_month_casted.month > 3)) #Months 4-6
+quarter_3 = only_month_casted.filter((only_month_casted.month < 10) & (only_month_casted.month > 6)) #Months 7-9
+# quarter_4 = only_date.filter(only_date.month  < 13 & only_date.month > 9) #Months 10-12, but their data only covers months from the first 3 quarters.
+quarter_1_view = quarter_1.createOrReplaceTempView("q1")
+quarter_2_view = quarter_2.createOrReplaceTempView("q2")
+quarter_3_view = quarter_3.createOrReplaceTempView("q3")
+# quarter_4_view = quarter_4.createOrReplaceTempView("q4")
+
+pop_q1 = spark.sql(
+    "SELECT COUNT(product_name) AS amnt, product_name FROM q1 GROUP BY product_name ORDER BY amnt DESC"
+)
+pop_q2 = spark.sql(
+    "SELECT COUNT(product_name) AS amnt, product_name FROM q2 GROUP BY product_name ORDER BY amnt DESC"
+)
+pop_q3 = spark.sql(
+    "SELECT COUNT(product_name) AS amnt, product_name FROM q3 GROUP BY product_name ORDER BY amnt DESC"
+)
+
+for i in range(5):
+    amnt = pop_q1.collect()[i]['amnt']
+    product = pop_q1.collect()[i]['product_name']
+    quarter = "1"
+    file.write(f"{amnt},{product},{quarter}\n")
+for i in range(5):
+    amnt = pop_q2.collect()[i]['amnt']
+    product = pop_q2.collect()[i]['product_name']
+    quarter = "2"
+    file.write(f"{amnt},{product},{quarter}\n")
+for i in range(5):
+    amnt = pop_q3.collect()[i]['amnt']
+    product = pop_q3.collect()[i]['product_name']
+    quarter = "3"
+    file.write(f"{amnt},{product},{quarter}\n")
+
+# print("Top products overall for first quarter:")
+# pop_q1.show(3)
+# print("Top products overall for second quarter:")
+# pop_q2.show(3)
+# print("Top products overall for third quarter:")
+# pop_q3.show(3)
+####################################################################################################################
+#                                                  Answers question 2b.                                            #
+####################################################################################################################
+df_q1_lst = []
+df_q2_lst = []
+df_q3_lst = []
+for i in range(len(ListCountry_Correct)):
+    curr_country = ListCountry_Correct[i]
+    quarter_1_country = quarter_1.filter(quarter_1.country == curr_country)
+    quarter_2_country = quarter_2.filter(quarter_2.country == curr_country)
+    quarter_3_country = quarter_3.filter(quarter_3.country == curr_country)
+    quarter_1_country_view = quarter_1_country.createOrReplaceTempView("q1_country")
+    quarter_2_country_view = quarter_1_country.createOrReplaceTempView("q2_country")
+    quarter_3_country_view = quarter_1_country.createOrReplaceTempView("q3_country")
+
+    pop_q1_country = spark.sql(
+        "SELECT COUNT(product_name) AS amnt, product_name FROM q1_country GROUP BY product_name ORDER BY amnt DESC"
+    )
+    pop_q2_country = spark.sql(
+        "SELECT COUNT(product_name) AS amnt, product_name FROM q2_country GROUP BY product_name ORDER BY amnt DESC"
+    )
+    pop_q3_country = spark.sql(
+        "SELECT COUNT(product_name) AS amnt, product_name FROM q3_country GROUP BY product_name ORDER BY amnt DESC"
+    )
+
+    for j in range(5):
+        if j < len(pop_q1_country.collect()):
+            amnt = pop_q1_country.collect()[j]['amnt']
+            product = pop_q1_country.collect()[j]['product_name']
+            quarter = 1
+            file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
+    for j in range(5):
+        if j < len(pop_q2_country.collect()):
+            amnt = pop_q2_country.collect()[j]['amnt']
+            product = pop_q2_country.collect()[j]['product_name']
+            quarter = 2
+            file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
+    for j in range(5):
+        if j < len(pop_q3_country.collect()):
+            amnt = pop_q3_country.collect()[j]['amnt']
+            product = pop_q3_country.collect()[j]['product_name']
+            quarter = 3
+            file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
+
+    df_q1_lst.append(pop_q1_country)
+    df_q2_lst.append(pop_q2_country)
+    df_q3_lst.append(pop_q3_country)
+    
+    # print(f"Q1 data for {curr_country}:")
+    # pop_q1_country.show()
+    # print(f"Q2 data for {curr_country}:")
+    # pop_q2_country.show()
+    # print(f"Q3 data for {curr_country}:")
+    # pop_q3_country.show()
+file.close()
+file2.close()
+####################################################################################################################
+#                                                     End question 2                                               #
+####################################################################################################################
 ####################################################################################
 #                                                                                  #
 #                                                                                  #
@@ -118,13 +248,16 @@ only_time_view = only_time.createOrReplaceTempView(
 
 count_by_country = spark.sql(
     "SELECT COUNT(product_name) AS amnt, country FROM data GROUP BY country ORDER BY amnt DESC"
-)  # Number 3 complete - displays the graph with all of the countries and how many sales in each.
+)
 
-file = open("phase_2/Q3.csv", "w")
-file.write("sales,country\n")
-for row in count_by_country.collect():
-    file.write(f"{row['amnt']},{row['country']}\n")
-file.close()
+# file = open("phase_2/Q3.csv", "w")
+# file.write("sales,country\n")
+# for row in count_by_country.collect():
+#     file.write(f"{row['amnt']},{row['country']}\n")
+# file.close()
+####################################################################################################################
+#                                                     End question 3                                               #
+####################################################################################################################
 
 ####################################################################################
 #                                                                                  #
@@ -145,11 +278,12 @@ q4_a = spark.sql(
     WHERE count_time = (SELECT MAX(count_time) FROM \
     (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time))"
 )
-file = open("phase_2/Q4.csv", "w")
-file.write("time,count,country\n")
-file.write(
-    f"{q4_a.collect()[0]['time']},{q4_a.collect()[0]['count_time']},all countries\n"
-)
+
+# file = open("phase_2/Q4.csv", "w")
+# file.write("time,count,country\n")
+# file.write(
+#     f"{q4_a.collect()[0]['time']},{q4_a.collect()[0]['count_time']},all countries\n"
+# )
 # q4.show() #Run this to display answer for 4a.
 
 ####################################################################################################################
@@ -179,11 +313,11 @@ for i in range(len(ListCountry_Correct)):
     )
     df_lst_2.append(q4_b)
 
-    for elem in q4_b.collect():
-        time = elem['time']
-        freq = elem['count_time']
-        curr_country = ListCountry_Correct[i]
-        file.write(f"{time},{freq},{curr_country}\n")
+    # for elem in q4_b.collect():
+    #     time = elem['time']
+    #     freq = elem['count_time']
+    #     curr_country = ListCountry_Correct[i]
+    #     file.write(f"{time},{freq},{curr_country}\n")
 
     # time = df_lst_2[i].collect()[-1]["time"]
     # freq = df_lst_2[i].collect()[-1]["count_time"]
