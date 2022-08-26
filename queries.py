@@ -7,13 +7,13 @@ from pyspark.sql.functions import substring
 import csv
 import pandas
 
-filepath = "YOUR FILE PATH HERE"
+filepath = 'file:/home/strumunix/Rev-P2/' # CHANGE THIS TO MATCH YOURS
 spark = SparkSession.builder.master("local").appName("myRDD").getOrCreate()
 
 spark.sparkContext.setLogLevel("WARN")
 sc = spark.sparkContext
 
-rdd1 = spark.read.option("header", False).option("inferSchema", True).csv(filepath)
+rdd1 = spark.read.option("header", False).option("inferSchema", True).csv(filepath + 'final_data.csv')
 
 ####################################################################################
 #                                 Variable setup                                   #
@@ -101,7 +101,67 @@ ListCountry_Correct = [
 #                                                                                  #
 #                                                                                  #
 ####################################################################################
+print('\n\n\n')
+####################################################################################
+#                                 TYPE-CAST
+####################################################################################
+df_typecast = spark.sql('SELECT \
+    CAST(order_id AS INT), \
+    CAST(customer_id AS INT), \
+    customer_name, \
+    CAST(product_id AS INT), \
+    product_name, \
+    product_category, \
+    payment_type, \
+    CAST(qty AS INT), \
+    CAST(price AS INT), \
+    datetime, \
+    country, \
+    city, \
+    e_commerce_website_name, \
+    payment_tnx_id, \
+    payment_tnx_success, \
+    failure_reason \
+    FROM data')
+####################################################################################
+#
+#               1a) What is the top selling category of items?
+#
+####################################################################################
+df_category_totals = df_typecast.select('product_category', (df_typecast.qty*df_typecast.price).alias('totals'))
+df_category_totals.createOrReplaceTempView('category_totals')
+df_sum_of_categories = spark.sql('SELECT product_category, SUM(totals) AS cat_sums FROM category_totals GROUP BY product_category ORDER BY cat_sums DESC')
+# df_sum_of_categories.show(truncate=False)
+# The maximum record is the first ordered record:
+highest_grossing_cat_list = list(df_sum_of_categories.collect()[0])
+print(f'1a) The highest grossing product category overall is {highest_grossing_cat_list[0]} with {"{:,}".format(highest_grossing_cat_list[1])}')
+print('\n\n\n')
 
+####################################################################################
+#
+#               1b) What is the top selling category of items per country?
+#
+####################################################################################
+
+df_category_totals = df_typecast.select('product_category', (df_typecast.qty*df_typecast.price).alias('totals'), 'country')
+df_category_totals.createOrReplaceTempView('category_totals')
+df_sum_of_categories = spark.sql('SELECT product_category, SUM(totals) AS cat_sums, country FROM category_totals GROUP BY country, product_category ORDER BY country, cat_sums DESC')
+# df_sum_of_categories.show(150)
+df_sum_of_categories.createOrReplaceTempView('category_totals')
+# use a common table expression (CTE) to filter rows
+df_gross_by_cat_by_country = spark.sql('WITH max_categories AS ( \
+    SELECT MAX(cat_sums) as max_gross, country \
+    FROM category_totals \
+    GROUP BY country\
+) \
+SELECT category_totals.product_category, max_categories.max_gross, category_totals.country FROM category_totals \
+INNER JOIN max_categories \
+ON max_categories.max_gross = category_totals.cat_sums \
+AND max_categories.country = category_totals.country \
+ORDER BY max_categories.max_gross DESC;')
+print('1b) The highest grossing product categories by country are:')
+df_gross_by_cat_by_country.show(100)
+print('\n\n\n')
 
 ####################################################################################
 #                                                                                  #
