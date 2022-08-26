@@ -7,13 +7,17 @@ from pyspark.sql.functions import substring
 import csv
 import pandas
 
-filepath = 'file:/home/strumunix/Rev-P2/' # CHANGE THIS TO MATCH YOURS
+filepath = "file:/home/phai597/"  # CHANGE THIS TO MATCH YOURS
 spark = SparkSession.builder.master("local").appName("myRDD").getOrCreate()
 
 spark.sparkContext.setLogLevel("WARN")
 sc = spark.sparkContext
 
-rdd1 = spark.read.option("header", False).option("inferSchema", True).csv(filepath + 'final_data.csv')
+rdd1 = (
+    spark.read.option("header", False)
+    .option("inferSchema", True)
+    .csv(filepath + "final_data.csv")
+)
 
 ####################################################################################
 #                                 Variable setup                                   #
@@ -101,11 +105,12 @@ ListCountry_Correct = [
 #                                                                                  #
 #                                                                                  #
 ####################################################################################
-print('\n\n\n')
+print("\n\n\n")
 ####################################################################################
 #                                 TYPE-CAST
 ####################################################################################
-df_typecast = spark.sql('SELECT \
+df_typecast = spark.sql(
+    "SELECT \
     CAST(order_id AS INT), \
     CAST(customer_id AS INT), \
     customer_name, \
@@ -122,20 +127,27 @@ df_typecast = spark.sql('SELECT \
     payment_tnx_id, \
     payment_tnx_success, \
     failure_reason \
-    FROM data')
+    FROM data"
+)
 ####################################################################################
 #
 #               1a) What is the top selling category of items?
 #
 ####################################################################################
-df_category_totals = df_typecast.select('product_category', (df_typecast.qty*df_typecast.price).alias('totals'))
-df_category_totals.createOrReplaceTempView('category_totals')
-df_sum_of_categories = spark.sql('SELECT product_category, SUM(totals) AS cat_sums FROM category_totals GROUP BY product_category ORDER BY cat_sums DESC')
+df_category_totals = df_typecast.select(
+    "product_category", (df_typecast.qty * df_typecast.price).alias("totals")
+)
+df_category_totals.createOrReplaceTempView("category_totals")
+df_sum_of_categories = spark.sql(
+    "SELECT product_category, SUM(totals) AS cat_sums FROM category_totals GROUP BY product_category ORDER BY cat_sums DESC"
+)
 # df_sum_of_categories.show(truncate=False)
 # The maximum record is the first ordered record:
 highest_grossing_cat_list = list(df_sum_of_categories.collect()[0])
-print(f'1a) The highest grossing product category overall is {highest_grossing_cat_list[0]} with {"{:,}".format(highest_grossing_cat_list[1])}')
-print('\n\n\n')
+print(
+    f'1a) The highest grossing product category overall is {highest_grossing_cat_list[0]} with {"{:,}".format(highest_grossing_cat_list[1])}'
+)
+print("\n\n\n")
 
 ####################################################################################
 #
@@ -143,13 +155,18 @@ print('\n\n\n')
 #
 ####################################################################################
 
-df_category_totals = df_typecast.select('product_category', (df_typecast.qty*df_typecast.price).alias('totals'), 'country')
-df_category_totals.createOrReplaceTempView('category_totals')
-df_sum_of_categories = spark.sql('SELECT product_category, SUM(totals) AS cat_sums, country FROM category_totals GROUP BY country, product_category ORDER BY country, cat_sums DESC')
+df_category_totals = df_typecast.select(
+    "product_category", (df_typecast.qty * df_typecast.price).alias("totals"), "country"
+)
+df_category_totals.createOrReplaceTempView("category_totals")
+df_sum_of_categories = spark.sql(
+    "SELECT product_category, SUM(totals) AS cat_sums, country FROM category_totals GROUP BY country, product_category ORDER BY country, cat_sums DESC"
+)
 # df_sum_of_categories.show(150)
-df_sum_of_categories.createOrReplaceTempView('category_totals')
+df_sum_of_categories.createOrReplaceTempView("category_totals")
 # use a common table expression (CTE) to filter rows
-df_gross_by_cat_by_country = spark.sql('WITH max_categories AS ( \
+df_gross_by_cat_by_country = spark.sql(
+    "WITH max_categories AS ( \
     SELECT MAX(cat_sums) as max_gross, country \
     FROM category_totals \
     GROUP BY country\
@@ -158,10 +175,11 @@ SELECT category_totals.product_category, max_categories.max_gross, category_tota
 INNER JOIN max_categories \
 ON max_categories.max_gross = category_totals.cat_sums \
 AND max_categories.country = category_totals.country \
-ORDER BY max_categories.max_gross DESC;')
-print('1b) The highest grossing product categories by country are:')
+ORDER BY max_categories.max_gross DESC;"
+)
+print("1b) The highest grossing product categories by country are:")
 df_gross_by_cat_by_country.show(100)
-print('\n\n\n')
+print("\n\n\n")
 
 ####################################################################################
 #                                                                                  #
@@ -175,18 +193,18 @@ print('\n\n\n')
 ####################################################################################
 #                                 Answers 2a                                       #
 ####################################################################################
-
+print("2) How does the popularity of products change throughout the year? Per country?")
 only_date = df1.withColumn(
     "month", substring("datetime", 6, 2)
 )  # Creates a new dataframe similar to only_time, but with the month of sale
 only_month = only_date.createOrReplaceTempView("only_month_view")
 only_month_casted = spark.sql(
-    "SELECT order_id, customer_id, customer_name, product_id, product_name, product_category, payment_type, qty, price, datetime, country, city, ecommerce_website_name, payment_txn_id, payment_txn_success, failure_reason, CAST(month AS INT) FROM only_month_casted_view"
+    "SELECT order_id, customer_id, customer_name, product_id, product_name, product_category, payment_type, qty, price, datetime, country, city, e_commerce_website_name, payment_tnx_id, payment_tnx_success, failure_reason, CAST(month AS INT) FROM only_month_view"
 )
 only_month_casted_view = only_month_casted.createOrReplaceTempView("only_month_casted")
 
-file = open("phase_2/Q2_a.csv", "w")
-file2 = open("phase_2/Q2_b.csv", "w")
+# file = open("phase_2/Q2_a.csv", "w")
+# file2 = open("phase_2/Q2_b.csv", "w")
 quarter_1 = only_month_casted.filter(only_month_casted.month < 4)  # Months 1-3
 quarter_2 = only_month_casted.filter(
     (only_month_casted.month < 7) & (only_month_casted.month > 3)
@@ -210,32 +228,34 @@ pop_q3 = spark.sql(
     "SELECT COUNT(product_name) AS amnt, product_name FROM q3 GROUP BY product_name ORDER BY amnt DESC"
 )
 
-for i in range(5):
-    amnt = pop_q1.collect()[i]["amnt"]
-    product = pop_q1.collect()[i]["product_name"]
-    quarter = "1"
-    file.write(f"{amnt},{product},{quarter}\n")
-for i in range(5):
-    amnt = pop_q2.collect()[i]["amnt"]
-    product = pop_q2.collect()[i]["product_name"]
-    quarter = "2"
-    file.write(f"{amnt},{product},{quarter}\n")
-for i in range(5):
-    amnt = pop_q3.collect()[i]["amnt"]
-    product = pop_q3.collect()[i]["product_name"]
-    quarter = "3"
-    file.write(f"{amnt},{product},{quarter}\n")
+# for i in range(5):
+#     amnt = pop_q1.collect()[i]["amnt"]
+#     product = pop_q1.collect()[i]["product_name"]
+#     quarter = "1"
+#     file.write(f"{amnt},{product},{quarter}\n")
+# for i in range(5):
+#     amnt = pop_q2.collect()[i]["amnt"]
+#     product = pop_q2.collect()[i]["product_name"]
+#     quarter = "2"
+#     file.write(f"{amnt},{product},{quarter}\n")
+# for i in range(5):
+#     amnt = pop_q3.collect()[i]["amnt"]
+#     product = pop_q3.collect()[i]["product_name"]
+#     quarter = "3"
+#     file.write(f"{amnt},{product},{quarter}\n")
 
 # print("Top products overall for first quarter:")
-# pop_q1.show(3)
+pop_q1.show(3)
 # print("Top products overall for second quarter:")
-# pop_q2.show(3)
+pop_q2.show(3)
 # print("Top products overall for third quarter:")
-# pop_q3.show(3)
+pop_q3.show(3)
 
 ####################################################################################
 #                                 Answers 2b                                       #
 ####################################################################################
+print("\n\n\n")
+print("Per country: ")
 for i in range(len(ListCountry_Correct)):
     curr_country = ListCountry_Correct[i]
     quarter_1_country = quarter_1.filter(quarter_1.country == curr_country)
@@ -274,14 +294,14 @@ for i in range(len(ListCountry_Correct)):
     #         quarter = 3
     #         file2.write(f"{amnt},{product},{quarter},{curr_country}\n")
 
-    # print(f"Q1 data for {curr_country}:")
-    # pop_q1_country.show()
-    # print(f"Q2 data for {curr_country}:")
-    # pop_q2_country.show()
-    # print(f"Q3 data for {curr_country}:")
-    # pop_q3_country.show()
-file.close()
-file2.close()
+    print(f"Q1 data for {curr_country}:")
+    pop_q1_country.show()
+    print(f"Q2 data for {curr_country}:")
+    pop_q2_country.show()
+    print(f"Q3 data for {curr_country}:")
+    pop_q3_country.show()
+# file.close()
+# file2.close()
 ####################################################################################
 #                                                                                  #
 #                                                                                  #
@@ -290,12 +310,13 @@ file2.close()
 #                                                                                  #
 #                                                                                  #
 ####################################################################################
-
+print("\n\n\n")
+print("3) Which locations see the highest traffic of sales?")
 count_by_country = spark.sql(
     "SELECT COUNT(product_name) AS amnt, country FROM data GROUP BY country ORDER BY amnt DESC"
 )
 
-# count_by_country.show()
+count_by_country.show()
 # file = open("phase_2/Q3.csv", "w")
 # file.write("sales,country\n")
 # for row in count_by_country.collect():
@@ -310,10 +331,11 @@ count_by_country = spark.sql(
 #                                                                                  #
 #                                                                                  #
 ####################################################################################
-
+print("\n\n\n")
 ####################################################################################
 #                                 Answers 4a                                       #
 ####################################################################################
+print("4) What times have the highest traffic of sales? Per country?")
 only_time = df1.withColumn(
     "time", substring("datetime", 12, 2)
 )  # Creates a new dataframe that is our normal dataframe, but with a new column 'time' that gives only the hour
@@ -333,10 +355,12 @@ q4_a = spark.sql(
 # file.write(
 #     f"{q4_a.collect()[0]['time']},{q4_a.collect()[0]['count_time']},all countries\n"
 # )
-# q4.show() #Run this to display answer for 4a.
+q4_a.show() #Run this to display answer for 4a.
 ####################################################################################
 #                                 Answers 4b                                       #
 ####################################################################################
+print("\n\n\n")
+print("Per country:")
 df_lst = []  # List of dataframes displaying data from specific countries.
 df_lst_2 = []  # Dataframe that only displays the highest time of sales by country.
 for i in range(len(ListCountry_Correct)):
@@ -370,8 +394,8 @@ for i in range(len(ListCountry_Correct)):
     # freq = df_lst_2[i].collect()[-1]["count_time"]
     # curr_country = ListCountry_Correct[i]
     # file.write(f"{time},{freq},{curr_country}\n")
-    # print(f"Busiest hour(s) of {ListCountry_Correct[i]}: ") #Run these 2 to display answer from 4b.
-    # df_lst_2[i].show()
+    print(f"Busiest hour(s) of {ListCountry_Correct[i]}: ") #Run these 2 to display answer from 4b.
+    df_lst_2[i].show()
 
 # file.close()
 
