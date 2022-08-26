@@ -17,6 +17,11 @@ data_rdd = (
     .csv(_filepath + "final_data.csv")
 )
 
+
+########################################################################
+#                       START COPYING FROM HERE                        #
+########################################################################
+
 ListCountry_Correct = [
     "Angola",
     "Argentina",
@@ -70,7 +75,7 @@ ListCountry_Correct = [
     "Uzbekistan",
     "Vietnam",
     "Malaysia",
-]  # Borrowed from Jed hehe, you da mvp
+]  # Borrowed from Jed.py, may not be necessary
 
 data_df = data_rdd.toDF(
     "order_id",
@@ -96,31 +101,13 @@ data_sql = data_df.createOrReplaceTempView(
     "data"
 )  # Makes an SQL-friendly data table to run SQL queries on
 
-only_time = data_df.withColumn(
-    "time", substring("datetime", 12, 2)
-)  # Creates a new dataframe that is our normal dataframe, but with a new column 'time' that gives only the hour
-
-only_date = data_df.withColumn(
-    "month", substring("datetime", 6, 2)
-)  # Creates a new dataframe similar to only_time, but with the month of sale
-
-only_month = only_date.createOrReplaceTempView("only_month_view")
-
-only_month_casted = spark.sql(
-    "SELECT order_id, customer_id, customer_name, product_id, product_name, product_category, payment_type, qty, price, datetime, country, city, ecommerce_website_name, payment_txn_id, payment_txn_success, failure_reason, CAST(month AS INT) FROM only_month_view"
-)
 
 
-only_month_casted_view = only_month_casted.createOrReplaceTempView("only_month_casted")
 
 
-only_time_2 = only_time.select(["time", "country"])  # For writing to file purposes
 
-# only_time_2.write.csv(_filepath + 'phai_test') #COMMAND TO WRITE TO CSV!!!
 
-only_time_view = only_time.createOrReplaceTempView(
-    "data_2"
-)  # SQL-friendly view of our new table with the 'time' column
+
 
 
 ####################################################################################
@@ -135,6 +122,16 @@ only_time_view = only_time.createOrReplaceTempView(
 ####################################################################################################################
 #                                                  Answers question 2a.                                            #
 ####################################################################################################################
+
+only_date = data_df.withColumn(
+    "month", substring("datetime", 6, 2)
+)  # Creates a new dataframe similar to only_time, but with the month of sale
+only_month = only_date.createOrReplaceTempView("only_month_view")
+only_month_casted = spark.sql(
+    "SELECT order_id, customer_id, customer_name, product_id, product_name, product_category, payment_type, qty, price, datetime, country, city, ecommerce_website_name, payment_txn_id, payment_txn_success, failure_reason, CAST(month AS INT) FROM only_month_view"
+)
+only_month_casted_view = only_month_casted.createOrReplaceTempView("only_month_casted")
+
 file = open('phase_2/Q2_a.csv', 'w')
 file2 = open('phase_2/Q2_b.csv', 'w')
 quarter_1 = only_month_casted.filter(only_month_casted.month < 4)  # Months 1-3
@@ -268,6 +265,14 @@ count_by_country = spark.sql(
 #                                                  Answers question 4a.                                            #
 ####################################################################################################################
 
+only_time = data_df.withColumn(
+    "time", substring("datetime", 12, 2)
+)  # Creates a new dataframe that is our normal dataframe, but with a new column 'time' that gives only the hour
+
+only_time_view = only_time.createOrReplaceTempView(
+    "data_2"
+)  # SQL-friendly view of our new table with the 'time' column
+
 q4_a = spark.sql(
     "SELECT time, count_time FROM (SELECT time, COUNT(time) AS count_time FROM data_2 GROUP BY time)\
     WHERE count_time = (SELECT MAX(count_time) FROM \
@@ -322,10 +327,5 @@ for i in range(len(ListCountry_Correct)):
     # df_lst_2[i].show()
 
 file.close()
-# all = spark.sql("SELECT * FROM data")
-# count_by_country.show()
-# count.show()
-# highest_location_of_sales.show()
-# highest_time_of_sales.show()
-# all.show()
+
 spark.stop()
