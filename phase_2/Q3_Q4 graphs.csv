@@ -1,0 +1,178 @@
+Product Category,Sum of transaction totals,,,product_category,,         country,max_gross,Armor,Gear,Weapons,,,,,,,,,,,,,,,,,,,,,,,,,
+Armor           ,"3,407,245 ",,,           Armor,,   United States,,"1,192,260",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gear            ,"1,163,641 ",,,           Armor,,           China,,"872,890",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Weapons         ,"442,328 ",,,           Armor,,           India,,"299,050",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,           Japan,,"141,990",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,       Indonesia,,"127,735",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          Brazil,,"92,635",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,     Philippines,,"72,415",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,      Bangladesh,,"64,045",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,     South Korea,,"59,850",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          Mexico,,"59,550",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,       Argentina,,"49,735",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,           Egypt,,"37,660",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          Turkey,,"33,020",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,  United Kingdom,,"31,460",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          France,,"30,960",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,            Peru,,"29,015",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          Russia,,"26,930",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,Congo (Kinshasa),,"26,330",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,            Iran,,,"24,683",,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,        Tanzania,,"22,410",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,        Malaysia,,"22,180",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,         Nigeria,,"15,830",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,        Thailand,,"14,955",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,       Australia,,"13,835",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,        Pakistan,,"10,215",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,         Vietnam,,"8,930",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,           Chile,,,"7,215",,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          Kuwait,,"5,350",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,      Kazakhstan,,"4,680",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,         Morocco,,"3,855",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,            Iraq,,,"3,633",,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,         Weapons,,        Colombia,,,,"2,562",,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          Poland,,"2,150",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          Greece,,"2,085",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,         Weapons,,    Saudi Arabia,,,,"1,958",,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,           Sudan,,"1,560",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,          Angola,,,"1,090",,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,         Weapons,,         Bolivia,,,,"1,050",,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,          Canada,,890,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,         Weapons,,        Mongolia,,,,805,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,            Mali,,,725,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,         Weapons,,         Senegal,,,,614,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,      Uzbekistan,,,592,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,         Austria,,,337,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,           Armor,,   Cote d'Ivoire,,280,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,           Kenya,,,265,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,            Gear,,            Togo,,,190,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,order_id,customer_id,customer_name,product_id,product_name,product_category,payment_type,qty,price,datetime,country,city,ecommerce website name,payment_txn_id,payment_txn_success,failure_reason
+,,,,,,,,,,,,,,,,,,,,0,209,Tiemou Ryoryori,81,Sprig of Mistletoe (Druidic Focus),Gear,Google pay,1,1,8/5/2022 10:23,United States,New York,Walmart.com,0,Y,
+,,,,,,,,,,,,,,,,,,,,1,753,Utorisi Ongin,10,Chain Mail,Armor,Gift card,1,75,2/10/2022 18:09,India,Delhi,yeoldestore.com,0,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,2,782,Rstanerma Iora,15,Dagger,Weapons,Paypal,7,2,3/28/2022 10:22,United States,Chicago,yeoldestore.com,0,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,3,64,Ilefono Herala,2,Leather,Armor,Venmo,7,10,7/19/2022 4:38,South Korea,Seoul,Etsy.com,0,Y,
+,,,,,,,,,,,,,,,,,,,,4,879,Ameci Bestieson,95,Ink (1 ounce bottle),Gear,Google pay,1,1,6/23/2022 17:03,United States,Los Angeles,Blacksmithery.com,1,Y,
+,,,,,,,,,,,,,,,,,,,,5,287,Tereca Lincheg,95,Ink (1 ounce bottle),Gear,Venmo,10,1,2/16/2022 3:29,United States,Los Angeles,Hardhat.com,1,Y,
+,,,,,,,,,,,,,,,,,,,,6,389,Caytherodu Irannistsi,2,Leather,Armor,Paypal,5,10,6/30/2022 16:42,China,Chongqing,Hardhat.com,1,Y,
+,,,,,,,,,,,,,,,,,,,,7,55,Lise Shewe,60,Rod (Arcane Focus),Gear,Google pay,6,10,4/3/2022 6:58,United States,New York,Hardhat.com,2,Y,
+,,,,,,,,,,,,,,,,,,,,8,205,Dyeadem Spast,52,Alchemist's Fire (flask),Gear,Cash app,10,50,3/14/2022 0:46,China,Tangshan,yeoldestore.com,0,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,9,388,Ardere Chen,1,Padded,Armor,Venmo,8,5,3/7/2022 15:02,United States,New York,Amazon.com,2,Y,
+,,,,,,,,,,,,,,,,,,,,10,191,Faprirese Ptot,22,Sickle,Weapons,Cash app,4,1,4/21/2022 13:25,Iran,Tehran,Walmart.com,1,Y,
+,,,,,,,,,,,,,,,,,,,,11,543,Nineno Antedreran,72,Chalk (10 piece),Gear,Google pay,4,1,1/29/2022 11:06,Brazil,Rio de Janeiro,Etsy.com,3,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,12,544,Tlethue Anthenin,106,Spellbook,Gear,Google pay,8,50,1/3/2022 12:11,United States,Los Angeles,yeoldestore.com,4,Y,
+,,,,,,,,,,,,,,,,,,,,14,189,Sante Fremme,10,Chain Mail,Armor,Paypal,1,75,6/10/2022 2:10,Congo (Kinshasa),Kinshasa,LarpersTrove.com,2,Y,
+,,,,,,,,,,,,,,,,,,,,15,757,FerorTtrsps,55,Crossbow Bolts (20),Gear,Paypal,1,10,2/22/2022 9:45,China,Handan,LarpersTrove.com,3,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,17,877,Ains Cluappa,69,Caltrops (20),Gear,Gift card,7,10,5/10/2022 13:34,United States,New York,Amazon.com,1,Y,
+,,,,,,,,,,,,,,,,,,,,18,827,Whathefred Itiori,94,Hunting Trap,Gear,Credit Card,2,5,3/22/2022 16:09,France,Paris,Blacksmithery.com,0,Y,
+,,,,,,,,,,,,,,,,,,,,19,356,Pecenorth Sec,106,Spellbook,Gear,Cash app,4,50,4/9/2022 12:01,United States,Manhattan,Blacksmithery.com,3,Y,
+,,,,,,,,,,,,,,,,,,,,21,426,Pruatha Qun,62,Wand (Arcane Focus),Gear,Souls of my Enemys,4,10,5/29/2022 2:07,China,Chongqing,Walmart.com,2,N,What is this; Why is it screaming
+,,,,,,,,,,,,,,,,,,,,23,270,Colyo Pure,26,Shortbow,Weapons,Venmo,6,25,6/7/2022 18:49,Thailand,Bangkok,Walmart.com,3,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,24,142,Dsem Reprathd,108,Vial,Gear,Cash app,3,1,7/27/2022 3:57,South Korea,Seoul,yeoldestore.com,4,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,25,872,Mesth Iarkorenan,95,Ink (1 ounce bottle),Gear,Google pay,5,1,7/18/2022 18:00,United States,Boston,Amazon.com,5,Y,
+,,,,,,,,,,,,,,,,,,,,26,814,Wir Nddcra,87,Sledgehammer,Gear,Apple pay,8,2,7/15/2022 10:30,Japan,Tokyo,Blacksmithery.com,0,Y,
+,,,,,,,,,,,,,,,,,,,,27,874,Dlirels Acigel,34,Lance,Weapons,Souls of my Enemys,3,10,8/7/2022 21:21,China,Shanghai,yeoldestore.com,3,Y,
+,,,,,,,,,,,,,,,,,,,,28,403,Cerfr Ishino,94,Hunting Trap,Gear,Venmo,3,5,5/2/2022 8:56,Congo (Kinshasa),Kinshasa,yeoldestore.com,4,Y,
+,,,,,,,,,,,,,,,,,,,,29,504,Weppu Witlysale,6,Scale Mail,Armor,Souls of my Enemys,6,50,1/25/2022 17:45,United States,Chicago,Walmart.com,4,N,Soul type not excepted
+,,,,,,,,,,,,,,,,,,,,30,570,Iagatys Trse,93,Hourglass,Gear,Apple pay,7,25,6/7/2022 6:34,China,Shaoyang,Etsy.com,1,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,33,640,Souagaj Terdi,11,Splint,Armor,Credit Card,6,200,1/16/2022 20:25,China,Shenyang,LarpersTrove.com,1,Y,
+,,,,,,,,,,,,,,,,,,,,34,853,Avealeds Lorvesth,11,Splint,Armor,Gift card,6,200,3/11/2022 20:02,United States,Los Angeles,LarpersTrove.com,2,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,35,99,Wieurreee Ivident,109,Waterskin,Gear,Cash app,7,2,4/9/2022 21:54,China,Yuncheng,yeoldestore.com,5,Y,
+,,,,,,,,,,,,,,,,,,,,36,301,Calas Smexur,20,Mace,Weapons,Apple pay,10,5,2/25/2022 0:44,United States,Los Angeles,yeoldestore.com,2,Y,
+,,,,,,,,,,,,,,,,,,,,37,79,Pay Timowa,3,Studded Leather,Armor,Gift card,5,45,5/28/2022 11:38,South Korea,Seoul,Amazon.com,3,Y,
+,,,,,,,,,,,,,,,,,,,,38,724,Fffat Ran,98,Bullseye Lantern,Gear,Apple pay,7,10,3/12/2022 3:59,United States,New York,Hardhat.com,3,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,39,853,Avealeds Lorvesth,42,Trident,Weapons,Paypal,7,5,7/21/2022 15:51,United States,Los Angeles,yeoldestore.com,6,Y,
+,,,,,,,,,,,,,,,,,,,,40,6,Oprerestho Tor,77,Fine Clothes,Gear,Souls of my Enemys,10,150,3/7/2022 8:08,United States,Philadelphia,Amazon.com,6,Y,
+,,,,,,,,,,,,,,,,,,,,41,522,Titoud Tocatayol,36,Maul,Weapons,Google pay,8,10,2/18/2022 5:07,India,Chennai,Etsy.com,6,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,43,47,Latizescou Wetons,96,Ink Pen,Gear,Gift card,10,0,6/8/2022 21:25,China,Ningde,yeoldestore.com,5,Y,
+,,,,,,,,,,,,,,,,,,,,44,315,Thersi Ong,36,Maul,Weapons,Google pay,6,10,5/31/2022 16:04,India,Delhi,Hardhat.com,7,Y,
+,,,,,,,,,,,,,,,,,,,,45,190,Any Helioueres,98,Bullseye Lantern,Gear,Gift card,10,10,1/28/2022 0:54,Vietnam,Ho Chi Minh City,LarpersTrove.com,6,Y,
+,,,,,,,,,,,,,,,,,,,,46,492,Wandiavit Duers,3,Studded Leather,Armor,Apple pay,6,45,8/8/2022 17:00,Iran,Tehran,LarpersTrove.com,4,Y,
+,,,,,,,,,,,,,,,,,,,,47,307,Bogisi Vesil,70,Candle,Gear,Venmo,7,1,4/12/2022 22:58,China,Jiangguanchi,Blacksmithery.com,5,Y,
+,,,,,,,,,,,,,,,,,,,,48,290,Reronc Athadinte,8,Half Plate,Armor,Apple pay,3,750,8/3/2022 3:01,United States,New York,Blacksmithery.com,5,Y,
+,,,,,,,,,,,,,,,,,,,,49,429,Alvav Randabursc,84,Yew Wand (Druidic Focus),Gear,Google pay,7,10,7/23/2022 10:26,Mexico,Mexico City,Hardhat.com,8,Y,
+,,,,,,,,,,,,,,,,,,,,50,174,Thendarppa Pechar,78,Traveler's Clothes,Gear,Google pay,4,20,7/27/2022 20:20,China,Beijing,Hardhat.com,9,Y,
+,,,,,,,,,,,,,,,,,,,,51,117,Meren Hopa,7,Breastplate,Armor,Gift card,4,400,3/9/2022 9:07,Japan,Tokyo,yeoldestore.com,7,Y,
+,,,,,,,,,,,,,,,,,,,,53,710,Iedire Iesileh,33,Halberd,Weapons,Apple pay,9,20,3/18/2022 21:56,Japan,Tokyo,Walmart.com,6,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,54,237,Thewhinsar Bofer,80,Crowbar,Gear,Apple pay,7,2,5/28/2022 3:31,United States,Los Angeles,yeoldestore.com,7,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,55,70,Ryousl Hiomont,82,Totem (Druidic Focus),Gear,Paypal,6,1,4/24/2022 9:11,Egypt,Cairo,LarpersTrove.com,7,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,56,270,Colyo Pure,69,Caltrops (20),Gear,Gift card,9,10,3/5/2022 0:19,Thailand,Bangkok,Hardhat.com,8,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,57,670,Dorrae Geduth,103,Rations (1 day),Gear,Google pay,7,5,6/26/2022 8:54,Japan,Tokyo,LarpersTrove.com,10,Y,
+,,,,,,,,,,,,,,,,,,,,58,69,Sen Ppprcr,42,Trident,Weapons,Apple pay,10,5,4/10/2022 5:15,United States,Los Angeles,LarpersTrove.com,8,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,59,378,Ianc Silurv,14,Club,Weapons,Venmo,7,1,7/1/2022 3:19,United States,Jacksonville,Hardhat.com,6,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,61,130,Ayent Wandog,6,Scale Mail,Armor,Credit Card,3,50,4/11/2022 2:46,Indonesia,Jakarta,yeoldestore.com,3,N,Incorrect CCV
+,,,,,,,,,,,,,,,,,,,,62,85,Jed Spellld,34,Lance,Weapons,Apple pay,7,10,3/23/2022 22:27,United States,New York,Amazon.com,9,Y,
+,,,,,,,,,,,,,,,,,,,,64,458,Frali Dinu,50,Net,Weapons,Gift card,7,1,7/17/2022 5:29,United States,New York,Walmart.com,9,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,65,782,Rstanerma Iora,75,Common Clothes,Gear,Venmo,4,5,6/25/2022 4:52,United States,Chicago,Walmart.com,7,Y,
+,,,,,,,,,,,,,,,,,,,,66,25,Nicond Iond,39,Rapier,Weapons,Cash app,2,25,1/8/2022 12:50,China,Renqiu,Walmart.com,7,Y,
+,,,,,,,,,,,,,,,,,,,,67,328,Ston Grastitul,96,Ink Pen,Gear,Apple pay,6,0,2/15/2022 15:41,China,Suzhou,yeoldestore.com,10,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6274,900,Issta Cactheng,31,Greataxe,Weapons,Souls of my Enemys,8,50,1/15/2022 11:10,China,Weifang,Amazon.com,807,N,What is this; Why is it screaming
+,,,,,,,,,,,,,,,,,,,,6275,746,Daldips Ptinc,4,Hide,Armor,Apple pay,9,10,5/3/2022 6:36,China,Zhumadian,Walmart.com,778,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6276,405,Lere Fofeate,56,Sling Bullets (20),Gear,Cash app,4,0,1/16/2022 3:15,United Kingdom,London,LarpersTrove.com,815,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,6277,766,Arn Rsce,85,Grappling Hook,Gear,Souls of my Enemys,10,2,8/13/2022 22:56,India,Delhi,Etsy.com,808,Y,
+,,,,,,,,,,,,,,,,,,,,6278,331,Funiasi Thoo,52,Alchemist's Fire (flask),Gear,Cash app,10,50,2/7/2022 13:41,China,Shangrao,yeoldestore.com,816,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6279,169,Schers Fefer,47,Hand Crossbow,Weapons,Gift card,6,75,8/7/2022 1:46,Japan,Tokyo,Walmart.com,801,Y,
+,,,,,,,,,,,,,,,,,,,,6280,458,Frali Dinu,57,Antitoxin (vial),Gear,Google pay,5,50,3/5/2022 2:37,United States,New York,Hardhat.com,787,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6281,300,Fecket Bers,11,Splint,Armor,Google pay,6,200,5/16/2022 12:55,China,Shuyangzha,Amazon.com,788,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6282,964,Cherohe Rethed,74,Climber's Kit,Gear,Souls of my Enemys,10,25,1/27/2022 7:54,China,Zhengzhou,yeoldestore.com,809,Y,None
+,,,,,,,,,,,,,,,,,,,,6283,102,Ffrernki Cofo,43,War Pick,Weapons,Apple pay,9,5,3/10/2022 21:47,Egypt,Alexandria,yeoldestore.com,779,Y,
+,,,,,,,,,,,,,,,,,,,,6285,481,Iectlondg Str,44,Warhammer,Weapons,Cash app,4,15,1/30/2022 18:32,China,Shanghai,yeoldestore.com,817,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6286,711,Atugint Thitai,17,Handaxe,Weapons,Google pay,4,5,5/30/2022 18:19,Egypt,Cairo,Walmart.com,789,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6287,764,Maten Whrofim,69,Caltrops (20),Gear,Venmo,3,10,1/14/2022 14:46,China,Shenzhen,Amazon.com,770,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,6288,512,Dul Acheatrs,73,Chest,Gear,Souls of my Enemys,1,5,3/26/2022 8:17,Indonesia,Jakarta,Amazon.com,810,N,Insuffecient Souls
+,,,,,,,,,,,,,,,,,,,,6289,983,Onereveral Ased,98,Bullseye Lantern,Gear,Venmo,5,10,5/23/2022 6:23,Japan,?saka,Blacksmithery.com,771,N,Payment site timed out
+,,,,,,,,,,,,,,,,,,,,6291,163,Fiese Neti,28,Battleaxe,Weapons,Paypal,4,10,4/9/2022 12:51,China,Tangshan,yeoldestore.com,769,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6293,688,Peca Rectechi,2,Leather,Armor,Venmo,1,10,5/14/2022 10:05,United States,San Diego,Blacksmithery.com,772,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6294,568,Tichieryo Mis,75,Common Clothes,Gear,Cash app,2,5,3/12/2022 10:45,United States,New York,yeoldestore.com,818,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6295,520,Featerd Plypangef,38,Pike,Weapons,Google pay,7,5,2/27/2022 19:21,United States,Boston,Walmart.com,790,Y,
+,,,,,,,,,,,,,,,,,,,,6297,466,Ystunth Orenouico,47,Hand Crossbow,Weapons,Apple pay,7,75,2/14/2022 1:40,China,Beijing,Hardhat.com,780,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6298,907,ThinenindViob,34,Lance,Weapons,Souls of my Enemys,9,10,3/5/2022 11:19,Brazil,São Paulo,yeoldestore.com,812,Y,
+,,,,,,,,,,,,,,,,,,,,6299,789,Ostis Heeed,17,Handaxe,Weapons,Gift card,1,5,4/11/2022 12:32,United States,St. Louis,Hardhat.com,802,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6300,353,Yimede Nfrengent,42,Trident,Weapons,Venmo,5,5,2/13/2022 15:07,United States,New York,Hardhat.com,773,Y,
+,,,,,,,,,,,,,,,,,,,,6301,298,Angordi Ond,19,Light Hammer,Weapons,Credit Card,6,2,7/12/2022 7:39,Mali,Bamako,Etsy.com,748,Y,
+,,,,,,,,,,,,,,,,,,,,6303,47,Latizescou Wetons,92,Holy Water (Flask),Gear,Paypal,9,25,6/16/2022 21:05,China,Ningde,Hardhat.com,773,Y,
+,,,,,,,,,,,,,,,,,,,,6304,894,Ticti Edec,39,Rapier,Weapons,Souls of my Enemys,8,25,7/18/2022 1:32,China,Baoding,yeoldestore.com,813,N,What is this; Why is it screaming
+,,,,,,,,,,,,,,,,,,,,6305,537,Wir Trec,52,Alchemist's Fire (flask),Gear,Venmo,8,50,4/20/2022 11:52,United States,Washington,Walmart.com,774,Y,
+,,,,,,,,,,,,,,,,,,,,6306,710,Iedire Iesileh,40,Scimitar,Weapons,Paypal,10,25,7/19/2022 1:36,Japan,Tokyo,Amazon.com,774,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6307,620,Fau Cele,30,Glaive,Weapons,Apple pay,3,200,5/13/2022 0:14,China,Shanghai,Etsy.com,781,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6308,877,Ains Cluappa,6,Scale Mail,Armor,Venmo,7,50,3/9/2022 3:01,United States,New York,Amazon.com,775,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6309,862,Isetape Arer,4,Hide,Armor,Cash app,2,10,6/19/2022 8:44,United States,Atlanta,Walmart.com,819,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6310,76,Timaris Eeingiof,69,Caltrops (20),Gear,Gift card,8,10,4/27/2022 4:09,Brazil,Rio de Janeiro,Etsy.com,803,Y,
+,,,,,,,,,,,,,,,,,,,,6311,317,Itinan Autaum,101,Basic Poison (Vial),Gear,Venmo,1,100,2/27/2022 11:01,China,Shenzhen,yeoldestore.com,776,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6312,938,Crounot Ercthaw,4,Hide,Armor,Google pay,3,10,4/20/2022 3:16,China,Chengdu,Etsy.com,791,Y,
+,,,,,,,,,,,,,,,,,,,,6313,463,Llond Ramsl,91,Reliquary (Holy Symbol),Gear,Souls of my Enemys,7,5,7/24/2022 12:12,South Korea,Seoul,Etsy.com,814,N,What is this; Why is it screaming
+,,,,,,,,,,,,,,,,,,,,6314,666,Thecthisti Heneref,15,Dagger,Weapons,Paypal,9,2,7/29/2022 18:03,United States,Charlotte,yeoldestore.com,775,Y,
+,,,,,,,,,,,,,,,,,,,,6315,224,Iconerer Bedexch,68,Bucket,Gear,Paypal,8,1,6/30/2022 15:48,United States,Harrisburg,yeoldestore.com,776,Y,
+,,,,,,,,,,,,,,,,,,,,6316,985,Foprsecag Burr,23,Spear,Weapons,Apple pay,2,10,2/15/2022 17:02,United States,Los Angeles,Etsy.com,782,Y,
+,,,,,,,,,,,,,,,,,,,,6317,115,Braspofon Tymp,37,Morningstar,Weapons,Paypal,2,15,3/25/2022 5:55,India,Kolk?ta,yeoldestore.com,777,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6318,323,Ear Tolict,28,Battleaxe,Weapons,Venmo,7,10,3/2/2022 15:37,Congo (Kinshasa),Kinshasa,Etsy.com,777,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6320,180,Argoole Cored,49,Longbow,Weapons,Paypal,6,50,1/31/2022 16:34,China,Qujing,LarpersTrove.com,779,Y,
+,,,,,,,,,,,,,,,,,,,,6321,735,Gyetedild Andg,36,Maul,Weapons,Cash app,4,10,1/31/2022 1:56,United States,Boston,Blacksmithery.com,820,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6322,927,Fiof Sasunon,19,Light Hammer,Weapons,Credit Card,5,2,3/14/2022 16:46,Indonesia,Jakarta,yeoldestore.com,749,N,Card reported stolen
+,,,,,,,,,,,,,,,,,,,,6323,680,Bonlt Thasa,107,Torch,Gear,Apple pay,6,1,6/23/2022 21:47,Pakistan,Karachi,Blacksmithery.com,783,Y,
+,,,,,,,,,,,,,,,,,,,,6324,516,Rcerermp Her,49,Longbow,Weapons,Cash app,8,50,2/11/2022 13:12,China,Kunming,LarpersTrove.com,821,Y,
+,,,,,,,,,,,,,,,,,,,,6325,184,Offoug:g Reavornt,40,Scimitar,Weapons,Gift card,2,25,7/27/2022 12:56,Brazil,São Paulo,LarpersTrove.com,804,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6327,715,Athesee Setp,3,Studded Leather,Armor,Gift card,3,45,5/15/2022 2:43,Thailand,Bangkok,Blacksmithery.com,805,N,Insuffecient Funds
+,,,,,,,,,,,,,,,,,,,,6328,325,Theninch Whet,47,Hand Crossbow,Weapons,Gift card,6,75,6/13/2022 11:35,Iraq,Baghdad,LarpersTrove.com,806,Y,
+,,,,,,,,,,,,,,,,,,,,6329,642,Cat Pthauted,94,Hunting Trap,Gear,Venmo,10,5,5/29/2022 21:44,India,Mumbai,Amazon.com,779,N,Failed to Authenticate buyer
+,,,,,,,,,,,,,,,,,,,,6330,746,Daldips Ptinc,106,Spellbook,Gear,Credit Card,9,50,1/14/2022 8:24,China,Zhumadian,Walmart.com,750,Y,
