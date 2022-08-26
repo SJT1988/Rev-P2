@@ -6,6 +6,7 @@ from pyspark.sql import HiveContext
 from pyspark.sql.functions import substring
 import csv
 import pandas
+import time
 
 filepath = "file:/home/phai597/"  # CHANGE THIS TO MATCH YOURS
 spark = SparkSession.builder.master("local").appName("myRDD").getOrCreate()
@@ -147,6 +148,7 @@ highest_grossing_cat_list = list(df_sum_of_categories.collect()[0])
 print(
     f'1a) The highest grossing product category overall is {highest_grossing_cat_list[0]} with {"{:,}".format(highest_grossing_cat_list[1])}'
 )
+time.sleep(10)
 print("\n\n\n")
 
 ####################################################################################
@@ -179,6 +181,7 @@ ORDER BY max_categories.max_gross DESC;"
 )
 print("1b) The highest grossing product categories by country are:")
 df_gross_by_cat_by_country.show(100)
+time.sleep(10)
 print("\n\n\n")
 
 ####################################################################################
@@ -250,7 +253,7 @@ pop_q1.show(3)
 pop_q2.show(3)
 # print("Top products overall for third quarter:")
 pop_q3.show(3)
-
+time.sleep(10)
 ####################################################################################
 #                                 Answers 2b                                       #
 ####################################################################################
@@ -310,6 +313,7 @@ for i in range(len(ListCountry_Correct)):
 #                                                                                  #
 #                                                                                  #
 ####################################################################################
+time.sleep(10)
 print("\n\n\n")
 print("3) Which locations see the highest traffic of sales?")
 count_by_country = spark.sql(
@@ -331,6 +335,7 @@ count_by_country.show()
 #                                                                                  #
 #                                                                                  #
 ####################################################################################
+time.sleep(10)
 print("\n\n\n")
 ####################################################################################
 #                                 Answers 4a                                       #
@@ -359,6 +364,7 @@ q4_a.show() #Run this to display answer for 4a.
 ####################################################################################
 #                                 Answers 4b                                       #
 ####################################################################################
+time.sleep(10)
 print("\n\n\n")
 print("Per country:")
 df_lst = []  # List of dataframes displaying data from specific countries.
