@@ -1,13 +1,12 @@
-from ast import expr
-from operator import truediv
+################################################################################
+# This file contains working for Query 1 where "Top-Selling Category" is
+# interpreted as the category with the highest gross sales, which is the sum
+# of the product of price and quantity for each transaction, grouped by
+# category.
+################################################################################
+
 from os import system, name
-import pyspark
 from pyspark.sql import SparkSession
-from pyspark.sql import HiveContext
-from pyspark.sql.functions import to_timestamp
-from pyspark.sql.window import Window
-import csv
-import pandas
 
 spark = SparkSession.builder \
     .master ("local") \
