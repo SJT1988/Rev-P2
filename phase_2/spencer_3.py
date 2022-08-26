@@ -17,10 +17,8 @@ spark = SparkSession.builder \
 spark.sparkContext.setLogLevel("WARN")
 sc = spark.sparkContext
 
-root_path = 'file:/home/strumunix/Rev-P2/'
-dir_path = 'phase_2/'
-filename = 'p2_Team1_Data.csv'
-filepath = root_path + dir_path + filename
+_filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
+_sourcedatafile = 'final_data.csv'
 
 # we only run this in Ubuntu anyway...
 def clear():
@@ -29,44 +27,15 @@ def clear():
 clear()
 print('\n\n\n')
 
+rdd0 = spark.read.option('header',False).option('inferSchema',True).csv(_filepath + _sourcedatafile)
 
-rdd1 = spark.read.option('header',False).option('inferSchema',True).csv(filepath)
-
-df1 = rdd1.toDF("order_id","customer_id","customer_name","product_id","product_name","product_category", \
+df0 = rdd0.toDF("order_id","customer_id","customer_name","product_id","product_name","product_category", \
     "payment_type","qty","price","datetime","country","city","e_commerce_website_name","payment_tnx_id", \
     "payment_tnx_success","failure_reason")
-'''
-df1.createOrReplaceTempView("data")
-
-# count of product_id = 109
-df_id_cnt = spark.sql('SELECT DISTINCT product_id FROM data WHERE product_id != \'null\'')
-# count of product_name = 109
-df_name_cnt = spark.sql('SELECT DISTINCT product_name FROM data WHERE product_name != \'null\'')
-# count of product_category = 3
-df_category_cnt = spark.sql('SELECT DISTINCT product_category FROM data WHERE product_category != \'null\'')
-# count of distinct product_price = 109 (verified by comparing different qty of crossbows, which are recorded as same price, so price is base-price, not total)
-df_price_cnt = spark.sql('SELECT COUNT(DISTINCT price) FROM data WHERE price != \'null\'')
-df_price_cnt.show()
-'''
-
-#=====================
-#=====================
-#=====================
+df0.createOrReplaceTempView('data')
 
 #################################################################################################################
-#                                   FILTER COLUMNS WITH 'NULL' VALUES (strings)
-#################################################################################################################
-df_no_null = df1.filter(
-    (df1.product_id != 'null') & 
-    (df1.product_name != 'null') & 
-    (df1.product_category != 'null') & 
-    (df1.price != 'null') & 
-    (df1.qty != 'null')
-)
-df_no_null.createOrReplaceTempView("no_null")
-
-#################################################################################################################
-#                                   TYPE-CAST
+#                                                   TYPE-CAST
 #################################################################################################################
 df_typecast = spark.sql('SELECT \
     CAST(order_id AS INT), \
@@ -78,31 +47,18 @@ df_typecast = spark.sql('SELECT \
     payment_type, \
     CAST(qty AS INT), \
     CAST(price AS INT), \
-    CAST(datetime AS DATE), \
+    datetime, \
     country, \
     city, \
     e_commerce_website_name, \
     payment_tnx_id, \
     payment_tnx_success, \
     failure_reason \
-    FROM no_null')
+    FROM data')
 
 #################################################################################################################
-#                          VERIFYING TYPE FOR EACH COLUMN (SUCCESS!)
+#                                                   RUN QUERIES
 #################################################################################################################
-# sample = df_typecast.collect()[0] # sample first record
-# for c in sample:
-#     print(type(c))
-
-#################################################################################################################
-#                          WRITE AS NEW CSV. IT WILL CONTAIN NO 'null' values (DONE)
-#################################################################################################################
-#df_no_null.write.csv(root_path + dir_path + 'no_null')
-
-#################################################################################################################
-#
-#                                                RUN QUERIES
-#
 #################################################################################################################
 #
 #               1a) What is the top selling category of items?
@@ -111,7 +67,7 @@ df_typecast = spark.sql('SELECT \
 df_category_totals = df_typecast.select('product_category', (df_typecast.qty*df_typecast.price).alias('totals'))
 df_category_totals.createOrReplaceTempView('category_totals')
 df_sum_of_categories = spark.sql('SELECT product_category, SUM(totals) AS cat_sums FROM category_totals GROUP BY product_category ORDER BY cat_sums DESC')
-# df_sum_of_categories.show(truncate=False)
+df_sum_of_categories.show(truncate=False)
 # The maximum record is the first ordered record:
 highest_grossing_cat_list = list(df_sum_of_categories.collect()[0])
 print(f'1a) The highest grossing product category overall is {highest_grossing_cat_list[0]} with {"{:,}".format(highest_grossing_cat_list[1])}')

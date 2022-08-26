@@ -15,7 +15,9 @@ spark = SparkSession.builder \
 
 spark.sparkContext.setLogLevel("WARN")
 sc = spark.sparkContext
-_filepath = 'file:/home/jed/' #'file:/home/strumunix/Rev-P2/phase_2/'
+
+_filepath = 'file:/home/strumunix/Rev-P2/phase_2/'
+#_filepath = 'file:/home/jed/'
 Out_Put_Path_for_Leading_in_qty = _filepath + "qty_out"
 Out_Put_Path_for_Leading_in_value = _filepath +"value_out"
 InPut_CSV_File_Path = _filepath +"p2_Team1_Data.csv"
