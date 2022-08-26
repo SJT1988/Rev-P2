@@ -77,7 +77,7 @@ df_typecast = spark.sql('SELECT \
     product_category, \
     payment_type, \
     CAST(qty AS INT), \
-    CAST(price AS INT), \
+    CAST(price AS DECIMAL()), \
     CAST(datetime AS DATE), \
     country, \
     city, \
